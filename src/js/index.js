@@ -602,7 +602,22 @@ window.onload = function () {
                     stagger: { each: 0.15, from: "end", },
                 }, '<0.3')
 
-        } else {
+        } else if (window_width <= 1680) {
+
+            let gl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: '.c2-box',
+                    start: "-70%",
+                    end: '+=1000',
+                    scrub: 10,
+                }
+            });
+            gl.to('.c2-cover-bg', { duration: 1, width: '0vw', ease: "power1.inOut", zIndex: '-1' })
+                .to('.c2-cover-bg', { duration: 1, opacity: 0, ease: "power1.inOut", }, '<0.8')
+
+        }
+
+        else {
             let gl = gsap.timeline({
                 scrollTrigger: {
                     trigger: '.c2-box',

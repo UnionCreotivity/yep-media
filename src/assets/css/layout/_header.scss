@@ -137,6 +137,10 @@ header {
                     opacity: 0;
                     z-index: -1;
 
+                    @media all and (max-width:1680px) {
+                        margin-top: 1.7vw;
+                    }
+
                     a {
 
                         &:hover,

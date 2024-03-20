@@ -241,6 +241,11 @@ header .right-box .menu-link .about-link .hidden-about {
   opacity: 0;
   z-index: -1;
 }
+@media all and (max-width: 1680px) {
+  header .right-box .menu-link .about-link .hidden-about {
+    margin-top: 1.7vw;
+  }
+}
 header .right-box .menu-link .about-link .hidden-about a:hover, header .right-box .menu-link .about-link .hidden-about a:focus, header .right-box .menu-link .about-link .hidden-about a:active {
   color: #5186c4;
 }
