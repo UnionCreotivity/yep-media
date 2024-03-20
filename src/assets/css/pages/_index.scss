@@ -1363,6 +1363,18 @@
                 img {
                     width: 9vw;
 
+                    @media all and (max-width:1680px) {
+                        width: 12vw;
+                    }
+
+                    @media all and (max-width:1366px) {
+                        width: 8vw;
+                    }
+
+                    @media all and (max-width:1280px) {
+                        width: 12vw;
+                    }
+
                     @media all and (max-width:1024px) {
                         width: 20vw;
                     }
