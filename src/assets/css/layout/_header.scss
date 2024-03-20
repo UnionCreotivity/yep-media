@@ -94,7 +94,7 @@ header {
                     display: flex;
                     position: relative;
                     padding-right: 1vw;
-                    background-image: url(/src/assets/images/arrow.svg);
+                    background-image: url(../images/arrow.svg);
                     background-repeat: no-repeat;
                     background-size: 0.8vw;
                     background-position-y: 0.2vw;
@@ -104,7 +104,7 @@ header {
                     &:focus,
                     &:active {
                         color: #5186c4;
-                        background-image: url(/src/assets/images/arrow_hover.svg);
+                        background-image: url(../images/arrow_hover.svg);
                     }
 
                     @media all and (max-width:1920px) {

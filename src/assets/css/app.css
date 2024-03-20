@@ -199,7 +199,7 @@ header .right-box .menu-link .about-link .nohidden-box {
   display: flex;
   position: relative;
   padding-right: 1vw;
-  background-image: url(/src/assets/images/arrow.svg);
+  background-image: url(../images/arrow.svg);
   background-repeat: no-repeat;
   background-size: 0.8vw;
   background-position-y: 0.2vw;
@@ -207,7 +207,7 @@ header .right-box .menu-link .about-link .nohidden-box {
 }
 header .right-box .menu-link .about-link .nohidden-box:hover, header .right-box .menu-link .about-link .nohidden-box:focus, header .right-box .menu-link .about-link .nohidden-box:active {
   color: #5186c4;
-  background-image: url(/src/assets/images/arrow_hover.svg);
+  background-image: url(../images/arrow_hover.svg);
 }
 @media all and (max-width: 1920px) {
   header .right-box .menu-link .about-link .nohidden-box {
@@ -458,7 +458,7 @@ footer {
 }
 
 .index-body .container {
-  background-image: url(/src/assets/images/home/fixed_bg.webp);
+  background-image: url(../images/home/fixed_bg.webp);
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
@@ -471,7 +471,7 @@ footer {
 }
 @media all and (max-width: 1024px) {
   .index-body .container {
-    background-image: url(/src/assets/images/home/bg_moblie.png);
+    background-image: url(../images/home/bg_moblie.png);
     background-attachment: initial;
     background-size: contain;
     background-position: right;
@@ -539,8 +539,8 @@ footer {
   z-index: 1;
   right: 20vw;
   bottom: 3vw;
-  -webkit-mask-image: url(/src/assets/images/home/mask.png);
-          mask-image: url(/src/assets/images/home/mask.png);
+  -webkit-mask-image: url(../images/home/mask.png);
+          mask-image: url(../images/home/mask.png);
   -webkit-mask-size: 2%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: left;
@@ -1877,8 +1877,8 @@ footer {
 }
 .index-body .container .c4-box .item2 img {
   width: 35vw;
-  -webkit-mask-image: url(/src/assets/images/home/mask.png);
-          mask-image: url(/src/assets/images/home/mask.png);
+  -webkit-mask-image: url(../images/home/mask.png);
+          mask-image: url(../images/home/mask.png);
   -webkit-mask-size: 0%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: left;
@@ -1909,8 +1909,8 @@ footer {
 }
 .index-body .container .c4-box .item3 img {
   width: 16vw;
-  -webkit-mask-image: url(/src/assets/images/home/sea_mask.png);
-          mask-image: url(/src/assets/images/home/sea_mask.png);
+  -webkit-mask-image: url(../images/home/sea_mask.png);
+          mask-image: url(../images/home/sea_mask.png);
   -webkit-mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -1991,8 +1991,8 @@ footer {
   position: absolute;
   right: 5vw;
   top: 12vw;
-  -webkit-mask-image: url(/src/assets/images/home/sea_mask.png);
-          mask-image: url(/src/assets/images/home/sea_mask.png);
+  -webkit-mask-image: url(../images/home/sea_mask.png);
+          mask-image: url(../images/home/sea_mask.png);
   -webkit-mask-size: 100%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: center;
@@ -2055,8 +2055,8 @@ footer {
 .index-body .container .c4-box-moblie .bottom-box .item2 {
   margin-left: -3vw;
   margin-bottom: 5vw;
-  -webkit-mask-image: url(/src/assets/images/home/mask.png);
-          mask-image: url(/src/assets/images/home/mask.png);
+  -webkit-mask-image: url(../images/home/mask.png);
+          mask-image: url(../images/home/mask.png);
   -webkit-mask-size: 0%;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-position: left;
@@ -2069,7 +2069,7 @@ footer {
 }
 
 .about-body {
-  background-image: url(/src/assets/images/about/big_bg.webp);
+  background-image: url(../images/about/big_bg.webp);
   position: relative;
   width: 100%;
   background-repeat: no-repeat;
@@ -2337,7 +2337,7 @@ footer {
 }
 
 .contact-body {
-  background-image: url(/src/assets/images/contact/contact_bg.webp);
+  background-image: url(../images/contact/contact_bg.webp);
   background-color: white;
   position: relative;
   width: 100%;
@@ -2365,7 +2365,7 @@ footer {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
-    background-image: url(/src/assets/images/contact/moblie_bg.webp);
+    background-image: url(../images/contact/moblie_bg.webp);
   }
 }
 .contact-body .container .top-box {

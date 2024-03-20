@@ -2,8 +2,8 @@
 
 
     .container {
-        // background-image: url(/src/assets/images/home/bg.webp);
-        background-image: url(/src/assets/images/home/fixed_bg.webp);
+        // background-image: url(../images/home/bg.webp);
+        background-image: url(../images/home/fixed_bg.webp);
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
@@ -16,7 +16,7 @@
         opacity: 0;
 
         @media all and (max-width:1024px) {
-            background-image: url(/src/assets/images/home/bg_moblie.png);
+            background-image: url(../images/home/bg_moblie.png);
             background-attachment: initial;
             background-size: contain;
             background-position: right;
@@ -43,7 +43,7 @@
                 z-index: 1;
                 left: 30vw;
                 top: 17vw;
-                // mask-image: url(/src/assets/images/home/mask2.png);
+                // mask-image: url(../images/home/mask2.png);
                 // -webkit-mask-size: 10%;
                 // -webkit-mask-repeat: no-repeat;
                 // -webkit-mask-position: center;
@@ -52,7 +52,7 @@
                 // mask-position: center;
                 // width: 22vw;
                 // height: 22vw;
-                // background-image: url(/src/assets/images/home/float_bottom_bg.png);
+                // background-image: url(../images/home/float_bottom_bg.png);
                 // background-size: cover;
 
                 // background-position: left;
@@ -63,7 +63,7 @@
                 }
 
                 @media all and (max-width:1024px) {
-                    // mask-image: url(/src/assets/images/home/mask2.png);
+                    // mask-image: url(../images/home/mask2.png);
                     // -webkit-mask-size: 100%;
                     // -webkit-mask-repeat: no-repeat;
                     // -webkit-mask-position: center;
@@ -101,7 +101,7 @@
                 z-index: 1;
                 right: 20vw;
                 bottom: 3vw;
-                mask-image: url(/src/assets/images/home/mask.png);
+                mask-image: url(../images/home/mask.png);
                 -webkit-mask-size: 2%;
                 -webkit-mask-repeat: no-repeat;
                 -webkit-mask-position: left;
@@ -1449,7 +1449,7 @@
 
                 img {
                     width: 35vw;
-                    mask-image: url(/src/assets/images/home/mask.png);
+                    mask-image: url(../images/home/mask.png);
                     -webkit-mask-size: 0%;
                     -webkit-mask-repeat: no-repeat;
                     -webkit-mask-position: left;
@@ -1481,7 +1481,7 @@
 
                 img {
                     width: 16vw;
-                    mask-image: url(/src/assets/images/home/sea_mask.png);
+                    mask-image: url(../images/home/sea_mask.png);
                     -webkit-mask-size: 100%;
                     -webkit-mask-repeat: no-repeat;
                     -webkit-mask-position: center;
@@ -1565,7 +1565,7 @@
                     position: absolute;
                     right: 5vw;
                     top: 12vw;
-                    mask-image: url(/src/assets/images/home/sea_mask.png);
+                    mask-image: url(../images/home/sea_mask.png);
                     -webkit-mask-size: 100%;
                     -webkit-mask-repeat: no-repeat;
                     -webkit-mask-position: center;
@@ -1648,7 +1648,7 @@
                         width: 50vw;
                     }
 
-                    mask-image: url(/src/assets/images/home/mask.png);
+                    mask-image: url(../images/home/mask.png);
                     -webkit-mask-size: 0%;
                     -webkit-mask-repeat: no-repeat;
                     -webkit-mask-position: left;
