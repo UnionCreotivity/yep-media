@@ -1790,19 +1790,9 @@ footer {
 .index-body .container .c4-box .middle-line img {
   width: 9vw;
 }
-@media all and (max-width: 1680px) {
+@media all and (max-width: 1440px) {
   .index-body .container .c4-box .middle-line img {
-    width: 12vw;
-  }
-}
-@media all and (max-width: 1366px) {
-  .index-body .container .c4-box .middle-line img {
-    width: 8vw;
-  }
-}
-@media all and (max-width: 1280px) {
-  .index-body .container .c4-box .middle-line img {
-    width: 12vw;
+    width: 6.5vw;
   }
 }
 @media all and (max-width: 1024px) {
