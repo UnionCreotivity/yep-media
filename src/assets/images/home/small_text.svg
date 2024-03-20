@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  viewBox="0 0 613 284">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#drop-shadow-1);
+      }
+
+      .cls-1,
+      .cls-2 {
+        fill: #fff;
+        font-family: BellMT, 'Bell MT';
+        font-size: 13px;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+        stroke-width: .25px;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3.58" dy="3.58" />
+      <feGaussianBlur result="blur" stdDeviation="8.36" />
+      <feFlood flood-color="#301d0d" flood-opacity=".1" />
+      <feComposite in2="blur" operator="in" />
+      <feComposite in="SourceGraphic" />
+    </filter>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <text class="cls-1" transform="translate(39.52 58.4) rotate(7.03)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(49.26 59.6) rotate(6.7)">
+      <tspan x="0" y="0">X</tspan>
+    </text>
+    <text class="cls-2" transform="translate(60.1 60.87) rotate(6.4)">
+      <tspan x="0" y="0">P</tspan>
+    </text>
+    <text class="cls-2" transform="translate(69.33 61.9) rotate(6.11)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(79.09 62.94) rotate(5.8)">
+      <tspan x="0" y="0">R</tspan>
+    </text>
+    <text class="cls-2" transform="translate(89.13 63.95) rotate(5.54)">
+      <tspan x="0" y="0">I</tspan>
+    </text>
+    <text class="cls-2" transform="translate(95.28 64.55) rotate(5.27)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(105.05 65.45) rotate(4.89)">
+      <tspan x="0" y="0">N</tspan>
+    </text>
+    <text class="cls-2" transform="translate(116.05 66.39) rotate(4.48)">
+      <tspan x="0" y="0">C</tspan>
+    </text>
+    <text class="cls-2" transform="translate(125.71 67.14) rotate(4.05)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(135.49 67.82) rotate(3.71)">
+      <tspan x="0" y="0"> </tspan>
+    </text>
+    <text class="cls-2" transform="translate(140.03 68.13) rotate(3.23)">
+      <tspan x="0" y="0">M</tspan>
+    </text>
+    <text class="cls-2" transform="translate(153.36 68.86) rotate(2.51)">
+      <tspan x="0" y="0">A</tspan>
+    </text>
+    <text class="cls-2" transform="translate(163.53 69.3) rotate(1.78)">
+      <tspan x="0" y="0">K</tspan>
+    </text>
+    <text class="cls-2" transform="translate(173.63 69.61) rotate(.92)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(183.4 69.75) rotate(-.01)">
+      <tspan x="0" y="0">S</tspan>
+    </text>
+    <text class="cls-2" transform="translate(191.46 69.73) rotate(-.8)">
+      <tspan x="0" y="0"> </tspan>
+    </text>
+    <text class="cls-2" transform="translate(195.99 69.68) rotate(-1.83)">
+      <tspan x="0" y="0">P</tspan>
+    </text>
+    <text class="cls-2" transform="translate(205.19 69.38) rotate(-3.68)">
+      <tspan x="0" y="0">R</tspan>
+    </text>
+    <text class="cls-2" transform="translate(214.92 68.76) rotate(-6.5)">
+      <tspan x="0" y="0">O</tspan>
+    </text>
+    <text class="cls-2" transform="translate(226.07 67.39) rotate(-10.98)">
+      <tspan x="0" y="0">F</tspan>
+    </text>
+    <text class="cls-2" transform="translate(235.15 65.55) rotate(-8.04)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(244.78 64.26) rotate(-4.56)">
+      <tspan x="0" y="0">S</tspan>
+    </text>
+    <text class="cls-2" transform="translate(252.72 63.66) rotate(-1.83)">
+      <tspan x="0" y="0">S</tspan>
+    </text>
+    <text class="cls-2" transform="translate(260.71 63.44) rotate(.35)">
+      <tspan x="0" y="0">I</tspan>
+    </text>
+    <text class="cls-2" transform="translate(266.81 63.46) rotate(2.72)">
+      <tspan x="0" y="0">O</tspan>
+    </text>
+    <text class="cls-2" transform="translate(277.46 64) rotate(5.51)">
+      <tspan x="0" y="0">N</tspan>
+    </text>
+    <text class="cls-2" transform="translate(287.78 65.02) rotate(7.91)">
+      <tspan x="0" y="0">A</tspan>
+    </text>
+    <text class="cls-2" transform="translate(297.82 66.45) rotate(10.15)">
+      <tspan x="0" y="0">L</tspan>
+    </text>
+    <text class="cls-2" transform="translate(306.9 68.12) rotate(11.68)">
+      <tspan x="0" y="0">,</tspan>
+    </text>
+    <text class="cls-2" transform="translate(310.93 68.94) rotate(13.22)">
+      <tspan x="0" y="0">P</tspan>
+    </text>
+    <text class="cls-2" transform="translate(319.88 71.06) rotate(15.51)">
+      <tspan x="0" y="0">R</tspan>
+    </text>
+    <text class="cls-2" transform="translate(329.02 73.6) rotate(18.02)">
+      <tspan x="0" y="0">O</tspan>
+    </text>
+    <text class="cls-2" transform="translate(339.13 76.93) rotate(20.88)">
+      <tspan x="0" y="0">F</tspan>
+    </text>
+    <text class="cls-2" transform="translate(347.82 80.26) rotate(24.12)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(356.65 84.28) rotate(27.9)">
+      <tspan x="0" y="0">S</tspan>
+    </text>
+    <text class="cls-2" transform="translate(363.63 88.01) rotate(32.4)">
+      <tspan x="0" y="0">S</tspan>
+    </text>
+    <text class="cls-2" transform="translate(370.23 92.28) rotate(37.9)">
+      <tspan x="0" y="0">I</tspan>
+    </text>
+    <text class="cls-2" transform="translate(374.93 95.7) rotate(48.13)">
+      <tspan x="0" y="0">O</tspan>
+    </text>
+    <text class="cls-2" transform="translate(381.95 103.93) rotate(48.29)">
+      <tspan x="0" y="0">N</tspan>
+    </text>
+    <text class="cls-2" transform="translate(388.89 111.68) rotate(46.36)">
+      <tspan x="0" y="0">A</tspan>
+    </text>
+    <text class="cls-2" transform="translate(395.95 119.04) rotate(44.96)">
+      <tspan x="0" y="0">L</tspan>
+    </text>
+    <text class="cls-2" transform="translate(402.51 125.55) rotate(44.12)">
+      <tspan x="0" y="0"> </tspan>
+    </text>
+    <text class="cls-2" transform="translate(405.74 128.73) rotate(43.1)">
+      <tspan x="0" y="0">M</tspan>
+    </text>
+    <text class="cls-2" transform="translate(415.49 137.8) rotate(41.85)">
+      <tspan x="0" y="0">A</tspan>
+    </text>
+    <text class="cls-2" transform="translate(423.08 144.59) rotate(40.78)">
+      <tspan x="0" y="0">K</tspan>
+    </text>
+    <text class="cls-2" transform="translate(430.72 151.16) rotate(39.71)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(438.27 157.41) rotate(38.69)">
+      <tspan x="0" y="0">S</tspan>
+    </text>
+    <text class="cls-2" transform="translate(444.55 162.41) rotate(37.94)">
+      <tspan x="0" y="0"> </tspan>
+    </text>
+    <text class="cls-2" transform="translate(448.1 165.2) rotate(37.01)">
+      <tspan x="0" y="0">E</tspan>
+    </text>
+    <text class="cls-2" transform="translate(455.93 171.09) rotate(35.53)">
+      <tspan x="0" y="0">X</tspan>
+    </text>
+    <text class="cls-2" transform="translate(464.78 177.39) rotate(33.74)">
+      <tspan x="0" y="0">T</tspan>
+    </text>
+    <text class="cls-2" transform="translate(473.56 183.23) rotate(31.67)">
+      <tspan x="0" y="0">R</tspan>
+    </text>
+    <text class="cls-2" transform="translate(482.23 188.55) rotate(29.1)">
+      <tspan x="0" y="0">A</tspan>
+    </text>
+    <text class="cls-2" transform="translate(491.14 193.47) rotate(26.08)">
+      <tspan x="0" y="0">O</tspan>
+    </text>
+    <text class="cls-2" transform="translate(500.79 198.17) rotate(24.91)">
+      <tspan x="0" y="0">R</tspan>
+    </text>
+    <text class="cls-2" transform="translate(509.94 202.41) rotate(23.93)">
+      <tspan x="0" y="0">D</tspan>
+    </text>
+    <text class="cls-2" transform="translate(520.13 206.9) rotate(23.25)">
+      <tspan x="0" y="0">I</tspan>
+    </text>
+    <text class="cls-2" transform="translate(525.8 209.35) rotate(22.65)">
+      <tspan x="0" y="0">N</tspan>
+    </text>
+    <text class="cls-2" transform="translate(535.45 213.36) rotate(22.02)">
+      <tspan x="0" y="0">A</tspan>
+    </text>
+    <text class="cls-2" transform="translate(544.92 217.19) rotate(21.44)">
+      <tspan x="0" y="0">R</tspan>
+    </text>
+    <text class="cls-2" transform="translate(553.68 220.62) rotate(20.94)">
+      <tspan x="0" y="0">Y</tspan>
+    </text>
+    <text class="cls-2" transform="translate(561.64 223.66) rotate(20.67)">
+      <tspan x="0" y="0">.</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 378 153">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        filter: url(#drop-shadow-1);
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="-3.58" dy="3.58"/>
+      <feGaussianBlur result="blur" stdDeviation="8.36"/>
+      <feFlood flood-color="#301d0d" flood-opacity=".1"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <path class="cls-1" d="M28.98,26.21s38.49-11.88,101.96,9.92c61.76,21.21,121.02,80.04,223.78,86.18"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 245.45 270.78">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 36px;
+      }
+
+      .cls-1, .cls-2 {
+        font-family: NotoSerifTC-Medium-90ms-RKSJ-H, 'Noto Serif TC';
+      }
+
+      .cls-2 {
+        font-size: 30px;
+      }
+    </style>
+  </defs>
+  <g id="_圖層_1-2" data-name="圖層 1">
+    <text class="cls-2" transform="translate(28.63 220.12) rotate(-15.67)"><tspan x="0" y="0">p</tspan></text>
+    <text class="cls-2" transform="translate(69.06 207.18) rotate(-23.09)"><tspan x="0" y="0">a</tspan></text>
+    <text class="cls-2" transform="translate(105.09 190.03) rotate(-31.17)"><tspan x="0" y="0">r</tspan></text>
+    <text class="cls-2" transform="translate(136.25 168.91) rotate(-40.33)"><tspan x="0" y="0">t</tspan></text>
+    <text class="cls-2" transform="translate(161.02 145.52) rotate(-51.98)"><tspan x="0" y="0">n</tspan></text>
+    <text class="cls-2" transform="translate(185.81 108.56) rotate(-66.28)"><tspan x="0" y="0">e</tspan></text>
+    <text class="cls-2" transform="translate(199.49 70.31) rotate(-78.9)"><tspan x="0" y="0">r</tspan></text>
+    <text class="cls-1" transform="translate(204.1 41.86) rotate(-82.27)"><tspan x="0" y="0"> </tspan></text>
+  </g>
+</svg>

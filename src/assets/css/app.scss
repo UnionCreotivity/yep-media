@@ -1,0 +1,16 @@
+//Utils
+@import 'utils/basic';
+@import 'utils/mixin';
+@import 'utils/variables';
+
+//layout
+@import 'layout/header';
+@import 'layout/menu';
+@import 'layout/footer';
+
+//Pages
+@import 'pages/index';
+@import 'pages/about';
+@import 'pages/contact';
+
+//components

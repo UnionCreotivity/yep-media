@@ -1,0 +1,17 @@
+@mixin indexMain() {
+
+    font-size: 1.5vw;
+    letter-spacing: 1em;
+    font-family: "Noto Serif TC", serif;
+    font-weight: bold;
+
+    @media all and (max-width:1440px) {
+        margin-bottom: 0vw;
+        font-size: 1.8vw;
+    }
+
+    @media all and (max-width:1024px) {
+        font-size: $moblie-big-title;
+        font-weight: 500;
+    }
+}
