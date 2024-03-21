@@ -153,6 +153,7 @@
   font-weight: 600;
   font-size: 0.8vw;
   padding-left: 0.6vw;
+  color: #5186C4;
 }
 @media all and (max-width: 1440px) {
   .loading-screen .logo-box .loading-text {
@@ -205,13 +206,13 @@ header .left-box .logo-box {
   padding-right: 7vw;
 }
 header .left-box .logo-box img {
-  width: 5.5vw;
+  width: 6vw;
   align-items: center;
   display: flex;
 }
 @media all and (max-width: 1440px) {
   header .left-box .logo-box img {
-    width: 6vw;
+    width: 7.5vw;
   }
 }
 @media all and (max-width: 1024px) {
