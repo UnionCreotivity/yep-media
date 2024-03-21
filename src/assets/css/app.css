@@ -167,7 +167,7 @@
 }
 @media all and (max-width: 500px) {
   .loading-screen .logo-box .loading-text {
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
