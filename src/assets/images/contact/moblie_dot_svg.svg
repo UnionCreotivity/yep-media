@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_圖層_2" data-name="圖層 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 201.52 8.21">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #72c3fb;
+      }
+    </style>
+  </defs>
+  <g id="_文字" data-name="文字">
+    <g>
+      <circle class="cls-1" cx="197.42" cy="4.1" r="4.1"/>
+      <circle class="cls-1" cx="149.09" cy="4.1" r="4.1"/>
+      <circle class="cls-1" cx="100.76" cy="4.1" r="4.1"/>
+      <circle class="cls-1" cx="52.43" cy="4.1" r="4.1"/>
+      <circle class="cls-1" cx="4.1" cy="4.1" r="4.1"/>
+    </g>
+  </g>
+</svg>

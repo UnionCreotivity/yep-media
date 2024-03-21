@@ -98,11 +98,13 @@ header {
                     background-size: 0.8vw;
                     background-position-y: 0.2vw;
                     background-position-x: 2.7vw;
+                    transition: background-image 0.2s ease;
 
                     &:hover,
                     &:focus,
                     &:active {
                         color: #5186c4;
+
                         background-image: url(../images/arrow_hover.svg);
                     }
 

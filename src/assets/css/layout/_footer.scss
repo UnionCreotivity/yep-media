@@ -5,15 +5,20 @@ footer {
     letter-spacing: 0.2em;
     text-align: center;
     padding-bottom: 1vw;
-    font-size: 1vw;
+    font-size: 0.8vw;
+    width: 100%;
+
 
     @media all and (max-width:1024px) {
         font-size: 16px;
+        padding: 2vw 0vw;
+        background-color: white;
     }
 
     @media all and (max-width:500px) {
         font-size: 3.3vw;
         padding-bottom: 4vw;
+
     }
 
     @media all and (max-width:375px) {
