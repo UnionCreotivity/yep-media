@@ -112,63 +112,6 @@ window.onload = function () {
     }
     headerAboutMenu();
 
-
-
-    function speechBubbles() {
-
-        if (window_width <= 1024) {
-            return;
-        } else {
-
-            const item = document.querySelectorAll('.speech-bubbles')
-            const dot = document.querySelectorAll('.dot');
-            let tl = gsap.timeline({
-                // repeat: -1,
-
-            });
-
-            let dl = gsap.timeline({
-                repeat: -1,
-                delay: 2
-            });
-
-            tl.from(item, {
-                duration: 1.5,
-                // filter: 'blur(10px)',
-                y: 600,
-                // opacity: 0,
-                scale: 2,
-                ease: "power2.inOut",
-                stagger: {
-                    each: 0.08,
-                    from: 'random'
-                },
-
-                xPercent: (pos) => gsap.utils.random(-800, 800),
-                yPercent: (pos) => gsap.utils.random(-300, 300),
-                // rotationX: () => gsap.utils.random(-90, 90)
-            })
-                .from('.top-box .content .text', {
-                    duration: 1,
-                    y: 100,
-                    opacity: 0,
-                    ease: "power1.inOut",
-
-                }, '<1.5')
-            floatBubbles();
-
-            dl.from(dot, {
-                opacity: 0,
-                ease: "power1.inOut",
-                stagger: {
-                    each: 0.25,
-                    from: 'start'
-                },
-            })
-        }
-    }
-    speechBubbles();
-
     function floatBubbles() {
 
         if (window_width <= 1024) {
@@ -250,4 +193,56 @@ window.onload = function () {
 
     }
     floatBubbles();
+
+    function speechBubbles() {
+
+        if (window_width <= 1024) {
+            return;
+        } else {
+
+            const item = document.querySelectorAll('.speech-bubbles')
+            const dot = document.querySelectorAll('.dot');
+            let tl = gsap.timeline({
+                // repeat: -1,
+            });
+
+            tl.from(item, {
+                duration: 1.5,
+                y: 600,
+                scale: 2,
+                ease: "power2.inOut",
+                stagger: {
+                    each: 0.08,
+                    from: 'random'
+                },
+
+                xPercent: (pos) => gsap.utils.random(-800, 800),
+                yPercent: (pos) => gsap.utils.random(-300, 300),
+            })
+                .from('.top-box .content .text', {
+                    duration: 1,
+                    y: 100,
+                    opacity: 0,
+                    ease: "power1.inOut",
+
+                }, '<1.5')
+
+            // dot    
+            let dl = gsap.timeline({
+                repeat: -1,
+                delay: 2
+            });
+            dl.from(dot, {
+                opacity: 0,
+                ease: "power1.inOut",
+                stagger: {
+                    each: 0.25,
+                    from: 'start'
+                },
+            })
+
+        }
+    }
+    speechBubbles();
+
 }

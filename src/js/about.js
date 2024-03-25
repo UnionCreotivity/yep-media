@@ -112,8 +112,6 @@ window.onload = function () {
     }
     headerAboutMenu();
 
-
-
     function openAni() {
         let tl = gsap.timeline({
 
@@ -155,7 +153,7 @@ window.onload = function () {
                 });
 
                 tl.from(item, {
-                    x: -200,
+                    x: -100,
                     opacity: 0,
                     duration: 1,
                     ease: "power1.inOut",

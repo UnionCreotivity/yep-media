@@ -112,5 +112,92 @@ window.onload = function () {
     }
     headerAboutMenu();
 
+    function openAni() {
+        let tl = gsap.timeline({});
+
+        if (window_width <= 1024) {
+            let text = document.querySelectorAll('.ani-text')
+            tl.from(text, {
+                duration: 1,
+                y: 60,
+                opacity: 0,
+                stagger: {
+                    each: 0.25,
+                    from: 'start'
+                }
+            })
+        } else {
+
+            tl.from('.left-box img', { duration: 1, opacity: 0, ease: "power1.inOut" })
+                .from('.middle-box img', { duration: 1, opacity: 0, ease: "power1.inOut" }, '<0.3')
+                .from('.right-box img', { duration: 1, opacity: 0, ease: "power1.inOut" }, '<0.3')
+                .from('.middle-box .text', { duration: 1, y: 100, filter: 'blur(10px)', opacity: 0, ease: "power1.inOut" }, '<')
+        }
+    }
+    openAni();
+
+    function c1FloatAni() {
+        let tl = gsap.timeline({
+            repeat: -1,
+            yoyo: true,
+            delay: 0.8
+        });
+
+        tl.to('.c1-box .content .item1', {
+            duration: 1,
+            ease: "power0.inOut",
+            y: -40
+        })
+
+
+    }
+    c1FloatAni();
+
+    function itemAni() {
+        let items = document.querySelectorAll('.content-box .content');
+
+        items.forEach((item, index) => {
+
+            let leftAndRight = item.querySelectorAll('.ani-box')
+            let tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: item,
+                    start: 'top 100%',
+                }
+            });
+
+            if (window_width <= 1024) {
+                tl
+                    .from(leftAndRight, {
+                        y: 100,
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power1.inOut",
+                        stagger: {
+                            each: 0.5,
+                            from: 'start'
+                        }
+
+                    })
+            } else {
+                tl
+                    .from(leftAndRight, {
+                        y: 300,
+                        opacity: 0,
+                        duration: 1,
+                        ease: "power1.inOut",
+                        stagger: {
+                            each: 0.5,
+                            from: 'start'
+                        }
+
+                    })
+            }
+
+        });
+    }
+
+    itemAni();
+
 
 }
