@@ -512,6 +512,11 @@ footer {
   font-size: 0.8vw;
   width: 100%;
 }
+@media all and (max-width: 1440px) {
+  footer {
+    font-size: 0.9vw;
+  }
+}
 @media all and (max-width: 1024px) {
   footer {
     font-size: 16px;
@@ -3800,6 +3805,12 @@ footer {
   flex-direction: column;
   margin-bottom: 1vw;
 }
+@media all and (max-width: 1440px) {
+  .ad-body .container .content-box .number-left .left .left-content .text-box .text {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
+}
 @media all and (max-width: 1024px) {
   .ad-body .container .content-box .number-left .left .left-content .text-box .text {
     font-size: 3.7vw;
@@ -3956,6 +3967,12 @@ footer {
   display: flex;
   flex-direction: column;
   margin-bottom: 1vw;
+}
+@media all and (max-width: 1440px) {
+  .ad-body .container .content-box .number-right .left .left-content .text-box .text {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
 }
 @media all and (max-width: 1024px) {
   .ad-body .container .content-box .number-right .left .left-content .text-box .text {
@@ -4753,6 +4770,12 @@ footer {
   font-size: 0.8vw;
   letter-spacing: 0.1em;
 }
+@media all and (max-width: 1440px) {
+  .work-body .container .c1-c4-box .c4-box .c4-content .yt-video-item-box .content {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
+}
 @media all and (max-width: 1024px) {
   .work-body .container .c1-c4-box .c4-box .c4-content .yt-video-item-box .content {
     font-size: 3.7vw;
@@ -4789,6 +4812,12 @@ footer {
   transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 2;
+}
+@media all and (max-width: 1440px) {
+  .work-body .container .c1-c4-box .c4-box .more-yt-box .yt-button {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
 }
 @media all and (max-width: 1024px) {
   .work-body .container .c1-c4-box .c4-box .more-yt-box .yt-button {
@@ -5080,6 +5109,12 @@ footer {
   letter-spacing: 0.1em;
   line-height: 1.5vw;
 }
+@media all and (max-width: 1440px) {
+  .work-body .container .c5-c6-box .c6-box .c6-content .left-box .content-box .left-content .content {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
+}
 @media all and (max-width: 1024px) {
   .work-body .container .c5-c6-box .c6-box .c6-content .left-box .content-box .left-content .content {
     line-height: 7vw;
@@ -5342,6 +5377,12 @@ footer {
   margin-top: 1vw;
   letter-spacing: 0.1em;
 }
+@media all and (max-width: 1440px) {
+  .work-body .container .c7-c9-box .c7-box .title-box .content {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
+}
 @media all and (max-width: 1024px) {
   .work-body .container .c7-c9-box .c7-box .title-box .content {
     font-size: 3.9vw;
@@ -5517,6 +5558,12 @@ footer {
   justify-content: center;
   text-align: center;
   line-height: 1.5vw;
+}
+@media all and (max-width: 1440px) {
+  .work-body .container .c7-c9-box .c8-box .c8-content .content {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
 }
 @media all and (max-width: 1024px) {
   .work-body .container .c7-c9-box .c8-box .c8-content .content {
@@ -5790,6 +5837,12 @@ footer {
   text-align: center;
   line-height: 1.5vw;
   margin-bottom: 3vw;
+}
+@media all and (max-width: 1440px) {
+  .work-body .container .c7-c9-box .c9-box .c9-content .content {
+    font-size: 0.9vw;
+    line-height: 1.7vw;
+  }
 }
 @media all and (max-width: 1024px) {
   .work-body .container .c7-c9-box .c9-box .c9-content .content {

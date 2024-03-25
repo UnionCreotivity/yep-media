@@ -401,6 +401,11 @@
                                 flex-direction: column;
                                 margin-bottom: 1vw;
 
+                                @media all and (max-width:1440px) {
+                                    font-size: 0.9vw;
+                                    line-height: 1.7vw;
+                                }
+
                                 @media all and (max-width:1024px) {
                                     font-size: $moblie-content;
                                     line-height: 7vw;
@@ -560,6 +565,11 @@
                                 display: flex;
                                 flex-direction: column;
                                 margin-bottom: 1vw;
+
+                                @media all and (max-width:1440px) {
+                                    font-size: 0.9vw;
+                                    line-height: 1.7vw;
+                                }
 
                                 @media all and (max-width:1024px) {
                                     font-size: $moblie-content;

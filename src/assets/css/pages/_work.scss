@@ -762,6 +762,10 @@
                             font-size: 0.8vw;
                             letter-spacing: 0.1em;
 
+                            @media all and (max-width:1440px) {
+                                font-size: 0.9vw;
+                                line-height: 1.7vw;
+                            }
 
                             @media all and (max-width:1024px) {
                                 font-size: $moblie-content;
@@ -802,6 +806,11 @@
                         transition: all 0.3s ease-in-out;
                         position: relative;
                         z-index: 2;
+
+                        @media all and (max-width:1440px) {
+                            font-size: 0.9vw;
+                            line-height: 1.7vw;
+                        }
 
                         @media all and (max-width:1024px) {
                             font-size: $moblie-content;
@@ -1108,6 +1117,11 @@
                                     letter-spacing: 0.1em;
                                     line-height: 1.5vw;
 
+                                    @media all and (max-width:1440px) {
+                                        font-size: 0.9vw;
+                                        line-height: 1.7vw;
+                                    }
+
                                     @media all and (max-width:1024px) {
                                         line-height: 7vw;
                                         font-size: $moblie-content;
@@ -1384,6 +1398,11 @@
                         margin-top: 1vw;
                         letter-spacing: 0.1em;
 
+                        @media all and (max-width:1440px) {
+                            font-size: 0.9vw;
+                            line-height: 1.7vw;
+                        }
+
                         @media all and (max-width:1024px) {
                             font-size: $moblie-sub-title;
                             margin-top: 2vw;
@@ -1563,6 +1582,11 @@
                         justify-content: center;
                         text-align: center;
                         line-height: 1.5vw;
+
+                        @media all and (max-width:1440px) {
+                            font-size: 0.9vw;
+                            line-height: 1.7vw;
+                        }
 
                         @media all and (max-width:1024px) {
                             display: none;
@@ -1841,6 +1865,11 @@
                         text-align: center;
                         line-height: 1.5vw;
                         margin-bottom: 3vw;
+
+                        @media all and (max-width:1440px) {
+                            font-size: 0.9vw;
+                            line-height: 1.7vw;
+                        }
 
                         @media all and (max-width:1024px) {
                             display: none;

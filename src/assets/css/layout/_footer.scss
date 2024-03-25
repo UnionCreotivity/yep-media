@@ -8,6 +8,9 @@ footer {
     font-size: 0.8vw;
     width: 100%;
 
+    @media all and (max-width:1440px) {
+        font-size: 0.9vw;
+    }
 
     @media all and (max-width:1024px) {
         font-size: 16px;
