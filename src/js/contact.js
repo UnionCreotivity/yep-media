@@ -198,6 +198,13 @@ window.onload = function () {
                 xPercent: (pos) => gsap.utils.random(-500, 500),
                 yPercent: (pos) => gsap.utils.random(-300, 300),
             })
+                .from('.top-box .content .text-moblie', {
+                    duration: 1,
+                    y: 70,
+                    opacity: 0,
+                    ease: "power1.inOut",
+
+                }, '<1.5')
         } else {
 
             const item = document.querySelectorAll('.speech-bubbles')
