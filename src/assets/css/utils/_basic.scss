@@ -45,7 +45,7 @@
     overflow: hidden;
 
     @media all and (max-width:500px) {
-        height: calc(var(--loadingvh, 1vh) * 87);
+        height: calc(var(--loadingvh, 1vh) * 99);
     }
 
     .logo-box {

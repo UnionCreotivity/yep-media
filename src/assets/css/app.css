@@ -51,7 +51,7 @@
 }
 @media all and (max-width: 500px) {
   .loading-screen {
-    height: calc(var(--loadingvh, 1vh) * 87);
+    height: calc(var(--loadingvh, 1vh) * 99);
   }
 }
 .loading-screen .logo-box {
@@ -193,8 +193,8 @@ header {
 @media all and (max-width: 1024px) {
   header {
     position: fixed;
-    padding: 2vw 5vw;
-    padding-bottom: 2vw;
+    padding: 3.5vw 5vw;
+    padding-bottom: 3.5vw;
     justify-content: space-between;
     background-color: white;
   }
@@ -327,7 +327,7 @@ header .menu-btn {
   }
 }
 header .menu-btn img {
-  width: 6.5vw;
+  width: 8vw;
 }
 
 .menu-moblie {
@@ -347,15 +347,15 @@ header .menu-btn img {
 }
 .menu-moblie .close-btn {
   position: absolute;
-  top: 3vw;
+  top: 4vw;
   right: 4.5vw;
 }
 .menu-moblie .close-btn img {
-  width: 40px;
+  width: 55px;
 }
 @media all and (max-width: 500px) {
   .menu-moblie .close-btn img {
-    width: 5.5vw;
+    width: 8vw;
   }
 }
 @media all and (max-width: 280px) {
@@ -386,7 +386,7 @@ header .menu-btn img {
   font-size: 5.5vw;
   letter-spacing: 0.3em;
   align-items: center;
-  font-weight: 100;
+  font-weight: 500;
 }
 @media all and (max-width: 500px) {
   .menu-moblie .link-box a .link {
@@ -419,7 +419,7 @@ header .menu-btn img {
   font-size: 5.5vw;
   letter-spacing: 0.3em;
   align-items: center;
-  font-weight: 100;
+  font-weight: 500;
   color: white;
 }
 @media all and (max-width: 500px) {
@@ -449,6 +449,7 @@ header .menu-btn img {
   letter-spacing: 0.1em;
   margin-left: 5vw;
   color: white;
+  font-weight: bolder;
 }
 @media all and (max-width: 500px) {
   .menu-moblie .link-box .about-box .about-nohidden-box-moblie .number {
@@ -468,10 +469,10 @@ header .menu-btn img {
   font-family: "Noto Serif TC", serif;
   letter-spacing: 0.2em;
   color: white;
-  height: 0vw;
-  opacity: 0;
-  z-index: -1;
+  height: 17vw;
+  z-index: 1;
   font-size: 4.2vw;
+  margin-bottom: 7vw;
 }
 .menu-moblie .link-box .about-box .about-hidden-box-moblie .a-box {
   display: flex;
@@ -2439,6 +2440,7 @@ footer {
 @media all and (max-width: 1024px) {
   .contact-body {
     background-image: none;
+    background-attachment: initial;
   }
 }
 .contact-body .footer {

@@ -15,14 +15,14 @@
 
     .close-btn {
         position: absolute;
-        top: 3vw;
+        top: 4vw;
         right: 4.5vw;
 
         img {
-            width: 40px;
+            width: 55px;
 
             @media all and (max-width:500px) {
-                width: 5.5vw;
+                width: 8vw;
             }
 
             @media all and (max-width:280px) {
@@ -53,8 +53,7 @@
                 font-size: 5.5vw;
                 letter-spacing: 0.3em;
                 align-items: center;
-                font-weight: 100;
-
+                font-weight: 500;
 
                 @media all and (max-width:500px) {
                     font-size: 6vw;
@@ -88,7 +87,7 @@
                     font-size: 5.5vw;
                     letter-spacing: 0.3em;
                     align-items: center;
-                    font-weight: 100;
+                    font-weight: 500;
                     color: white;
 
                     @media all and (max-width:500px) {
@@ -129,6 +128,7 @@
                     letter-spacing: 0.1em;
                     margin-left: 5vw;
                     color: white;
+                    font-weight: bolder;
 
                     @media all and (max-width:500px) {
                         font-size: 4vw;
@@ -150,21 +150,21 @@
                 font-family: 'Noto Serif TC', serif;
                 letter-spacing: 0.2em;
                 color: white;
-                height: 0vw;
-                opacity: 0;
-                z-index: -1;
+                height: 17vw;
+
+                z-index: 1;
                 font-size: 4.2vw;
+                margin-bottom: 7vw;
 
                 .a-box {
                     display: flex;
                     flex-direction: column;
-                    // height: 17vw;
+
 
                     :nth-child(1) {
 
                         margin-bottom: 4vw;
                     }
-
 
                 }
 

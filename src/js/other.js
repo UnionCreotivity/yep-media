@@ -49,44 +49,44 @@ window.onload = function () {
     };
     menuClick();
 
-    function menuAboutClick() {
-        let aboutBtn = document.querySelector('.menu-moblie .link-box .about-box')
-        let hidden = document.querySelector('.about-hidden-box-moblie');
-        let open = false;
-        aboutBtn.addEventListener('click', () => {
+    // function menuAboutClick() {
+    //     let aboutBtn = document.querySelector('.menu-moblie .link-box .about-box')
+    //     let hidden = document.querySelector('.about-hidden-box-moblie');
+    //     let open = false;
+    //     aboutBtn.addEventListener('click', () => {
 
-            if (open === false) {
-                let tl = gsap.timeline({
-                });
-                tl.to(hidden, {
-                    opacity: 1,
-                    zIndex: 1,
-                    height: '17vw',
-                    marginBottom: '10vw',
-                    ease: "power1.inOut",
-                }
-                )
-                open = true;
-            } else if (open === true) {
-                let tl = gsap.timeline({
-                });
-                tl.to(hidden, {
-                    opacity: 0,
-                    zIndex: '-1',
-                    height: '0vw',
-                    marginBottom: '0vw',
-                    ease: "power1.inOut",
-                }
-                )
-                open = false;
-            }
+    //         if (open === false) {
+    //             let tl = gsap.timeline({
+    //             });
+    //             tl.to(hidden, {
+    //                 opacity: 1,
+    //                 zIndex: 1,
+    //                 height: '17vw',
+    //                 marginBottom: '10vw',
+    //                 ease: "power1.inOut",
+    //             }
+    //             )
+    //             open = true;
+    //         } else if (open === true) {
+    //             let tl = gsap.timeline({
+    //             });
+    //             tl.to(hidden, {
+    //                 opacity: 0,
+    //                 zIndex: '-1',
+    //                 height: '0vw',
+    //                 marginBottom: '0vw',
+    //                 ease: "power1.inOut",
+    //             }
+    //             )
+    //             open = false;
+    //         }
 
-        });
+    //     });
 
 
 
-    }
-    menuAboutClick();
+    // }
+    // menuAboutClick();
 
     function headerAboutMenu() {
         let about = document.querySelector('.nohidden-box');

@@ -73,45 +73,6 @@ window.onload = function () {
     };
     menuClick();
 
-    function menuAboutClick() {
-        let aboutBtn = document.querySelector('.menu-moblie .link-box .about-box')
-        let hidden = document.querySelector('.about-hidden-box-moblie');
-        let open = false;
-        aboutBtn.addEventListener('click', () => {
-
-            if (open === false) {
-                let tl = gsap.timeline({
-                });
-                tl.to(hidden, {
-                    opacity: 1,
-                    zIndex: 1,
-                    height: '17vw',
-                    marginBottom: '10vw',
-                    ease: "power1.inOut",
-                }
-                )
-                open = true;
-            } else if (open === true) {
-                let tl = gsap.timeline({
-                });
-                tl.to(hidden, {
-                    opacity: 0,
-                    zIndex: '-1',
-                    height: '0vw',
-                    marginBottom: '0vw',
-                    ease: "power1.inOut",
-                }
-                )
-                open = false;
-            }
-
-        });
-
-
-
-    }
-    menuAboutClick();
-
     function headerAboutMenu() {
         let about = document.querySelector('.nohidden-box');
         let hidden = document.querySelector('.hidden-about');
@@ -139,7 +100,7 @@ window.onload = function () {
         if (window_width <= 1024) {
             let tl = gsap.timeline({
                 repeat: -1,
-                delay: 2,
+                delay: 3,
                 yoyo: true
             });
 
@@ -219,13 +180,30 @@ window.onload = function () {
     function speechBubbles() {
 
         if (window_width <= 1024) {
-            return;
+            const item = document.querySelectorAll('.speech-bubbles')
+            let tl = gsap.timeline({
+
+            });
+
+            tl.from(item, {
+                duration: 1.5,
+                y: 200,
+                scale: 1.7,
+                ease: "power2.inOut",
+                stagger: {
+                    each: 0.08,
+                    from: 'random'
+                },
+
+                xPercent: (pos) => gsap.utils.random(-500, 500),
+                yPercent: (pos) => gsap.utils.random(-300, 300),
+            })
         } else {
 
             const item = document.querySelectorAll('.speech-bubbles')
             const dot = document.querySelectorAll('.dot');
             let tl = gsap.timeline({
-                // repeat: -1,
+
             });
 
             tl.from(item, {
