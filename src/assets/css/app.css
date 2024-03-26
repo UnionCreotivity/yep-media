@@ -3178,6 +3178,7 @@ footer {
   width: 18vw;
   top: -15vw;
   left: 0px;
+  z-index: 2;
 }
 .contact-body .container .info-box-moblie .moblie-item2 {
   position: absolute;
