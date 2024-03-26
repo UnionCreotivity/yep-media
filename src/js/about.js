@@ -220,9 +220,9 @@ window.onload = function () {
 
             const directorName = document.querySelector(".director-name");
 
-            let ease = CustomEase.create(
+            const ease = CustomEase.create(
                 "custom",
-                "M0,0 C0.272,0 0.234,1 0.5,1 0.792,1 0.744,0 1,0 "
+                "M0,0 C0.275,0 0.230,1 0.4,1 0.794,1 0.744,0 1,0 "
             );
 
             const hoverTextTl = gsap.timeline({ paused: true });
@@ -261,14 +261,17 @@ window.onload = function () {
                 type: "chars,words,lines", linesClass: "clip-text"
             }));
 
-
+            const ease = CustomEase.create(
+                "custom",
+                "M0,0 C0.275,0 0.230,1 0.4,1 0.794,1 0.744,0 1,0"
+            );
             item.forEach((name, index) => {
 
                 const hoverNameTl = gsap.timeline({ paused: true });
 
                 hoverNameTl.to(itemName[index].chars, {
                     y: -60,
-                    ease: "custom",
+                    ease: ease,
                     scale: 1.3,
                     stagger: {
                         amount: 0.5
