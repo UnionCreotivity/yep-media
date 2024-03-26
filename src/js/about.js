@@ -177,7 +177,7 @@ window.onload = function () {
                 });
 
                 tl.from(item, {
-                    x: -100,
+                    x: -70,
                     opacity: 0,
                     duration: 1,
                     ease: "power1.inOut",
@@ -218,7 +218,7 @@ window.onload = function () {
                 type: "chars,words,lines", linesClass: "clip-text"
             }));
 
-            const mailFooter = document.querySelector(".director-name");
+            const directorName = document.querySelector(".director-name");
 
             let ease = CustomEase.create(
                 "custom",
@@ -235,7 +235,7 @@ window.onload = function () {
                 }
             });
 
-            mailFooter.addEventListener("mousemove", function (event) {
+            directorName.addEventListener("mousemove", function (event) {
                 let rect = this.getBoundingClientRect();
                 let xPosition = event.clientX - rect.left;
                 let width = rect.width;
@@ -246,7 +246,7 @@ window.onload = function () {
                 hoverTextTl.progress(mappedValue);
             });
 
-            mailFooter.addEventListener("mouseleave", function (event) {
+            directorName.addEventListener("mouseleave", function (event) {
                 hoverTextTl.progress(0);
             });
         }
