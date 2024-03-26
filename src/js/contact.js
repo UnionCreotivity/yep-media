@@ -232,7 +232,7 @@ window.onload = function () {
                     opacity: 0,
                     ease: "power1.inOut",
 
-                }, '<1.5')
+                }, '<1.2')
 
             // dot    
             let dl = gsap.timeline({
