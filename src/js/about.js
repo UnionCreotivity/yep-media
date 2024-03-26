@@ -209,7 +209,7 @@ window.onload = function () {
             });
         }
     }
-    itemAni();
+    // itemAni();
 
     function hoverDirectorNameText() {
         if (window_width > 1024) {
