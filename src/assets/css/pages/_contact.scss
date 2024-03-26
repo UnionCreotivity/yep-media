@@ -877,11 +877,28 @@
                 border-top-left-radius: 25vw;
                 border-bottom-right-radius: 25vw;
                 height: 94vh;
+                position: relative;
 
                 @media all and (max-width:500px) {
                     height: auto;
                 }
 
+                .bottom-circle {
+                    display: none;
+                    position: absolute;
+                    bottom: 35vw;
+                    right: -0.7vw;
+                    width: 20vw;
+
+                    @media all and (max-width:1024px) {
+                        display: flex;
+                    }
+
+                    @media all and (max-width:500px) {
+                        bottom: 46vw;
+                    }
+
+                }
 
                 .input-box {
                     display: flex;
@@ -1196,6 +1213,13 @@
             :nth-child(2) {
                 border-top-right-radius: 25vw;
                 border-bottom-left-radius: 25vw;
+                border-top-left-radius: 0vw;
+                border-bottom-right-radius: 0vw;
+            }
+
+            .moblie-item3 {
+                border-top-right-radius: 0vw;
+                border-bottom-left-radius: 0vw;
                 border-top-left-radius: 0vw;
                 border-bottom-right-radius: 0vw;
             }

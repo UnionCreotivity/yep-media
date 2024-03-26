@@ -3201,10 +3201,28 @@ footer {
   border-top-left-radius: 25vw;
   border-bottom-right-radius: 25vw;
   height: 94vh;
+  position: relative;
 }
 @media all and (max-width: 500px) {
   .contact-body .container .info-box-moblie .info-content-box {
     height: auto;
+  }
+}
+.contact-body .container .info-box-moblie .info-content-box .bottom-circle {
+  display: none;
+  position: absolute;
+  bottom: 35vw;
+  right: -0.7vw;
+  width: 20vw;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .info-box-moblie .info-content-box .bottom-circle {
+    display: flex;
+  }
+}
+@media all and (max-width: 500px) {
+  .contact-body .container .info-box-moblie .info-content-box .bottom-circle {
+    bottom: 46vw;
   }
 }
 .contact-body .container .info-box-moblie .info-content-box .input-box {
@@ -3477,6 +3495,12 @@ footer {
 .contact-body .container .info-box-moblie :nth-child(2) {
   border-top-right-radius: 25vw;
   border-bottom-left-radius: 25vw;
+  border-top-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
+}
+.contact-body .container .info-box-moblie .moblie-item3 {
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 0vw;
   border-top-left-radius: 0vw;
   border-bottom-right-radius: 0vw;
 }
