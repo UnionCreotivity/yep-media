@@ -193,6 +193,11 @@
                         font-weight: 600;
                         line-height: 1.5vw;
                         font-size: 0.85vw;
+
+                        @media all and (max-width:1440px) {
+                            font-size: 1vw;
+                            line-height: 1.8vw;
+                        }
                     }
 
                     .item1 {

@@ -5,7 +5,6 @@ window.onload = function () {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-
     function menuClick() {
         let menu_btn = document.querySelector('.menu-btn');
         let menu_box = document.querySelector('.menu-moblie');
@@ -92,18 +91,14 @@ window.onload = function () {
     function headerAboutMenu() {
         let about = document.querySelector('.nohidden-box');
         let hidden = document.querySelector('.hidden-about');
-        // let b = document.querySelector('.nohidden-box .arrow');
 
         about.addEventListener('mouseenter', () => {
-            // b.style.cssText += 'border-color: #5186c4 #fff #fff;';
-
             let tl = gsap.timeline({
             });
             tl.to('.hidden-about', { opacity: 1, zIndex: 1, ease: "power1.inOut", })
         });
 
         hidden.addEventListener('mouseleave', () => {
-            // b.style.cssText -= 'border-color: #5186c4 #fff #fff;';
             let tl = gsap.timeline({
             });
             tl.to('.hidden-about', { opacity: 0, zIndex: -1, ease: "power1.inOut", })
@@ -111,92 +106,65 @@ window.onload = function () {
     }
     headerAboutMenu();
 
-    function openAni() {
-        let tl = gsap.timeline({});
+    // function c2EnterAni() {
+    //     let gl = gsap.timeline({
+    //         scrollTrigger: {
+    //             trigger: ".content-box",
+    //             start: "top top",
+    //             endTrigger: ".content-box2",
+    //             end: "bottom top",
+    //         }
+    //     });
 
-        if (window_width <= 1024) {
-            let text = document.querySelectorAll('.ani-text')
-            tl.from(text, {
-                duration: 1,
-                y: 60,
-                opacity: 0,
-                stagger: {
-                    each: 0.25,
-                    from: 'start'
-                }
-            })
-        } else {
+    //     gl
+    //         .to('.content-box', { display: 'none', duration: 0.5, ease: "power1.inOut", }, '<')
+    //         .to('.content-box', { opacity: 0, duration: 0.5, ease: "power1.inOut", })
+    //         .to('.content-box2', { display: 'flex', duration: 0.5, ease: "power1.inOut", }, '<')
+    //         .to('.content-box2', { opacity: 1, duration: 0.5, ease: "power1.inOut", }, '<')
 
-            tl.from('.left-box img', { duration: 1, opacity: 0, ease: "power1.inOut" })
-                .from('.middle-box img', { duration: 1, opacity: 0, ease: "power1.inOut" }, '<0.3')
-                .from('.right-box img', { duration: 1, opacity: 0, ease: "power1.inOut" }, '<0.3')
-                .from('.middle-box .text', { duration: 1, y: 100, filter: 'blur(10px)', opacity: 0, ease: "power1.inOut" }, '<')
-        }
-    }
-    openAni();
+    // }
 
-    function c1FloatAni() {
-        let tl = gsap.timeline({
-            repeat: -1,
-            yoyo: true,
-            delay: 0.8
-        });
+    // function c2LeaveAni() {
+    //     gl.reversed();
 
-        tl.to('.c1-box .content .item1', {
-            duration: 1,
-            ease: "power0.inOut",
-            y: -40
-        })
+    // }
+
+    // function pinC2Ani() {
+    //     gsap.registerPlugin(ScrollTrigger);
+
+    //     // 將c2-box固定
+    //     gsap.to('.c2-box', {
+    //         scrollTrigger: {
+    //             trigger: ".c2-box",
+    //             start: "top top",
+    //             endTrigger: ".content-box",
+    //             end: "bottom top",
+    //             pin: true,
+    //             // 更改此處的markers:true以在開發期間可見觸發器
+    //             markers: true
+    //         }
+    //     });
+
+    //     // 監聽觸發事件，將content-box切換為content-box2
+    //     ScrollTrigger.create({
+    //         trigger: ".content-box",
+    //         start: "top top",
+    //         endTrigger: ".content-box2",
+    //         end: "bottom top",
+    //         onEnter: () => {
+    //             c2EnterAni();
+    //         },
+    //         onLeaveBack: () => {
+    //             c2LeaveAni();
+    //         },
+    //         // 更改此處的markers:true以在開發期間可見觸發器
+    //         markers: true
+    //     });
 
 
-    }
-    c1FloatAni();
 
-    function itemAni() {
-        let items = document.querySelectorAll('.content-box .content');
-
-        items.forEach((item, index) => {
-
-            let leftAndRight = item.querySelectorAll('.ani-box')
-            let tl = gsap.timeline({
-                scrollTrigger: {
-                    trigger: item,
-                    start: 'top 100%',
-                }
-            });
-
-            if (window_width <= 1024) {
-                tl
-                    .from(leftAndRight, {
-                        y: 100,
-                        opacity: 0,
-                        duration: 1,
-                        ease: "power1.inOut",
-                        stagger: {
-                            each: 0.5,
-                            from: 'start'
-                        }
-
-                    })
-            } else {
-                tl
-                    .from(leftAndRight, {
-                        y: 300,
-                        opacity: 0,
-                        duration: 1,
-                        ease: "power1.inOut",
-                        stagger: {
-                            each: 0.5,
-                            from: 'start'
-                        }
-
-                    })
-            }
-
-        });
-    }
-
-    itemAni();
+    // }
+    // pinC2Ani();
 
 
 }

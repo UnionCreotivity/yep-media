@@ -1,0 +1,405 @@
+.other-body {
+    background-color: white;
+    position: relative;
+    width: 100%;
+
+    .container {
+        position: relative;
+        width: 100%;
+
+        .c1-box {
+            position: relative;
+            width: 100%;
+            padding-top: 10vw;
+            display: flex;
+            justify-content: right;
+            padding-bottom: 9vw;
+
+            .title-box {
+                position: absolute;
+                top: 5vw;
+                left: 5vw;
+                font-size: 1.1vw;
+                letter-spacing: 0.3em;
+                font-family: 'Noto Serif TC';
+                align-items: center;
+                font-weight: 600;
+
+                @media all and (max-width:1024px) {
+                    position: initial;
+                    display: flex;
+                    flex-direction: column-reverse;
+                    margin-top: 20vw;
+                    font-size: $moblie-sub-title;
+                }
+
+                .text-1 {
+                    margin-bottom: 0.5vw;
+
+                    @media all and (max-width:1024px) {
+                        margin-bottom: 0vw;
+                    }
+                }
+
+                .text-2 {
+                    @media all and (max-width:1024px) {
+                        letter-spacing: 1em;
+                        padding-left: 5vw;
+                        margin-bottom: 3vw;
+                        font-size: $moblie-big-title;
+                    }
+                }
+            }
+
+            .c1-bg {
+                position: absolute;
+                width: 40vw;
+                bottom: -2vw;
+                left: -2vw;
+            }
+
+            .right-box {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-bottom: 10vw;
+
+                .swiper-box {
+                    width: 100%;
+                    padding: 0vw 5vw;
+                    position: relative;
+
+                    .swiper {
+                        width: 100%;
+
+                        .swiper-wrapper {
+                            width: 100%;
+
+
+                            .swiper-slide {
+
+                                a {
+                                    color: black;
+                                    text-decoration: none;
+                                }
+
+                                img {
+                                    display: block;
+                                    width: 100%;
+                                }
+
+                                .title {
+                                    font-size: 0.9vw;
+                                    letter-spacing: 0.2em;
+                                    font-family: 'Noto Serif TC';
+                                    align-items: center;
+                                    font-weight: 600;
+                                    margin-top: 1vw;
+                                    height: 3vw;
+
+                                    @media all and (max-width:1920px) {
+                                        height: 4vw;
+                                    }
+
+                                    @media all and (max-width:1440px) {
+                                        font-size: 1vw;
+                                        line-height: 1.8vw;
+                                    }
+                                }
+
+                                .year {
+                                    font-size: 0.9vw;
+                                    letter-spacing: 0.1em;
+                                    font-family: 'Noto Serif TC';
+                                    align-items: center;
+                                    font-weight: 600;
+
+                                    @media all and (max-width:1440px) {
+                                        font-size: 1vw;
+                                        line-height: 1.8vw;
+                                    }
+                                }
+                            }
+
+                        }
+
+                    }
+
+                    .swiper-pagination-horizontal {
+                        bottom: -3vw;
+
+                        .swiper-pagination-bullet {
+                            margin: 0.35vw;
+
+                            @media all and (max-width:1440px) {
+                                width: 6px;
+                                height: 6px;
+                                margin: 0.75vw;
+                            }
+
+                            @media all and (max-width:500px) {
+                                width: 6px;
+                                height: 6px;
+                                margin: 0.75vw;
+                            }
+                        }
+
+                        .swiper-pagination-bullet-active {
+                            background: #565656
+                        }
+                    }
+
+                    .c1-swiper-prev {
+                        position: absolute;
+                        left: 3vw;
+                        cursor: pointer;
+                        top: 7vw;
+
+                        @media all and (max-width:1920px) {
+                            left: 2vw;
+                        }
+
+                        img {
+                            width: 1vw;
+
+                            @media all and (max-width:1024px) {
+                                width: 3vw;
+                            }
+                        }
+                    }
+
+                    .c1-swiper-next {
+                        position: absolute;
+                        right: 3vw;
+                        top: 7vw;
+                        cursor: pointer;
+
+                        @media all and (max-width:1920px) {
+                            right: 2vw;
+                        }
+
+                        img {
+                            width: 1vw;
+
+
+                            @media all and (max-width:1024px) {
+                                width: 3vw;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .c2-box {
+            width: 100%;
+            height: 100vh;
+            background-image: url(../images/other/c2_bg.webp);
+            background-color: white;
+            position: relative;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            display: flex;
+            overflow: hidden;
+
+            .left-box {
+                width: 40%;
+                display: flex;
+
+                position: relative;
+                padding-top: 7vw;
+                padding-bottom: 7vw;
+                justify-content: right;
+
+                .machine-box {
+                    position: relative;
+
+                    .all-machine {
+                        width: 20vw;
+                    }
+                }
+            }
+
+            .right-box {
+                width: 60%;
+                display: flex;
+                position: relative;
+
+                .c2-svg-text-top {
+                    width: 30vw;
+                    top: -9vw;
+                    right: -1vw;
+                    position: absolute;
+                }
+
+                .c2-svg-text-bottom {
+                    width: 30vw;
+                    bottom: -12vw;
+                    left: -11vw;
+                    position: absolute;
+                }
+
+                .scroll-box {
+                    width: 70%;
+                    display: flex;
+                    flex-direction: column;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    border: 1px solid red;
+                    overflow: hidden;
+                    // height: 25vw;
+
+                    .content-box {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 1vw;
+
+                        .title-box {
+                            display: flex;
+                            flex-direction: column;
+
+                            .dot {
+                                display: flex;
+                                flex-direction: column;
+                                width: 12vw;
+                                margin-bottom: 0.5vw;
+                            }
+
+                            .title {
+                                font-size: 1.1vw;
+                                letter-spacing: 0.2em;
+                                font-family: "Noto Serif TC";
+                                align-items: center;
+                                font-weight: 600;
+                                margin-bottom: 1.5vw;
+                            }
+                        }
+
+                        .content {
+                            font-size: 0.85vw;
+                            letter-spacing: 0.1em;
+                            font-family: "Noto Serif TC";
+                            align-items: center;
+                            line-height: 1.7vw;
+                            font-weight: 600;
+                        }
+
+                        .button-box {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 3vw;
+
+                            .button {
+                                position: relative;
+                                overflow: hidden;
+
+                                background-image: url(../images/other/btn_bg.png);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 10vw;
+                                height: 10vw;
+                                flex-direction: column;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                .text {
+
+                                    width: 6vw;
+
+                                    font-size: 1.1vw;
+                                    letter-spacing: 0.2em;
+                                    font-family: "Noto Serif TC";
+
+                                    text-align: center;
+                                    font-weight: 600;
+                                }
+                            }
+
+                        }
+                    }
+
+                    .content-box2 {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        padding-top: 2vw;
+                        opacity: 0;
+                        display: none;
+
+                        .title-box {
+                            display: flex;
+                            flex-direction: column;
+
+                            .dot {
+                                display: flex;
+                                flex-direction: column;
+                                width: 12vw;
+                                margin-bottom: 0.5vw;
+                            }
+
+                            .title {
+                                font-size: 1.1vw;
+                                letter-spacing: 0.2em;
+                                font-family: "Noto Serif TC";
+                                align-items: center;
+                                font-weight: 600;
+                                margin-bottom: 1.5vw;
+                            }
+                        }
+
+                        .content {
+                            font-size: 0.85vw;
+                            letter-spacing: 0.1em;
+                            font-family: "Noto Serif TC";
+                            align-items: center;
+                            line-height: 1.7vw;
+                            font-weight: 600;
+                        }
+
+                        .button-box {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 3vw;
+
+                            .button {
+                                position: relative;
+                                overflow: hidden;
+
+                                background-image: url(../images/other/btn_bg.png);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                                width: 10vw;
+                                height: 10vw;
+                                flex-direction: column;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+
+                                .text {
+
+                                    width: 6vw;
+
+                                    font-size: 1.1vw;
+                                    letter-spacing: 0.2em;
+                                    font-family: "Noto Serif TC";
+
+                                    text-align: center;
+                                    font-weight: 600;
+                                }
+                            }
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+    }
+}

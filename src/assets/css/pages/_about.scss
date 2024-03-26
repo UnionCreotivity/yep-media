@@ -10,8 +10,9 @@
     flex-direction: column;
 
     @media all and (max-width:1024px) {
-        background-image: url(../images/about/moblie_bg.webp);
-        background-position: left;
+        background-image: none;
+        background-color: white;
+
     }
 
     .left-bg {
@@ -125,7 +126,7 @@
                     }
 
                     .job-title,
-                    .name,
+                    .director-name,
                     .content {
                         padding-left: 3vw;
                         display: flex;
@@ -155,7 +156,7 @@
             @media all and (max-width:500px) {
                 width: 90%;
                 padding-bottom: 10vw;
-                padding-left: 6vw;
+
             }
 
             .person-box {

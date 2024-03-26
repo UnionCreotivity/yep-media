@@ -2,10 +2,33 @@ window.onload = function () {
     var window_width = window.screen.width;
     var window_height = window.innerHeight;
     let vh = window.innerHeight * 0.01;
-    gsap.registerPlugin(MotionPathPlugin);
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+    let loadingScreen = document.querySelector(".loading-screen");
+    let allBody = document.querySelector(".container");
+
+    let loadingText = document.getElementById("loading-text");
+    let percent = 1;
+
+    function updateProgress() {
+
+        loadingText.textContent = percent + "%";
+        percent++;
+        if (percent <= 100) {
+            setTimeout(updateProgress, 10);
+        } else {
+
+            let tl = gsap.timeline({});
+            tl.to(loadingScreen, { duration: 1, opacity: 0, ease: "power1.inOut" })
+                .to(allBody, { duration: 1, opacity: 1 }, '<0.5')
+                .to(loadingScreen, { duration: 1, display: 'none', })
+
+            openAni();
+        }
+    }
+
+    updateProgress();
 
     function menuClick() {
         let menu_btn = document.querySelector('.menu-btn');
@@ -136,7 +159,7 @@ window.onload = function () {
         }
 
     }
-    openAni();
+    // openAni();
 
     function itemAni() {
         let items = document.querySelectorAll('.person-box');
@@ -163,7 +186,7 @@ window.onload = function () {
         } else {
 
             items.forEach((item, index) => {
-                let delay = index * 0.25;
+                let delay = index * 0.2;
 
                 let tl = gsap.timeline({
                     scrollTrigger: {
@@ -187,6 +210,86 @@ window.onload = function () {
     }
     itemAni();
 
+    function hoverDirectorNameText() {
+        if (window_width > 1024) {
+            let filmTitle = gsap.utils.toArray(".director-name");
+            let splitFilmTitle = filmTitle.map(heading => new SplitText(heading, {
+                type: "chars,words,lines", linesClass: "clip-text"
+            }));
+
+            const mailFooter = document.querySelector(".director-name");
+
+            let ease = CustomEase.create(
+                "custom",
+                "M0,0 C0.272,0 0.234,1 0.5,1 0.792,1 0.744,0 1,0 "
+            );
+
+            const hoverTextTl = gsap.timeline({ paused: true });
+
+            hoverTextTl.to(splitFilmTitle[0].chars, {
+                y: -100,
+                ease: ease,
+                stagger: {
+                    amount: 1
+                }
+            });
+
+            mailFooter.addEventListener("mousemove", function (event) {
+                let rect = this.getBoundingClientRect();
+                let xPosition = event.clientX - rect.left;
+                let width = rect.width;
+                let mappedValue = xPosition / width;
+
+                mappedValue = Math.min(1, Math.max(0, mappedValue));
+
+                hoverTextTl.progress(mappedValue);
+            });
+
+            mailFooter.addEventListener("mouseleave", function (event) {
+                hoverTextTl.progress(0);
+            });
+        }
+    }
+    hoverDirectorNameText();
+
+    function hoverNameText() {
+        if (window_width > 1024) {
+            let item = document.querySelectorAll(".name");
+            let Names = gsap.utils.toArray(".name");
+            let itemName = Names.map(heading => new SplitText(heading, {
+                type: "chars,words,lines", linesClass: "clip-text"
+            }));
 
 
+            item.forEach((name, index) => {
+
+                const hoverNameTl = gsap.timeline({ paused: true });
+
+                hoverNameTl.to(itemName[index].chars, {
+                    y: -60,
+                    ease: "custom",
+                    scale: 1.3,
+                    stagger: {
+                        amount: 0.5
+                    }
+                });
+
+                name.addEventListener("mousemove", function (event) {
+                    let rect = this.getBoundingClientRect();
+                    let xPosition = event.clientX - rect.left;
+                    let width = rect.width;
+                    let mappedValue = xPosition / width;
+
+                    mappedValue = Math.min(1, Math.max(0, mappedValue));
+
+                    hoverNameTl.progress(mappedValue);
+                });
+
+                name.addEventListener("mouseleave", function (event) {
+                    hoverNameTl.progress(0);
+                });
+            });
+        }
+    }
+    hoverNameText();
 }
