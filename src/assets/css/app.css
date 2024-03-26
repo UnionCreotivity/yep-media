@@ -64,7 +64,7 @@
 }
 @media all and (max-width: 500px) {
   .loading-screen .logo-box {
-    margin-bottom: 30vw;
+    margin-bottom: 33vw;
   }
 }
 .loading-screen .logo-box .loader__wrap {
