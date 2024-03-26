@@ -3205,7 +3205,7 @@ footer {
 }
 @media all and (max-width: 500px) {
   .contact-body .container .info-box-moblie .info-content-box {
-    height: auto;
+    height: calc(var(--loadingvh, 1vh) * 80);
   }
 }
 .contact-body .container .info-box-moblie .info-content-box .bottom-circle {

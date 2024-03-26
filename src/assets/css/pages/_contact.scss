@@ -880,7 +880,7 @@
                 position: relative;
 
                 @media all and (max-width:500px) {
-                    height: auto;
+                    height: calc(var(--loadingvh, 1vh) * 80);
                 }
 
                 .bottom-circle {
