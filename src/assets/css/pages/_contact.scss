@@ -561,6 +561,10 @@
                                     color: white;
                                     border: 1px solid #5186c4;
                                     border-radius: 0.9vw;
+
+                                    @media all and (max-width:1024px) {
+                                        border-radius: 6vw;
+                                    }
                                 }
 
                                 input {
@@ -572,6 +576,10 @@
                                         border-radius: 0.9vw;
                                         color: white;
                                         border: 1px solid #5186c4;
+
+                                        @media all and (max-width:1024px) {
+                                            border-radius: 6vw;
+                                        }
                                     }
                                 }
 
@@ -596,6 +604,10 @@
                                         color: white;
                                         border: 1px solid #5186c4;
                                         border-radius: 0.9vw;
+
+                                        @media all and (max-width:1024px) {
+                                            border-radius: 6vw;
+                                        }
                                     }
                                 }
                             }
@@ -666,6 +678,10 @@
                                     color: white;
                                     border: 1px solid #5186c4;
                                     border-radius: 0.9vw;
+
+                                    @media all and (max-width:1024px) {
+                                        border-radius: 6vw;
+                                    }
                                 }
 
                                 input {
@@ -677,6 +693,10 @@
                                         border-radius: 0.9vw;
                                         color: white;
                                         border: 1px solid #5186c4;
+
+                                        @media all and (max-width:1024px) {
+                                            border-radius: 6vw;
+                                        }
                                     }
                                 }
 
@@ -702,6 +722,10 @@
                                         color: white;
                                         border: 1px solid #5186c4;
                                         border-radius: 0.9vw;
+
+                                        @media all and (max-width:1024px) {
+                                            border-radius: 6vw;
+                                        }
                                     }
                                 }
                             }
@@ -903,7 +927,7 @@
                             &:hover,
                             &:focus,
                             &:active {
-                                background-color: #5186c4;
+
                                 color: white;
                                 border: 1px solid #5186c4;
                                 border-radius: 6vw;
@@ -957,6 +981,10 @@
                                 color: white;
                                 border: 1px solid #5186c4;
                                 border-radius: 0.9vw;
+
+                                @media all and (max-width:1024px) {
+                                    border-radius: 6vw;
+                                }
                             }
 
                             input {
@@ -968,6 +996,10 @@
                                     border-radius: 0.9vw;
                                     color: white;
                                     border: 1px solid #5186c4;
+
+                                    @media all and (max-width:1024px) {
+                                        border-radius: 6vw;
+                                    }
                                 }
                             }
 
@@ -1033,6 +1065,11 @@
                                 color: white;
                                 border: 1px solid #5186c4;
                                 border-radius: 0.9vw;
+
+                                @media all and (max-width:1024px) {
+                                    border-radius: 6vw;
+                                }
+
                             }
 
                             input {
@@ -1044,6 +1081,10 @@
                                     border-radius: 0.9vw;
                                     color: white;
                                     border: 1px solid #5186c4;
+
+                                    @media all and (max-width:1024px) {
+                                        border-radius: 6vw;
+                                    }
                                 }
                             }
 

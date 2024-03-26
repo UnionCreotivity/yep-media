@@ -2940,6 +2940,11 @@ footer {
   border: 1px solid #5186c4;
   border-radius: 0.9vw;
 }
+@media all and (max-width: 1024px) {
+  .contact-body .container .bottom-box .content .middle-input-box .button-box .btn-group .select input:checked + label {
+    border-radius: 6vw;
+  }
+}
 .contact-body .container .bottom-box .content .middle-input-box .button-box .btn-group .select input {
   opacity: 0;
   position: absolute;
@@ -2949,6 +2954,11 @@ footer {
   border-radius: 0.9vw;
   color: white;
   border: 1px solid #5186c4;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .bottom-box .content .middle-input-box .button-box .btn-group .select input:checked {
+    border-radius: 6vw;
+  }
 }
 .contact-body .container .bottom-box .content .middle-input-box .button-box .btn-group .select .button_select {
   color: black;
@@ -2969,6 +2979,11 @@ footer {
   color: white;
   border: 1px solid #5186c4;
   border-radius: 0.9vw;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .bottom-box .content .middle-input-box .button-box .btn-group .select .button_select:hover, .contact-body .container .bottom-box .content .middle-input-box .button-box .btn-group .select .button_select:focus, .contact-body .container .bottom-box .content .middle-input-box .button-box .btn-group .select .button_select:active {
+    border-radius: 6vw;
+  }
 }
 .contact-body .container .bottom-box .content .middle-input-box .dashed-row {
   margin-top: 1vw;
@@ -3024,6 +3039,11 @@ footer {
   border: 1px solid #5186c4;
   border-radius: 0.9vw;
 }
+@media all and (max-width: 1024px) {
+  .contact-body .container .bottom-box .content .bottom-input-box .left-button-box .btn-group .select input:checked + label {
+    border-radius: 6vw;
+  }
+}
 .contact-body .container .bottom-box .content .bottom-input-box .left-button-box .btn-group .select input {
   opacity: 0;
   position: absolute;
@@ -3033,6 +3053,11 @@ footer {
   border-radius: 0.9vw;
   color: white;
   border: 1px solid #5186c4;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .bottom-box .content .bottom-input-box .left-button-box .btn-group .select input:checked {
+    border-radius: 6vw;
+  }
 }
 .contact-body .container .bottom-box .content .bottom-input-box .left-button-box .btn-group .select .button_select {
   color: black;
@@ -3053,6 +3078,11 @@ footer {
   color: white;
   border: 1px solid #5186c4;
   border-radius: 0.9vw;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .bottom-box .content .bottom-input-box .left-button-box .btn-group .select .button_select:hover, .contact-body .container .bottom-box .content .bottom-input-box .left-button-box .btn-group .select .button_select:focus, .contact-body .container .bottom-box .content .bottom-input-box .left-button-box .btn-group .select .button_select:active {
+    border-radius: 6vw;
+  }
 }
 .contact-body .container .bottom-box .content .bottom-input-box .right-button-box {
   display: flex;
@@ -3218,7 +3248,6 @@ footer {
   border: 1px solid black;
 }
 .contact-body .container .info-box-moblie .info-content-box .input-box .input-group input:hover, .contact-body .container .info-box-moblie .info-content-box .input-box .input-group input:focus, .contact-body .container .info-box-moblie .info-content-box .input-box .input-group input:active {
-  background-color: #5186c4;
   color: white;
   border: 1px solid #5186c4;
   border-radius: 6vw;
@@ -3266,6 +3295,11 @@ footer {
   border: 1px solid #5186c4;
   border-radius: 0.9vw;
 }
+@media all and (max-width: 1024px) {
+  .contact-body .container .info-box-moblie .info-content-box .button-box .btn-group .select input:checked + label {
+    border-radius: 6vw;
+  }
+}
 .contact-body .container .info-box-moblie .info-content-box .button-box .btn-group .select input {
   opacity: 0;
   position: absolute;
@@ -3275,6 +3309,11 @@ footer {
   border-radius: 0.9vw;
   color: white;
   border: 1px solid #5186c4;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .info-box-moblie .info-content-box .button-box .btn-group .select input:checked {
+    border-radius: 6vw;
+  }
 }
 .contact-body .container .info-box-moblie .info-content-box .button-box .btn-group .select .button_select {
   color: black;
@@ -3330,6 +3369,11 @@ footer {
   border: 1px solid #5186c4;
   border-radius: 0.9vw;
 }
+@media all and (max-width: 1024px) {
+  .contact-body .container .info-box-moblie .info-content-box .interval-button-box .btn-group .select input:checked + label {
+    border-radius: 6vw;
+  }
+}
 .contact-body .container .info-box-moblie .info-content-box .interval-button-box .btn-group .select input {
   opacity: 0;
   position: absolute;
@@ -3339,6 +3383,11 @@ footer {
   border-radius: 0.9vw;
   color: white;
   border: 1px solid #5186c4;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .info-box-moblie .info-content-box .interval-button-box .btn-group .select input:checked {
+    border-radius: 6vw;
+  }
 }
 .contact-body .container .info-box-moblie .info-content-box .interval-button-box .btn-group .select .button_select {
   color: black;
