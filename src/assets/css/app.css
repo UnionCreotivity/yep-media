@@ -4609,6 +4609,7 @@ footer {
 .work-body .container .c1-c4-box .c3-box .c3-content {
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 @media all and (max-width: 1024px) {
   .work-body .container .c1-c4-box .c3-box .c3-content {
@@ -4961,7 +4962,7 @@ footer {
 @media all and (max-width: 1024px) {
   .work-body .container .c1-c4-box .c4-box .more-yt-box .yt-button {
     font-size: 3.7vw;
-    padding: 2vw 5vw;
+    padding: 4vw 5vw;
     letter-spacing: 0.2em;
   }
 }

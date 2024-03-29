@@ -459,6 +459,7 @@
                 .c3-content {
                     display: flex;
                     position: relative;
+                    overflow: hidden;
 
                     @media all and (max-width:1024px) {
                         flex-direction: column-reverse;
@@ -821,7 +822,7 @@
 
                         @media all and (max-width:1024px) {
                             font-size: $moblie-content;
-                            padding: 2vw 5vw;
+                            padding: 4vw 5vw;
                             letter-spacing: 0.2em;
                         }
 
