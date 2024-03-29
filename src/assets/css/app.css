@@ -7339,6 +7339,12 @@ footer {
     right: 2vw;
   }
 }
+@media all and (max-width: 1024px) {
+  .news-body .container .return-btn {
+    right: 4vw;
+    font-size: 3.7vw;
+  }
+}
 .news-body .container .return-btn a {
   color: black;
 }
