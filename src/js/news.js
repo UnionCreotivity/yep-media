@@ -25,8 +25,6 @@ window.onload = function () {
                 .to(allBody, { duration: 1, opacity: 1 }, '<0.5')
                 .to(loadingScreen, { duration: 1, display: 'none', })
 
-            openAni();
-
         }
     }
     updateProgress();

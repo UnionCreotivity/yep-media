@@ -7210,12 +7210,17 @@ footer {
 }
 .news-body .container {
   width: 100%;
-  height: auto;
+  height: 100vh;
   display: flex;
   justify-content: left;
   padding-top: 4.5vw;
   flex-direction: column;
   position: relative;
+}
+@media all and (max-width: 1440px) {
+  .news-body .container {
+    padding-top: 9vw;
+  }
 }
 @media all and (max-width: 1024px) {
   .news-body .container {
@@ -7268,6 +7273,12 @@ footer {
   right: 11vw;
   top: 10vw;
 }
+@media all and (max-width: 1440px) {
+  .news-body .container .right-box {
+    right: 7vw;
+    top: 14vw;
+  }
+}
 @media all and (max-width: 1024px) {
   .news-body .container .right-box {
     position: initial;
@@ -7301,7 +7312,7 @@ footer {
   font-family: "Noto Serif TC";
   align-items: center;
   font-weight: bold;
-  bottom: 0vw;
+  bottom: 2vw;
   right: 2vw;
   padding: 0.2vw 0.7vw;
   padding-left: 0.95vw;
@@ -7310,6 +7321,12 @@ footer {
   color: black;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+}
+@media all and (max-width: 1440px) {
+  .news-body .container .return-btn {
+    bottom: 8vw;
+    right: 2vw;
+  }
 }
 .news-body .container .return-btn a {
   color: black;

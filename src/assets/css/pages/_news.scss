@@ -9,12 +9,16 @@
 
     .container {
         width: 100%;
-        height: auto;
+        height: 100vh;
         display: flex;
         justify-content: left;
         padding-top: 4.5vw;
         flex-direction: column;
         position: relative;
+
+        @media all and (max-width:1440px) {
+            padding-top: 9vw;
+        }
 
         @media all and (max-width:1024px) {
             padding-top: 16vw;
@@ -66,6 +70,11 @@
             right: 11vw;
             top: 10vw;
 
+            @media all and (max-width:1440px) {
+                right: 7vw;
+                top: 14vw;
+            }
+
             @media all and (max-width:1024px) {
                 position: initial;
                 font-size: $moblie-sub-title;
@@ -99,7 +108,7 @@
             font-family: 'Noto Serif TC';
             align-items: center;
             font-weight: bold;
-            bottom: 0vw;
+            bottom: 2vw;
             right: 2vw;
             padding: 0.2vw 0.7vw;
             padding-left: 0.95vw;
@@ -110,6 +119,11 @@
             -o-transition: all 0.3s ease-in-out;
             transition: all 0.3s ease-in-out;
             cursor: pointer;
+
+            @media all and (max-width:1440px) {
+                bottom: 8vw;
+                right: 2vw;
+            }
 
             a {
                 color: black;
