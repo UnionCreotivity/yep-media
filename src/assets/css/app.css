@@ -4609,11 +4609,11 @@ footer {
 .work-body .container .c1-c4-box .c3-box .c3-content {
   display: flex;
   position: relative;
-  overflow: hidden;
 }
 @media all and (max-width: 1024px) {
   .work-body .container .c1-c4-box .c3-box .c3-content {
     flex-direction: column-reverse;
+    overflow: hidden;
   }
 }
 .work-body .container .c1-c4-box .c3-box .c3-content .left-box {

@@ -459,10 +459,11 @@
                 .c3-content {
                     display: flex;
                     position: relative;
-                    overflow: hidden;
+
 
                     @media all and (max-width:1024px) {
                         flex-direction: column-reverse;
+                        overflow: hidden;
                     }
 
                     .left-box {
