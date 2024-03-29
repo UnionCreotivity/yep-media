@@ -5,6 +5,34 @@ window.onload = function () {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+    $('.content-box3-scrolltop-btn').click(function () {
+        $('html,body').animate({ scrollTop: 0 }, 800);
+    });
+
+    // loading
+    let loadingScreen = document.querySelector(".loading-screen");
+    let allBody = document.querySelector(".container");
+    let loadingText = document.getElementById("loading-text");
+    let percent = 1;
+
+    // loading
+    function updateProgress() {
+
+        loadingText.textContent = percent + "%";
+        percent++;
+        if (percent <= 100) {
+            setTimeout(updateProgress, 10);
+        } else {
+
+            let tl = gsap.timeline({});
+            tl.to(loadingScreen, { duration: 1, opacity: 0, ease: "power1.inOut" })
+                .to(allBody, { duration: 1, opacity: 1 }, '<0.5')
+                .to(loadingScreen, { duration: 1, display: 'none', })
+
+        }
+    }
+    updateProgress();
+
     function menuClick() {
         let menu_btn = document.querySelector('.menu-btn');
         let menu_box = document.querySelector('.menu-moblie');
@@ -49,45 +77,6 @@ window.onload = function () {
     };
     menuClick();
 
-    // function menuAboutClick() {
-    //     let aboutBtn = document.querySelector('.menu-moblie .link-box .about-box')
-    //     let hidden = document.querySelector('.about-hidden-box-moblie');
-    //     let open = false;
-    //     aboutBtn.addEventListener('click', () => {
-
-    //         if (open === false) {
-    //             let tl = gsap.timeline({
-    //             });
-    //             tl.to(hidden, {
-    //                 opacity: 1,
-    //                 zIndex: 1,
-    //                 height: '17vw',
-    //                 marginBottom: '10vw',
-    //                 ease: "power1.inOut",
-    //             }
-    //             )
-    //             open = true;
-    //         } else if (open === true) {
-    //             let tl = gsap.timeline({
-    //             });
-    //             tl.to(hidden, {
-    //                 opacity: 0,
-    //                 zIndex: '-1',
-    //                 height: '0vw',
-    //                 marginBottom: '0vw',
-    //                 ease: "power1.inOut",
-    //             }
-    //             )
-    //             open = false;
-    //         }
-
-    //     });
-
-
-
-    // }
-    // menuAboutClick();
-
     function headerAboutMenu() {
         let about = document.querySelector('.nohidden-box');
         let hidden = document.querySelector('.hidden-about');
@@ -106,65 +95,203 @@ window.onload = function () {
     }
     headerAboutMenu();
 
-    // function c2EnterAni() {
-    //     let gl = gsap.timeline({
-    //         scrollTrigger: {
-    //             trigger: ".content-box",
-    //             start: "top top",
-    //             endTrigger: ".content-box2",
-    //             end: "bottom top",
-    //         }
-    //     });
+    function tabChange() {
+        if (window_width > 1024) {
+            let tabs = document.querySelectorAll('.tab');
+            let contents = document.querySelectorAll('.change-content');
+            let originMachine = document.querySelectorAll('.origin-machine')
 
-    //     gl
-    //         .to('.content-box', { display: 'none', duration: 0.5, ease: "power1.inOut", }, '<')
-    //         .to('.content-box', { opacity: 0, duration: 0.5, ease: "power1.inOut", })
-    //         .to('.content-box2', { display: 'flex', duration: 0.5, ease: "power1.inOut", }, '<')
-    //         .to('.content-box2', { opacity: 1, duration: 0.5, ease: "power1.inOut", }, '<')
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('click', (e) => {
 
-    // }
+                    tabs.forEach((t) => {
+                        if (t !== tab) {
+                            t.classList.remove('tab-active');
+                        }
+                    });
 
-    // function c2LeaveAni() {
-    //     gl.reversed();
+                    contents.forEach((content, i) => {
+                        if (index === i) {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 1, zIndex: '11', ease: "power0.in" })
+                        }
+                        else {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 0, zIndex: '-1', ease: "power0.in" })
+                        }
 
-    // }
+                        if (index === 1) {
+                            let tl = gsap.timeline({})
+                            tl.to(originMachine, { duration: 0.7, opacity: 1, ease: "power0.in" })
+                        } else {
+                            let tl = gsap.timeline({})
+                            tl.to(originMachine, { duration: 0.7, opacity: 0, ease: "power0.in" })
+                        }
+                    });
+                    tab.classList.toggle('tab-active');
 
-    // function pinC2Ani() {
-    //     gsap.registerPlugin(ScrollTrigger);
+                });
+            });
+        }
+    }
+    tabChange();
 
-    //     // 將c2-box固定
-    //     gsap.to('.c2-box', {
-    //         scrollTrigger: {
-    //             trigger: ".c2-box",
-    //             start: "top top",
-    //             endTrigger: ".content-box",
-    //             end: "bottom top",
-    //             pin: true,
-    //             // 更改此處的markers:true以在開發期間可見觸發器
-    //             markers: true
-    //         }
-    //     });
+    function tabChangeMoblie() {
+        if (window_width <= 1024) {
+            let tabs = document.querySelectorAll('.tab-moblie');
+            let contents = document.querySelectorAll('.change-content-moblie');
 
-    //     // 監聽觸發事件，將content-box切換為content-box2
-    //     ScrollTrigger.create({
-    //         trigger: ".content-box",
-    //         start: "top top",
-    //         endTrigger: ".content-box2",
-    //         end: "bottom top",
-    //         onEnter: () => {
-    //             c2EnterAni();
-    //         },
-    //         onLeaveBack: () => {
-    //             c2LeaveAni();
-    //         },
-    //         // 更改此處的markers:true以在開發期間可見觸發器
-    //         markers: true
-    //     });
+            tabs.forEach((tab, index) => {
+                tab.addEventListener('click', (e) => {
 
+                    tabs.forEach((t) => {
+                        if (t !== tab) {
+                            t.classList.remove('tab-active-moblie');
+                        }
+                    });
 
+                    contents.forEach((content, i) => {
+                        if (index === i) {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, display: 'block', opacity: 1, zIndex: '11', ease: "power0.in" })
+                        } else {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, display: 'none', opacity: 0, zIndex: '-1', ease: "power0.in" })
+                        }
+                    });
+                    tab.classList.toggle('tab-active-moblie');
 
-    // }
-    // pinC2Ani();
+                });
+            });
+        }
+    }
+    tabChangeMoblie();
 
+    function hoverButton() {
+        if (window_width > 1024) {
+            let btn = document.querySelectorAll('.content2-button');
+            let btnContent = document.querySelectorAll('.item-content');
+            let changeItem = document.querySelectorAll('.change-item')
+
+            btn.forEach((item, index) => {
+
+                item.addEventListener('mouseenter', () => {
+
+                    let tl = gsap.timeline({
+                    });
+                    tl.to(btnContent[index], { duration: 1, opacity: 1, ease: "power1.inOut", })
+                        .to(changeItem[index], { duration: 1, opacity: 1, ease: "power1.inOut", }, '<')
+                });
+
+                item.addEventListener('mouseleave', () => {
+
+                    let tl = gsap.timeline({
+                    });
+                    tl.to(btnContent[index], { duration: 1, opacity: 0, ease: "power1.inOut", })
+                        .to(changeItem[index], { duration: 1, opacity: 0, ease: "power1.inOut", }, '<')
+                });
+            })
+        }
+    }
+    hoverButton();
+
+    function hoverContent2Btn() {
+        if (window_width > 1024) {
+            let btn = document.querySelectorAll('.content-box3 .button-box .button');
+            let content = document.querySelectorAll('.content-text-box .text');
+
+            btn.forEach((item, index) => {
+
+                item.addEventListener('mouseenter', () => {
+
+                    let tl = gsap.timeline({
+                    });
+                    tl.to(content[index], { duration: 1, opacity: 1, ease: "power1.inOut", })
+
+                });
+
+                item.addEventListener('mouseleave', () => {
+
+                    let tl = gsap.timeline({
+                    });
+                    tl.to(content[index], { duration: 1, opacity: 0, ease: "power1.inOut", })
+
+                });
+            })
+        }
+    }
+    hoverContent2Btn();
+
+    function clickTab2Btn() {
+        if (window_width <= 1024) {
+            let btn = document.querySelectorAll('.button-swiper .swiper-wrapper .swiper-slide .button-box');
+            let btnContent = document.querySelectorAll('.item-content-moblie');
+            let machineImg = document.querySelectorAll('.change-item-moblie');
+
+            btn.forEach((item, index) => {
+
+                item.addEventListener('click', () => {
+                    btn.forEach((t) => {
+                        if (t !== index) {
+                            t.classList.remove('tab2-active-moblie');
+                        }
+                    });
+                    btnContent.forEach((content, i) => {
+                        if (index === i) {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 1, ease: "power0.in" })
+                        } else {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 0, ease: "power0.in" })
+                        }
+                    });
+                    machineImg.forEach((content, i) => {
+                        if (index === i) {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 1, ease: "power0.in" })
+                        } else {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 0, ease: "power0.in" })
+                        }
+                    });
+
+                    item.classList.toggle('tab2-active-moblie');
+                });
+
+            })
+        }
+    }
+    clickTab2Btn();
+
+    function clcikTab3Btn() {
+        if (window_width <= 1024) {
+            let btn = document.querySelectorAll('.tab3-button')
+            let tab3Content = document.querySelectorAll('.tab3-content-text')
+
+            btn.forEach((item, index) => {
+
+                item.addEventListener('click', () => {
+                    btn.forEach((t) => {
+                        if (t !== index) {
+                            t.classList.remove('tab3-active-moblie');
+                        }
+                    });
+                    tab3Content.forEach((content, i) => {
+                        if (index === i) {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 1, ease: "power0.in" })
+                        } else {
+                            let tl = gsap.timeline({})
+                            tl.to(content, { duration: 0.7, opacity: 0, ease: "power0.in" })
+                        }
+                    });
+
+                    item.classList.toggle('tab3-active-moblie');
+                });
+
+            })
+        }
+    }
+    clcikTab3Btn();
 
 }

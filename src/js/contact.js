@@ -5,11 +5,13 @@ window.onload = function () {
     document.documentElement.style.setProperty("--vh", `${vh}px`);
     gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
+    //loading
     let loadingScreen = document.querySelector(".loading-screen");
     let allBody = document.querySelector(".container");
     let loadingText = document.getElementById("loading-text");
     let percent = 1;
 
+    //loading
     function updateProgress() {
 
         loadingText.textContent = percent + "%";
@@ -26,7 +28,6 @@ window.onload = function () {
             speechBubbles();
         }
     }
-
     updateProgress();
 
     function menuClick() {
@@ -250,6 +251,6 @@ window.onload = function () {
 
         }
     }
-    // speechBubbles();
+
 
 }

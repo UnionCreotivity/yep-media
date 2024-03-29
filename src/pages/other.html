@@ -17,6 +17,17 @@
 </head>
 
 <body class="other-body">
+    <div class="loading-screen">
+        <div class="logo-box">
+            <div class="loader__wrap" role="alertdialog" aria-busy="true" aria-live="polite" aria-label="Loading…">
+                <div class="loader" aria-hidden="true">
+                    <div class="loader__sq"></div>
+                    <div class="loader__sq"></div>
+                </div>
+            </div>
+            <div class="loading-text" id="loading-text">0%</div>
+        </div>
+    </div>
     <header class="header-box">
         <div class="left-box">
             <div class="logo-box">
@@ -36,21 +47,20 @@
                     </div>
                     <div class="hidden-about">
                         <a href="./about.html">團隊</a>
-                        <a href="./index.html">廣告介紹</a>
+                        <a href="./ad.html">廣告介紹</a>
                     </div>
                 </div>
                 <div class="link">
-                    <a href="./index.html">WORK</a>
+                    <a href="./work.html">WORK</a>
                 </div>
                 <div class="link">
-                    <a href="./index.html">OTHER</a>
+                    <a href="./other.html">OTHER</a>
                 </div>
                 <div class="link">
                     <a href="./contact.html">CONTACT</a>
                 </div>
             </div>
         </div>
-
         <div class="menu-btn">
             <img src="../assets/images/menu-icon.svg" alt="" srcset="" />
         </div>
@@ -59,7 +69,6 @@
         <div class="close-btn">
             <img src="../assets/images/close.svg" alt="close" srcset="">
         </div>
-
         <div class="link-box">
             <div class="about-box">
                 <div class="about-nohidden-box-moblie">
@@ -72,15 +81,15 @@
                 <div class="about-hidden-box-moblie">
                     <div class="a-box">
                         <a href="./about.html">團隊</a>
-                        <a href="./index.html">廣告介紹</a>
+                        <a href="./ad.html">廣告介紹</a>
                     </div>
                 </div>
             </div>
-            <a href="./index.html" class="work-link">
+            <a href="./work.html" class="work-link">
                 <div class="link">WORK</div>
                 <div class="number">02</div>
             </a>
-            <a href="./index.html" class="other-link">
+            <a href="./other.html" class="other-link">
                 <div class="link">OTHER</div>
                 <div class="number">03</div>
             </a>
@@ -89,7 +98,6 @@
                 <div class="number">04</div>
             </a>
         </div>
-
         <div class="copyright-box">
             Copyright © 亞儂媒體 All rights reserved.
         </div>
@@ -107,6 +115,7 @@
             </div>
 
             <img class="c1-bg" src="../assets/images/other/c1_bg.png" alt="c1_bg" srcset="">
+
 
             <div class="right-box">
                 <div class="swiper-box">
@@ -151,6 +160,8 @@
                         <img src="../assets/images/home/next.svg" alt="" srcset="">
                     </div>
                 </div>
+                <img class="moblie-left-item" src="../assets/images/other/c1_moblie_left.png" alt="" srcset="">
+                <img class="moblie-right-item" src="../assets/images/other/c1_moblie_right.png" alt="" srcset="">
             </div>
         </div>
 
@@ -158,22 +169,31 @@
             <div class="left-box">
                 <div class="machine-box">
                     <img class="all-machine" src="../assets/images/other/machine.png" alt="" srcset="">
+                    <img class="origin-machine" src="../assets/images/other/origin.png" alt="" srcset="">
+                    <img class="change1-machine change-item" src="../assets/images/other/change1.png" alt="" srcset="">
+                    <img class="change2-machine change-item" src="../assets/images/other/change2.png" alt="" srcset="">
+                    <img class="change3-machine change-item" src="../assets/images/other/change3.png" alt="" srcset="">
+                    <img class="change4-machine change-item" src="../assets/images/other/change4.png" alt="" srcset="">
                 </div>
             </div>
 
             <div class="right-box">
                 <img class="c2-svg-text-top" src="../assets/images/other/c2_svg_text_2.svg" alt="" srcset="">
                 <img class="c2-svg-text-bottom" src="../assets/images/other/c2_svg_text_2.svg" alt="" srcset="">
-                <div class="scroll-box">
-                    <div class="content-box">
+                <div class="tab-box">
+                    <div class="tab tab-active">機台簡介</div>
+                    <div class="tab">功能說明</div>
+                    <div class="tab">區域查詢</div>
+                </div>
+                <div class="change-box">
+
+                    <div class="content-box change-content">
                         <div class="title-box">
                             <img class="dot" src="../assets/images/other/title_dot.png" alt="" srcset="">
                             <div class="title">高效智能回收機台，您用過了嗎？</div>
                         </div>
                         <div class="content">
-                            科技進步飛快，連回收都能變得有趣！<br>
-                            提供便利性，也透過相對應的回饋機制，提高民眾的使用意願；「環保」、「回收」早是被高<br>
-                            度關心的議題，因此除了曝光廣告的效益外，還能在民眾心中留下好的品牌形象。
+                            科技進步飛快，連回收都能變得有趣！提供便利性，也透過相對應的回饋機制，提高民眾的使用意願；「環保」、「回收」早是被高度關心的議題，因此除了曝光廣告的效益外，還能在民眾心中留下好的品牌形象。
                         </div>
                         <div class="button-box">
                             <div class="button">
@@ -187,30 +207,306 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="content-box2 change-content">
+                        <div class="button-box">
+                            <div class="item bottle-box">
+                                <div class="content2-button bottle-btn">
+                                    <div class="text">寶特瓶投放入口</div>
+                                </div>
+                                <div class="item-content bottle-content">高約 1.35m</div>
+                            </div>
+
+                            <div class="item panel-box">
+                                <div class="content2-button panel-btn">
+                                    <div class="text">用戶觸控面板</div>
+                                </div>
+                                <div class="item-content panel-content">可放【靜態圖片】、【動態短影片】</div>
+                            </div>
+
+                            <div class="item battery-box">
+                                <div class="content2-button battery-btn">
+                                    <div class="text">電池投放入口</div>
+                                </div>
+                                <div class="item-content battery-content">高約 1.05m</div>
+                            </div>
+
+                            <div class="item all-box">
+                                <div class="content2-button all-btn">
+                                    <div class="text">全機皆可包膜</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="fixed-swiper-box">
+                            <div class="swiper c2-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/other/banner1.png" alt="" srcset="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/other/banner2.png" alt="" srcset="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/other/banner3.png" alt="" srcset="">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="../assets/images/other/banner1.png" alt="" srcset="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="c2-swiper-pagination"></div>
+                            <div class="c2-swiper-prev">
+                                <img src="../assets/images/home/prev.svg" alt="" srcset="">
+                            </div>
+                            <div class="c2-swiper-next">
+                                <img src="../assets/images/home/next.svg" alt="" srcset="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-box3 change-content">
+                        <div class="title-box">
+                            <img class="dot" src="../assets/images/other/title_dot2.png" alt="" srcset="">
+                            <div class="title">在哪可以看到這些機台呢</div>
+                        </div>
+                        <div class="button-box">
+                            <div class="button">
+                                <div class="text">科技廠內</div>
+                            </div>
+                            <div class="button">
+                                <div class="text">熱門門市</div>
+                            </div>
+                            <div class="button">
+                                <div class="text">新竹縣市</div>
+                            </div>
+                        </div>
+
+                        <div class="content-text-box">
+                            <div class="text">
+                                精準鎖定科技人族群，擺放在顯眼區域，透過每日反覆的曝光，使消費者對商品產生興趣，
+                                提高了解的意願；聯發科、台積電、友達等部分科技廠，現已佈點完成。
+                            </div>
+                            <div class="text">
+                                各式身份的人，在台灣的日常都離不開便利商店，精選熱門高人流門市，
+                                每日可觸及大量的區域、非區域性受眾。
+                            </div>
+                            <div class="text">
+                                新竹，掌握台灣經濟命脈，也是含金量最高的城市！
+                                機台位置環繞新竹縣重要公家單位、市心熱區、高級住宅區，可大量曝光在高收入族群中。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-box3-scrolltop-btn">
+                    back to top
                 </div>
             </div>
         </div>
 
+        <div class="c2-box-moblie">
+            <img class="moblie-bg" src="../assets/images/other/moblie_bg.png" alt="" srcset="">
+            <div class="tab-box-moblie">
+                <div class="tab-moblie tab-active-moblie">機台簡介</div>
+                <div class="tab-moblie">功能說明</div>
+                <div class="tab-moblie">區域查詢</div>
+            </div>
+
+            <div class="tab1-content change-content-moblie">
+                <div class="title-box">
+                    <img class="dot" src="../assets/images/other/title_dot.png" alt="" srcset="">
+                    <div class="title">高效智能回收機台，<br>您用過了嗎？</div>
+                </div>
+                <div class="content">
+                    科技進步飛快，連回收都能變得有趣！提供便利性，也透過相對應的回饋機制，提高民眾的使用意願；「環保」、「回收」早是被高度關心的議題，因此除了曝光廣告的效益外，還能在民眾心中留下好的品牌形象。
+                </div>
+
+                <div class="machine-box-moblie">
+                    <img class="all-machine-moblie" src="../assets/images/other/machine.png" alt="" srcset="">
+                </div>
+
+                <div class="content1-button-box-moblie">
+                    <div class="content1-button-moblie">
+                        <div class="text">實踐能源再生</div>
+                    </div>
+                    <div class="content1-button-moblie">
+                        <div class="text">曝光企業與品牌</div>
+                    </div>
+                    <div class="content1-button-moblie">
+                        <div class="text">優質形象塑造</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab2-content change-content-moblie">
+                <div class="machine-box-moblie">
+                    <img class="all-machine-moblie" src="../assets/images/other/machine.png" alt="" srcset="">
+                    <img class="origin-machine-moblie" src="../assets/images/other/origin.png" alt="" srcset="">
+                    <img class="change1-machine-moblie change-item-moblie" src="../assets/images/other/change1.png"
+                        alt="" srcset="">
+                    <img class="change2-machine-moblie change-item-moblie" src="../assets/images/other/change2.png"
+                        alt="" srcset="">
+                    <img class="change3-machine-moblie change-item-moblie" src="../assets/images/other/change3.png"
+                        alt="" srcset="">
+                    <img class="change4-machine-moblie change-item-moblie" src="../assets/images/other/change4.png"
+                        alt="" srcset="">
+                </div>
+
+                <div class="button-swiper-box">
+                    <div class="swiper button-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="button-box tab2-active-moblie">
+                                    <div class="text">寶特瓶投放入口</div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="button-box">
+                                    <div class="text">用戶觸控面板</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="button-box">
+                                    <div class="text">電池投放入口</div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="button-box">
+                                    <div class="text">全機皆可包膜</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-content-moblie bottle-content-moblie">高約 1.35m</div>
+                    <div class="item-content-moblie panel-content-moblie">可放【靜態圖片】、【動態短影片】</div>
+                    <div class="item-content-moblie battery-content-moblie">高約 1.05m</div>
+                    <div class="item-content-moblie space-content-moblie"></div>
+                    <div class="button-swiper-prev">
+                        <img src="../assets/images/home/prev.svg" alt="" srcset="">
+                    </div>
+                    <div class="button-swiper-next">
+                        <img src="../assets/images/home/next.svg" alt="" srcset="">
+                    </div>
+                </div>
+
+                <div class="fixed-swiper-box-moblie">
+                    <div class="swiper fixed-swiper-moblie">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../assets/images/other/banner1.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/other/banner2.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/other/banner3.png" alt="" srcset="">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../assets/images/other/banner1.png" alt="" srcset="">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="c2-swiper-pagination-moblie"></div>
+                    <div class="c2-swiper-prev-moblie">
+                        <img src="../assets/images/home/prev.svg" alt="" srcset="">
+                    </div>
+                    <div class="c2-swiper-next-moblie">
+                        <img src="../assets/images/home/next.svg" alt="" srcset="">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="tab3-content change-content-moblie">
+                <div class="title-box">
+                    <img class="dot" src="../assets/images/other/title_dot2.png" alt="" srcset="">
+                    <div class="title">在哪可以看到這些機台呢</div>
+                </div>
+
+                <div class="tab3-button-box">
+                    <div class="tab3-button tab3-active-moblie">
+                        <div class="text">科技廠內</div>
+                    </div>
+                    <div class="tab3-button">
+                        <div class="text">熱門門市</div>
+                    </div>
+                    <div class="tab3-button">
+                        <div class="text">新竹縣市</div>
+                    </div>
+                </div>
+
+                <div class="tab3-content-text-box">
+                    <div class="tab3-content-text tab3-content-text1">
+                        精準鎖定科技人族群，擺放在顯眼區域，透過每日反覆的曝光，使消費者對商品產生興趣，
+                        提高了解的意願；聯發科、台積電、友達等部分科技廠，現已佈點完成。
+                    </div>
+                    <div class="tab3-content-text">
+                        各式身份的人，在台灣的日常都離不開便利商店，精選熱門高人流門市，
+                        每日可觸及大量的區域、非區域性受眾。
+                    </div>
+                    <div class="tab3-content-text">
+                        新竹，掌握台灣經濟命脈，也是含金量最高的城市！
+                        機台位置環繞新竹縣重要公家單位、市心熱區、高級住宅區，可大量曝光在高收入族群中。
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <footer class="footer">
+            Copyright © 亞儂媒體 All rights reserved.
+        </footer>
     </div>
 
-    <!-- <footer class="footer">
-        Copyright © 亞儂媒體 All rights reserved.
-    </footer> -->
+
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"
         integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
     <script src="../assets/minified/gsap.min.js"></script>
     <script src="../assets/minified/ScrollTrigger.min.js"></script>
     <script src="../assets/minified/ScrollToPlugin.min.js"></script>
     <script src="../assets/minified/SplitText.min.js"></script>
-    <script src="../assets/minified/MorphSVGPlugin.min.js"></script>
-    <script src="../assets/minified/MotionPathPlugin.min.js"></script>
-    <script src="../assets/minified/MotionPathHelper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
     <script src="../js/other.js"></script>
     <script>
-        window.onload = function () {
 
+        var window_width = window.screen.width;
+
+        if (window_width <= 1024) {
+            const mySwiper = new Swiper('.c1-swiper', {
+                slidesPerView: 1,
+
+                navigation: {
+                    nextEl: '.c1-swiper-next',
+                    prevEl: '.c1-swiper-prev'
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+
+            const swiperButton = new Swiper('.button-swiper', {
+                slidesPerView: 2,
+
+                navigation: {
+                    nextEl: '.button-swiper-next',
+                    prevEl: '.button-swiper-prev'
+                },
+
+            });
+
+            const moblieC2Swiper = new Swiper('.fixed-swiper-moblie', {
+                slidesPerView: 1,
+                navigation: {
+                    nextEl: '.c2-swiper-next-moblie',
+                    prevEl: '.c2-swiper-prev-moblie'
+                },
+                pagination: {
+                    el: ".c2-swiper-pagination-moblie",
+                },
+            });
+        } else {
             const mySwiper = new Swiper('.c1-swiper', {
                 slidesPerView: 3,
                 spaceBetween: 40,
@@ -222,8 +518,21 @@
                     el: ".swiper-pagination",
                 },
             });
-
         }
+
+
+        const mySwiper2 = new Swiper('.c2-swiper', {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            navigation: {
+                nextEl: '.c2-swiper-next',
+                prevEl: '.c2-swiper-prev'
+            },
+            pagination: {
+                el: ".c2-swiper-pagination",
+            },
+        });
+
     </script>
 
 

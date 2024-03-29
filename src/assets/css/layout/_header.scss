@@ -82,6 +82,10 @@ header {
                 font-size: 15px;
             }
 
+            @media all and (max-width:1440px) {
+                font-size: 13px;
+            }
+
             .link {
                 margin-left: 3vw;
                 cursor: pointer;
@@ -130,7 +134,7 @@ header {
                         padding-right: 1.4vw;
                         background-size: 1vw;
                         background-position-y: 0.3vw;
-                        background-position-x: 4.6vw;
+                        background-position-x: 4vw;
                     }
 
                     @media all and (max-width:1366px) {
