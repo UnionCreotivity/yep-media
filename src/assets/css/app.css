@@ -323,8 +323,7 @@ header .right-box .menu-link .about-link .nohidden-box:hover, header .right-box 
 }
 @media all and (max-width: 1280px) {
   header .right-box .menu-link .about-link .nohidden-box {
-    background-position-y: 0.5vw;
-    background-position-x: 5vw;
+    background-position-x: 4.6vw;
   }
 }
 header .right-box .menu-link .about-link .hidden-about {
@@ -583,7 +582,7 @@ footer {
 }
 @media all and (max-width: 1024px) {
   .index-body .container {
-    background-image: url(../images/home/bg_moblie.png);
+    background-image: url(../images/home/bg_moblie.webp);
     background-attachment: initial;
     background-size: contain;
     background-position: right;
@@ -3561,6 +3560,11 @@ footer {
     background-attachment: initial;
   }
 }
+@media all and (max-width: 1440px) {
+  .ad-body header .right-box {
+    padding-right: 13vw;
+  }
+}
 .ad-body .container {
   width: 100%;
   padding-top: 7vw;
@@ -4198,6 +4202,11 @@ footer {
 .work-body {
   position: relative;
   width: 100%;
+}
+@media all and (max-width: 1440px) {
+  .work-body header .right-box {
+    padding-right: 13vw;
+  }
 }
 .work-body .container {
   width: 100%;

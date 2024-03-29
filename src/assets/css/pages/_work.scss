@@ -1,7 +1,14 @@
 .work-body {
-
     position: relative;
     width: 100%;
+
+    header {
+        .right-box {
+            @media all and (max-width:1440px) {
+                padding-right: 13vw;
+            }
+        }
+    }
 
     .container {
         width: 100%;
