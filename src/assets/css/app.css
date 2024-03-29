@@ -6602,7 +6602,7 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .other-body .container .c2-box .right-box .change-box .content-box2 .button-box .item .content2-button:hover {
   background-image: url(../images/other/btn_bg.png);
@@ -6765,7 +6765,7 @@ footer {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .other-body .container .c2-box .right-box .change-box .content-box3 .button-box .button:hover {
   background-image: url(../images/other/btn_bg.png);
