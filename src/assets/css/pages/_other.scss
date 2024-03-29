@@ -24,6 +24,11 @@
             justify-content: right;
             padding-bottom: 10vw;
 
+            @media all and (max-width:1440px) {
+                padding-top: 15vw;
+                padding-bottom: 16vw;
+            }
+
             @media all and (max-width:1024px) {
                 flex-direction: column;
                 padding-top: 0vw;

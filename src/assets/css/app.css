@@ -6036,6 +6036,12 @@ footer {
   justify-content: right;
   padding-bottom: 10vw;
 }
+@media all and (max-width: 1440px) {
+  .other-body .container .c1-box {
+    padding-top: 15vw;
+    padding-bottom: 16vw;
+  }
+}
 @media all and (max-width: 1024px) {
   .other-body .container .c1-box {
     flex-direction: column;
