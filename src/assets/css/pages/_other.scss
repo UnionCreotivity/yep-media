@@ -1218,7 +1218,8 @@
                         position: absolute;
                         right: 2vw;
                         cursor: pointer;
-                        top: 25vw;
+                        top: 29vw;
+                        z-index: 10;
 
                         img {
                             width: 3vw;
@@ -1229,7 +1230,8 @@
                         position: absolute;
                         left: 2vw;
                         cursor: pointer;
-                        top: 25vw;
+                        top: 29vw;
+                        z-index: 10;
 
                         img {
                             width: 3vw;
@@ -1311,7 +1313,7 @@
                     font-size: $moblie-content;
                     letter-spacing: 0.15em;
                     font-family: "Noto Serif TC";
-                    text-align: center;
+                    text-align: justify;
                     font-weight: 500;
                     line-height: 6.5vw;
                     margin-bottom: 40vw;

@@ -5600,6 +5600,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.work-body .container .c7-c9-box .c8-box .c8-content .swiper-box .swiper .swiper-wrapper .swiper-slide a {
+  display: flex;
+  justify-content: center;
+}
 .work-body .container .c7-c9-box .c8-box .c8-content .swiper-box .swiper .swiper-wrapper .swiper-slide img {
   display: block;
   -o-object-fit: cover;
@@ -5862,6 +5866,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.work-body .container .c7-c9-box .c9-box .c9-content .swiper-box .swiper .swiper-wrapper .swiper-slide a {
+  display: flex;
+  justify-content: center;
 }
 .work-body .container .c7-c9-box .c9-box .c9-content .swiper-box .swiper .swiper-wrapper .swiper-slide img {
   display: block;
@@ -7109,7 +7117,8 @@ footer {
   position: absolute;
   right: 2vw;
   cursor: pointer;
-  top: 25vw;
+  top: 29vw;
+  z-index: 10;
 }
 .other-body .container .c2-box-moblie .tab2-content .fixed-swiper-box-moblie .c2-swiper-next-moblie img {
   width: 3vw;
@@ -7118,7 +7127,8 @@ footer {
   position: absolute;
   left: 2vw;
   cursor: pointer;
-  top: 25vw;
+  top: 29vw;
+  z-index: 10;
 }
 .other-body .container .c2-box-moblie .tab2-content .fixed-swiper-box-moblie .c2-swiper-prev-moblie img {
   width: 3vw;
@@ -7185,7 +7195,7 @@ footer {
   font-size: 3.7vw;
   letter-spacing: 0.15em;
   font-family: "Noto Serif TC";
-  text-align: center;
+  text-align: justify;
   font-weight: 500;
   line-height: 6.5vw;
   margin-bottom: 40vw;
