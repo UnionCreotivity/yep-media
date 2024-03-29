@@ -7232,9 +7232,11 @@ footer {
   width: 100%;
   justify-content: left;
   padding-left: 2vw;
+  width: 80%;
 }
 @media all and (max-width: 1024px) {
   .news-body .container .left-box {
+    width: 100%;
     padding-left: 0vw;
     justify-content: center;
   }
