@@ -198,8 +198,8 @@ header {
 @media all and (max-width: 1024px) {
   header {
     position: fixed;
-    padding: 3vw 5vw;
-    padding-bottom: 2.5vw;
+    padding: 2vw 5vw;
+    box-shadow: 0px 2px 9px rgba(57, 63, 72, 0.12);
     justify-content: space-between;
     background-color: white;
   }
@@ -218,6 +218,18 @@ header .left-box .logo-box {
 @media all and (max-width: 1366px) {
   header .left-box .logo-box {
     padding-right: 3vw;
+  }
+}
+@media all and (max-width: 1024px) {
+  header .left-box .logo-box {
+    display: flex;
+    width: 100%;
+  }
+}
+@media all and (max-width: 1024px) {
+  header .left-box .logo-box a {
+    display: flex;
+    width: 100%;
   }
 }
 header .left-box .logo-box img {
@@ -351,6 +363,8 @@ header .right-box .menu-link .about-link .hidden-about :nth-child(1) {
 }
 header .menu-btn {
   display: none;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
 }
 @media all and (max-width: 1024px) {
   header .menu-btn {
