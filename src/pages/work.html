@@ -579,7 +579,9 @@
         if (window_width <= 1024) {
             const mySwiper = new Swiper('.c8-swiper', {
                 slidesPerView: 1,
-
+                autoplay: {
+                    delay: 4000,
+                },
                 navigation: {
                     nextEl: '.c8-swiper-next',
                     prevEl: '.c8-swiper-prev'
@@ -591,6 +593,9 @@
         } else {
             const mySwiper = new Swiper('.c8-swiper', {
                 slidesPerView: 3,
+                autoplay: {
+                    delay: 3500,
+                },
                 spaceBetween: 0,
                 navigation: {
                     nextEl: '.c8-swiper-next',
@@ -605,9 +610,10 @@
 
         if (window_width <= 1024) {
             const mySwiper2 = new Swiper('.c9-swiper', {
-
                 slidesPerView: 1,
-
+                autoplay: {
+                    delay: 4000,
+                },
                 spaceBetween: 0,
                 navigation: {
                     nextEl: '.c9-swiper-next',
@@ -621,7 +627,9 @@
             const mySwiper2 = new Swiper('.c9-swiper', {
 
                 slidesPerView: 3,
-
+                autoplay: {
+                    delay: 3500,
+                },
                 spaceBetween: 0,
                 navigation: {
                     nextEl: '.c9-swiper-next',
