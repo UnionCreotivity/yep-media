@@ -307,15 +307,18 @@ window.onload = function () {
 
             //順序
             let tl = gsap.timeline({
-                repeat: -1,
-                yoyo: true,
-                repeatDelay: 2
+                scrollTrigger: {
+                    trigger: '.c2-box',
+                    start: "-45%",
+                },
             });
 
             tl.from('.c2-content .bottom .item', {
                 duration: 1.5,
                 opacity: 0,
-                y: -70,
+                y: -70, yoyo: true,
+                repeat: -1,
+                repeatDelay: 5,
                 ease: "power1.inOut",
                 stagger: {
                     each: 0.2,
@@ -351,9 +354,10 @@ window.onload = function () {
 
             //順序
             let tl = gsap.timeline({
-                repeat: -1,
-                yoyo: true,
-                repeatDelay: 2
+                scrollTrigger: {
+                    trigger: '.c2-content',
+                    start: "-40%",
+                },
             });
 
             tl.from('.c2-content .bottom .item', {
@@ -361,6 +365,9 @@ window.onload = function () {
                 opacity: 0,
                 x: -100,
                 ease: "power1.inOut",
+                yoyo: true,
+                repeat: -1,
+                repeatDelay: 5,
                 stagger: {
                     each: 0.2,
                     from: 'start'
