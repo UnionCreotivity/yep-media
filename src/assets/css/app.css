@@ -4235,11 +4235,15 @@ footer {
 @media all and (max-width: 1024px) {
   .work-body .container .c1-c4-box .c1-box {
     width: 95vw;
-    height: calc(var(--loadingvh, 1vh) * 83);
     border-bottom-left-radius: 25vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
+  }
+}
+@media all and (max-width: 500px) {
+  .work-body .container .c1-c4-box .c1-box {
+    height: calc(var(--loadingvh, 1vh) * 83);
   }
 }
 .work-body .container .c1-c4-box .c1-box .item1 {
@@ -4367,6 +4371,10 @@ footer {
     border-top-left-radius: 25vw;
     border-bottom-right-radius: 15vw;
     border-bottom-left-radius: 0vw;
+  }
+}
+@media all and (max-width: 500px) {
+  .work-body .container .c1-c4-box .c2-box {
     height: calc(var(--loadingvh, 1vh) * 83);
   }
 }

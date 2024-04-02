@@ -35,13 +35,16 @@
 
                 @media all and (max-width:1024px) {
                     width: 95vw;
-                    height: calc(var(--loadingvh, 1vh) *83);
                     border-bottom-left-radius: 25vw;
                     display: flex;
                     justify-content: center;
                     flex-direction: column;
                 }
 
+
+                @media all and (max-width:500px) {
+                    height: calc(var(--loadingvh, 1vh) *83);
+                }
 
                 .item1 {
                     position: absolute;
@@ -126,7 +129,6 @@
                         font-family: 'Noto Serif TC';
                         align-items: center;
                         font-weight: 600;
-
                         flex-direction: column;
                         margin-top: 20vw;
                         display: none;
@@ -178,8 +180,10 @@
                     border-top-left-radius: 25vw;
                     border-bottom-right-radius: 15vw;
                     border-bottom-left-radius: 0vw;
-                    height: calc(var(--loadingvh, 1vh) *83);
+                }
 
+                @media all and (max-width:500px) {
+                    height: calc(var(--loadingvh, 1vh) *83);
                 }
 
                 .c2-content {
