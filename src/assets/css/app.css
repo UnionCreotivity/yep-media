@@ -5631,6 +5631,7 @@ footer {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 95%;
 }
 @media all and (max-width: 1920px) {
   .work-body .container .c7-c9-box .c8-box .c8-content .swiper-box .swiper .swiper-wrapper .swiper-slide img {
@@ -5898,6 +5899,7 @@ footer {
   display: block;
   -o-object-fit: cover;
      object-fit: cover;
+  width: 95%;
 }
 @media all and (max-width: 1920px) {
   .work-body .container .c7-c9-box .c9-box .c9-content .swiper-box .swiper .swiper-wrapper .swiper-slide img {
