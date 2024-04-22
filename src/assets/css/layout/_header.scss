@@ -1,213 +1,221 @@
 header {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    padding: 1vw;
-    width: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  padding: 1vw;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  text-align: center;
+  align-items: center;
+  font-family: "微軟正黑體";
+  letter-spacing: 0.1em;
+  z-index: 99;
+
+  @media all and (max-width: 1440px) {
+    padding-top: 1.5vw;
+  }
+
+  @media all and (max-width: 1024px) {
+    position: fixed;
+    padding: 2vw 5vw;
+    box-shadow: 0px 2px 9px rgba(57, 63, 72, 0.12);
+    // padding-bottom: 2vw;
+    justify-content: space-between;
+    background-color: white;
+  }
+
+  .left-box {
     display: flex;
-    justify-content: right;
-    text-align: center;
-    align-items: center;
-    font-family: '微軟正黑體';
-    letter-spacing: 0.1em;
-    z-index: 99;
-  
 
-    @media all and (max-width:1440px) {
-        padding-top: 1.5vw;
-    }
+    .logo-box {
+      padding-right: 7vw;
 
-    @media all and (max-width:1024px) {
-        position: fixed;
-        padding: 2vw 5vw;
-        box-shadow:0px 2px 9px rgba(57, 63, 72, 0.12);
-        // padding-bottom: 2vw;
-        justify-content: space-between;
-        background-color: white;
-    }
+      @media all and (max-width: 1440px) {
+        padding-right: 5vw;
+      }
 
-    .left-box {
+      @media all and (max-width: 1366px) {
+        padding-right: 3vw;
+      }
+      @media all and (max-width: 1024px) {
+        display: flex;
+        width: 100%;
+      }
+
+      a {
+        @media all and (max-width: 1024px) {
+          display: flex;
+          width: 100%;
+        }
+      }
+
+      img {
+        width: 6vw;
+        align-items: center;
         display: flex;
 
-        .logo-box {
-            padding-right: 7vw;
-            
-            @media all and (max-width:1440px) {
-                padding-right: 5vw;
-            }
-
-            @media all and (max-width:1366px) {
-                padding-right: 3vw;
-            }
-            @media all and (max-width:1024px) {
-                display: flex;
-                width: 100%;
-            }
-
-            a{
-                @media all and (max-width:1024px) {
-                    display: flex;
-                    width: 100%;
-                }
-            }
-
-            img {
-                width: 6vw;
-                align-items: center;
-                display: flex;
-
-                @media all and (max-width:1440px) {
-                    width: 7.5vw;
-                }
-
-                @media all and (max-width:1024px) {
-                    width: 27vw;
-                }
-
-            }
+        @media all and (max-width: 1440px) {
+          width: 7.5vw;
         }
+
+        @media all and (max-width: 1024px) {
+          width: 27vw;
+        }
+      }
+    }
+  }
+
+  .right-box {
+    display: flex;
+    padding-right: 15vw;
+
+    @media all and (max-width: 1920px) {
+      padding-right: 11vw;
     }
 
-    .right-box {
+    @media all and (max-width: 1440px) {
+      padding-right: 5vw;
+    }
+
+    @media all and (max-width: 1024px) {
+      display: none;
+    }
+
+    .menu-link {
+      display: flex;
+      font-size: 20px;
+      color: #000000;
+      font-weight: bold;
+      font-size: 0.61vw;
+
+      @media all and (max-width: 1920px) {
+        font-size: 15px;
+      }
+
+      @media all and (max-width: 1440px) {
+        font-size: 13px;
+      }
+
+      .link {
+        margin-left: 3vw;
+        cursor: pointer;
+
+        a {
+          color: #000000;
+        }
+      }
+
+      .about-link {
         display: flex;
-        padding-right: 15vw;
+        flex-direction: column;
 
-        @media all and (max-width:1920px) {
-            padding-right: 11vw;
+        &:hover,
+        &:focus,
+        &:active {
+          color: #5186c4;
         }
 
-        @media all and (max-width:1440px) {
-            padding-right: 5vw;
+        .nohidden-box {
+          display: flex;
+          position: relative;
+          padding-right: 1vw;
+          background-image: url(../images/arrow.svg);
+          background-repeat: no-repeat;
+          background-size: 0.8vw;
+          background-position-y: 0.2vw;
+          background-position-x: 2.7vw;
+          transition: background-image 0.2s ease;
+
+          &:hover,
+          &:focus,
+          &:active {
+            color: #5186c4;
+
+            background-image: url(../images/arrow_hover.svg);
+          }
+
+          @media all and (max-width: 1920px) {
+            padding-right: 1.25vw;
+            background-position-x: 3.5vw;
+            background-position-y: 0.3vw;
+          }
+          @media all and (max-width: 1680px) {
+            padding-right: 1.25vw;
+            background-size: 1vw;
+            background-position-x: 4vw;
+            background-position-y: 0.3vw;
+          }
+          @media all and (max-width: 1440px) {
+            padding-right: 1.4vw;
+            background-size: 1vw;
+            background-position-x: 4vw;
+          }
+
+          @media all and (max-width: 1366px) {
+            background-size: 1.1vw;
+            background-position-y: 0.35vw;
+          }
+
+          @media all and (max-width: 1280px) {
+            background-position-x: 4.6vw;
+          }
         }
 
-        @media all and (max-width:1024px) {
-            display: none;
+        .hidden-about {
+          margin-top: 0.5vw;
+          display: flex;
+          flex-direction: column;
+          text-align: left;
+          padding-left: 0.3vw;
+          border-left: 1px solid black;
+          position: absolute;
+          top: 2vw;
+          opacity: 0;
+          z-index: -1;
+
+          @media all and (max-width: 1680px) {
+            margin-top: 1.7vw;
+          }
+
+          a {
+            &:hover,
+            &:focus,
+            &:active {
+              color: #5186c4;
+            }
+          }
+
+          :nth-child(1) {
+            margin-bottom: 0.5vw;
+          }
         }
+      }
+    }
+  }
 
-        .menu-link {
-            display: flex;
-            font-size: 20px;
-            color: #000000;
-            font-weight: bold;
-            font-size: 0.61vw;
-
-            @media all and (max-width:1920px) {
-                font-size: 15px;
-            }
-
-            @media all and (max-width:1440px) {
-                font-size: 13px;
-            }
-
-            .link {
-                margin-left: 3vw;
-                cursor: pointer;
-
-                a {
-                    color: #000000;
-                }
-            }
-
-            .about-link {
-                display: flex;
-                flex-direction: column;
-
-                &:hover,
-                &:focus,
-                &:active {
-                    color: #5186c4;
-                }
-
-                .nohidden-box {
-                    display: flex;
-                    position: relative;
-                    padding-right: 1vw;
-                    background-image: url(../images/arrow.svg);
-                    background-repeat: no-repeat;
-                    background-size: 0.8vw;
-                    background-position-y: 0.2vw;
-                    background-position-x: 2.7vw;
-                    transition: background-image 0.2s ease;
-
-                    &:hover,
-                    &:focus,
-                    &:active {
-                        color: #5186c4;
-
-                        background-image: url(../images/arrow_hover.svg);
-                    }
-
-                    @media all and (max-width:1920px) {
-                        padding-right: 1.25vw;
-                        background-position-x: 3.5vw;
-                        background-position-y: 0.3vw;
-                    }
-
-                    @media all and (max-width:1440px) {
-                        padding-right: 1.4vw;
-                        background-size: 1vw;
-                        background-position-y: 0.3vw;
-                        background-position-x: 4vw;
-                    }
-
-                    @media all and (max-width:1366px) {
-                        background-size: 1.1vw;
-                        background-position-y: 0.35vw;
-                    }
-
-                    @media all and (max-width:1280px) {
-                        background-position-x: 4.6vw;
-                    }
-                }
-
-                .hidden-about {
-                    margin-top: 0.5vw;
-                    display: flex;
-                    flex-direction: column;
-                    text-align: left;
-                    padding-left: 0.3vw;
-                    border-left: 1px solid black;
-                    position: absolute;
-                    top: 2vw;
-                    opacity: 0;
-                    z-index: -1;
-
-                    @media all and (max-width:1680px) {
-                        margin-top: 1.7vw;
-                    }
-
-                    a {
-
-                        &:hover,
-                        &:focus,
-                        &:active {
-                            color: #5186c4;
-                        }
-                    }
-
-
-                    :nth-child(1) {
-                        margin-bottom: 0.5vw;
-                    }
-                }
-            }
-        }
+  .menu-btn {
+    display: none;
+    // border: 1px solid red;
+    // height: 8vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    // border: 1px solid red;
+    @media all and (max-width: 1024px) {
+      display: flex;
     }
 
-    .menu-btn {
-        display: none;
-        // border: 1px solid red;
-        // height: 8vw;
-        padding-top: 2vw;
-        padding-bottom: 2vw;
-        // border: 1px solid red;
-        @media all and (max-width:1024px) {
-            display: flex;
-        }
-
-        img {
-            width: 8vw;
-        }
+    img {
+      width: 8vw;
     }
+  }
+}
 
+.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-transition: all 0.8s ease-in-out;
+  -o-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+  box-shadow: 0px 15px 10px -15px rgb(104, 104, 104, 17%);
 }

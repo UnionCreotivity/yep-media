@@ -135,6 +135,16 @@ window.onload = function () {
     }
     headerAboutMenu();
 
+    function scrollHeaderBg() {
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop() > 50) {
+                $(".header-box").addClass("active");
+            } else {
+                $(".header-box").removeClass("active");
+            }
+        });
+    }
+    scrollHeaderBg();
 
     let content = document.querySelectorAll(".text-1");
     let content1 = gsap.utils.toArray(content);
