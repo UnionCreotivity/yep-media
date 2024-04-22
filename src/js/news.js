@@ -92,13 +92,15 @@ window.onload = function () {
     headerAboutMenu();
 
     function scrollHeaderBg() {
-        $(window).on("scroll", function () {
-            if ($(window).scrollTop() > 50) {
-                $(".header-box").addClass("active");
-            } else {
-                $(".header-box").removeClass("active");
-            }
-        });
+        if (window_width > 1024) {
+            $(window).on("scroll", function () {
+                if ($(window).scrollTop() > 50) {
+                    $(".header-box").addClass("active");
+                } else {
+                    $(".header-box").removeClass("active");
+                }
+            });
+        }
     }
     scrollHeaderBg();
 }
