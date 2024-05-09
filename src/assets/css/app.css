@@ -1764,6 +1764,10 @@ footer {
 .index-body .container .c3-box .right-box .swiper .swiper-slide div img {
   width: 11vw;
   filter: grayscale(1);
+  transition: all 0.25s ease-in-out;
+}
+.index-body .container .c3-box .right-box .swiper .swiper-slide div img:hover {
+  filter: initial;
 }
 @media all and (max-width: 1024px) {
   .index-body .container .c3-box .right-box .swiper .swiper-slide div img {

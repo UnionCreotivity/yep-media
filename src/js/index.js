@@ -196,20 +196,25 @@ window.onload = function () {
         }, '<')
     }
 
-    function sweiprHover() {
-        let slide = document.querySelectorAll('.swiper-slide div img')
-        slide.forEach((item) => {
 
-            let tl = gsap.timeline({});
-            item.addEventListener('mouseenter', () => {
-                tl.to(item, { filter: 'initial', ease: "power1.inOut", })
-            });
+    // function sweiprHover() {
 
-            item.addEventListener('mouseleave', () => {
-                tl.to(item, { filter: 'grayscale(1)', ease: "power1.inOut", })
-            });
-        })
-    } sweiprHover();
+    //     let slide = document.querySelectorAll('.swiper-slide div img')
+    //     slide.forEach((item) => {
+
+    //         let tl = gsap.timeline({});
+    //         item.addEventListener('mouseenter', () => {
+    //             tl.to(item, { filter: 'initial', ease: "power1.inOut", })
+    //         });
+
+    //         item.addEventListener('mouseleave', () => {
+    //             tl.to(item, { filter: 'grayscale(1)', ease: "power1.inOut", })
+    //         });
+    //     })
+
+
+    // }
+    // sweiprHover();
 
 
     function openAni() {
@@ -368,7 +373,7 @@ window.onload = function () {
                         maskSize: '100%',
                         ease: "power1.inout"
                     }, '<')
-                .from('.c1-right-box,.header-box', {
+                .from('.c1-right-box', {
                     duration: 1,
                     opacity: 0,
                     ease: "power1.inOut",

@@ -1123,7 +1123,6 @@
               display: flex;
               grid-template-rows: initial;
               grid-template-columns: initial;
-
               display: flex;
               flex-wrap: wrap;
             }
@@ -1162,6 +1161,12 @@
                 width: 11vw;
                 filter: grayscale(1);
 
+                -webkit-transition: all 0.25s ease-in-out;
+                -o-transition: all 0.25s ease-in-out;
+                transition: all 0.25s ease-in-out;
+                &:hover {
+                  filter: initial;
+                }
                 @media all and (max-width: 1024px) {
                   width: 33vw;
                 }
