@@ -2347,15 +2347,43 @@ footer {
 .about-body .container .top-box .top-person-box .job-title-box .job-title,
 .about-body .container .top-box .top-person-box .job-title-box .director-name,
 .about-body .container .top-box .top-person-box .job-title-box .content,
+.about-body .container .top-box .top-person-box .job-title-box .director-job,
 .about-body .container .top-box .top-person-box .name-box .job-title,
 .about-body .container .top-box .top-person-box .name-box .director-name,
 .about-body .container .top-box .top-person-box .name-box .content,
+.about-body .container .top-box .top-person-box .name-box .director-job,
 .about-body .container .top-box .top-person-box .content-box .job-title,
 .about-body .container .top-box .top-person-box .content-box .director-name,
-.about-body .container .top-box .top-person-box .content-box .content {
+.about-body .container .top-box .top-person-box .content-box .content,
+.about-body .container .top-box .top-person-box .content-box .director-job {
   padding-left: 3vw;
   display: flex;
   justify-content: center;
+}
+.about-body .container .top-box .top-person-box .director-name-box {
+  flex-direction: column;
+}
+@media all and (max-width: 1024px) {
+  .about-body .container .top-box .top-person-box .director-name-box .director-content {
+    font-size: 5vw;
+    font-weight: bold;
+  }
+}
+.about-body .container .top-box .top-person-box .director-job {
+  margin-bottom: 1vw;
+}
+.about-body .container .top-box .top-person-box .content-box {
+  margin-top: 1vw;
+}
+.about-body .container .top-box .top-person-box .content-box .content {
+  line-height: 2vw;
+}
+@media all and (max-width: 1024px) {
+  .about-body .container .top-box .top-person-box .content-box .content {
+    line-height: 6.5vw;
+    font-size: 3.4vw;
+    letter-spacing: 0.2em;
+  }
 }
 .about-body .container .person-list-box {
   width: 80%;

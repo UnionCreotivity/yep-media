@@ -124,10 +124,36 @@
 
           .job-title,
           .director-name,
-          .content {
+          .content,
+          .director-job {
             padding-left: 3vw;
             display: flex;
             justify-content: center;
+          }
+        }
+        .director-name-box {
+          flex-direction: column;
+          .director-content {
+            @media all and (max-width: 1024px) {
+              font-size: 5vw;
+              font-weight: bold;
+            }
+          }
+        }
+        .director-job {
+          margin-bottom: 1vw;
+        }
+
+        .content-box {
+          margin-top: 1vw;
+          .content {
+            line-height: 2vw;
+
+            @media all and (max-width: 1024px) {
+              line-height: 6.5vw;
+              font-size: 3.4vw;
+              letter-spacing: 0.2em;
+            }
           }
         }
       }
