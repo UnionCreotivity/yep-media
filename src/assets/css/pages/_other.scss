@@ -1,1335 +1,1301 @@
 .other-body {
-    background-color: white;
+  background-color: white;
+  position: relative;
+  width: 100%;
+
+  .container {
     position: relative;
     width: 100%;
 
-    .container {
+    .footer {
+      position: absolute;
+
+      @media all and (max-width: 1024px) {
         position: relative;
-        width: 100%;
+      }
+    }
 
-        .footer {
+    .c1-box {
+      position: relative;
+      width: 100%;
+      padding-top: 10vw;
+      display: flex;
+      justify-content: right;
+      padding-bottom: 10vw;
+
+      @media all and (max-width: 1440px) {
+        padding-top: 15vw;
+        padding-bottom: 16vw;
+      }
+
+      @media all and (max-width: 1024px) {
+        flex-direction: column;
+        padding-top: 0vw;
+        padding-bottom: 10vw;
+      }
+
+      .title-box {
+        position: absolute;
+        top: 5vw;
+        left: 5vw;
+        font-size: 3vw;
+        letter-spacing: 0.3em;
+        font-family: "Noto Serif TC";
+        align-items: center;
+        font-weight: 600;
+
+        @media all and (max-width: 1024px) {
+          position: initial;
+          display: flex;
+          flex-direction: column-reverse;
+          margin-top: 20vw;
+          font-size: 7.5vw;
+        }
+
+        .text-1 {
+          margin-bottom: 0.5vw;
+
+          @media all and (max-width: 1024px) {
+            margin-bottom: 0vw;
+          }
+        }
+
+        .text-2 {
+          @media all and (max-width: 1024px) {
+            letter-spacing: 1em;
+            padding-left: 5vw;
+            margin-bottom: 3vw;
+            font-size: $moblie-big-title;
+          }
+        }
+      }
+
+      .c1-bg {
+        position: absolute;
+        width: 40vw;
+        bottom: -2vw;
+        left: -2vw;
+
+        @media all and (max-width: 1024px) {
+          display: none;
+        }
+      }
+
+      .right-box {
+        width: 68%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10vw;
+        position: relative;
+
+        @media all and (max-width: 1024px) {
+          width: 100%;
+          margin-top: 10vw;
+          padding-bottom: 10vw;
+        }
+
+        .moblie-left-item {
+          display: none;
+
+          @media all and (max-width: 1024px) {
+            display: flex;
             position: absolute;
-
-            @media all and (max-width:1024px) {
-                position: relative;
-            }
-
+            bottom: 0px;
+            left: -2vw;
+            width: 38vw;
+          }
         }
 
-        .c1-box {
-            position: relative;
-            width: 100%;
-            padding-top: 10vw;
+        .moblie-right-item {
+          display: none;
+
+          @media all and (max-width: 1024px) {
             display: flex;
-            justify-content: right;
-            padding-bottom: 10vw;
-
-            @media all and (max-width:1440px) {
-                padding-top: 15vw;
-                padding-bottom: 16vw;
-            }
-
-            @media all and (max-width:1024px) {
-                flex-direction: column;
-                padding-top: 0vw;
-                padding-bottom: 10vw;
-            }
-
-            .title-box {
-                position: absolute;
-                top: 5vw;
-                left: 5vw;
-                font-size: 1.1vw;
-                letter-spacing: 0.3em;
-                font-family: 'Noto Serif TC';
-                align-items: center;
-                font-weight: 600;
-
-                @media all and (max-width:1024px) {
-                    position: initial;
-                    display: flex;
-                    flex-direction: column-reverse;
-                    margin-top: 20vw;
-                    font-size: $moblie-sub-title;
-                }
-
-                .text-1 {
-                    margin-bottom: 0.5vw;
-
-                    @media all and (max-width:1024px) {
-                        margin-bottom: 0vw;
-                    }
-                }
-
-                .text-2 {
-                    @media all and (max-width:1024px) {
-                        letter-spacing: 1em;
-                        padding-left: 5vw;
-                        margin-bottom: 3vw;
-                        font-size: $moblie-big-title;
-                    }
-                }
-            }
-
-            .c1-bg {
-                position: absolute;
-                width: 40vw;
-                bottom: -2vw;
-                left: -2vw;
-
-                @media all and (max-width:1024px) {
-                    display: none;
-                }
-            }
-
-            .right-box {
-                width: 60%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                padding-bottom: 10vw;
-                position: relative;
-
-                @media all and (max-width:1024px) {
-                    width: 100%;
-                    margin-top: 10vw;
-                    padding-bottom: 10vw;
-                }
-
-                .moblie-left-item {
-                    display: none;
-
-                    @media all and (max-width:1024px) {
-                        display: flex;
-                        position: absolute;
-                        bottom: 0px;
-                        left: -2vw;
-                        width: 38vw;
-                    }
-                }
-
-                .moblie-right-item {
-                    display: none;
-
-                    @media all and (max-width:1024px) {
-                        display: flex;
-                        position: absolute;
-                        bottom: 19vw;
-                        right: 0vw;
-                        width: 13vw;
-                    }
-                }
-
-                .swiper-box {
-                    width: 100%;
-                    padding: 0vw 5vw;
-                    position: relative;
-
-                    @media all and (max-width:1024px) {
-                        width: 80%;
-                        display: flex;
-                        justify-content: center;
-                        margin: 0 auto;
-                        padding: 0vw 0vw;
-                    }
-
-                    .swiper {
-                        width: 100%;
-
-                        @media all and (max-width:1024px) {
-                            padding-bottom: 6vw;
-                        }
-
-                        .swiper-wrapper {
-                            width: 100%;
-
-                            .swiper-slide {
-
-                                a {
-                                    color: black;
-                                    text-decoration: none;
-                                }
-
-                                img {
-                                    display: block;
-                                    width: 100%;
-                                }
-
-                                .title {
-                                    font-size: 0.9vw;
-                                    letter-spacing: 0.2em;
-                                    font-family: 'Noto Serif TC';
-                                    align-items: center;
-                                    font-weight: 600;
-                                    margin-top: 1vw;
-                                    height: 3vw;
-
-                                    @media all and (max-width:1920px) {
-                                        height: 4vw;
-                                    }
-
-                                    @media all and (max-width:1440px) {
-                                        font-size: 1vw;
-                                        line-height: 1.8vw;
-                                    }
-
-                                    @media all and (max-width:1024px) {
-                                        text-align: center;
-                                        font-size: $moblie-content;
-                                        margin-top: 0vw;
-                                        padding-top: 17vw;
-                                    }
-
-                                }
-
-                                .year {
-                                    font-size: 0.9vw;
-                                    letter-spacing: 0.1em;
-                                    font-family: 'Noto Serif TC';
-                                    align-items: center;
-                                    font-weight: 600;
-
-                                    @media all and (max-width:1440px) {
-                                        font-size: 1vw;
-                                        line-height: 1.8vw;
-                                    }
-
-                                    @media all and (max-width:1024px) {
-                                        font-size: $moblie-content;
-                                        text-align: center;
-                                        margin-top: 9vw;
-                                    }
-
-                                }
-                            }
-
-                        }
-
-                    }
-
-                    .swiper-pagination-horizontal {
-                        bottom: -3vw;
-
-                        @media all and (max-width:1024px) {
-                            bottom: 22vw;
-                        }
-
-                        .swiper-pagination-bullet {
-                            margin: 0.35vw;
-
-                            @media all and (max-width:1440px) {
-                                width: 6px;
-                                height: 6px;
-                                margin: 0.75vw;
-                            }
-
-                            @media all and (max-width:500px) {
-                                width: 6px;
-                                height: 6px;
-                                margin: 0.75vw;
-                            }
-                        }
-
-                        .swiper-pagination-bullet-active {
-                            background: #565656
-                        }
-                    }
-
-                    .c1-swiper-prev {
-                        position: absolute;
-                        left: 3vw;
-                        cursor: pointer;
-                        top: 7vw;
-
-                        @media all and (max-width:1920px) {
-                            left: 2vw;
-                        }
-
-                        @media all and (max-width:1024px) {
-                            top: 38vw;
-                            left: -7vw;
-                        }
-
-                        img {
-                            width: 1vw;
-
-                            @media all and (max-width:1024px) {
-                                width: 3vw;
-                            }
-                        }
-                    }
-
-                    .c1-swiper-next {
-                        position: absolute;
-                        right: 3vw;
-                        top: 7vw;
-                        cursor: pointer;
-
-                        @media all and (max-width:1920px) {
-                            right: 2vw;
-                        }
-
-                        @media all and (max-width:1024px) {
-                            top: 38vw;
-                            right: -7vw;
-                        }
-
-                        img {
-                            width: 1vw;
-
-                            @media all and (max-width:1024px) {
-                                width: 3vw;
-                            }
-                        }
-                    }
-                }
-            }
+            position: absolute;
+            bottom: 19vw;
+            right: 0vw;
+            width: 13vw;
+          }
         }
 
-        .c2-box {
-            width: 100%;
-            height: 100vh;
-            background-image: url(../images/other/c2_bg.webp);
-            background-color: white;
-            position: relative;
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
+        .swiper-box {
+          width: 100%;
+          padding: 0vw 5vw;
+          position: relative;
+
+          @media all and (max-width: 1024px) {
+            width: 80%;
             display: flex;
-            overflow: hidden;
+            justify-content: center;
+            margin: 0 auto;
+            padding: 0vw 0vw;
+          }
 
-            @media all and (max-width:1024px) {
-                display: none;
+          .swiper {
+            width: 100%;
+
+            @media all and (max-width: 1024px) {
+              padding-bottom: 6vw;
             }
 
-            .left-box {
-                width: 40%;
-                display: flex;
-                position: relative;
-                padding-top: 7vw;
-                padding-bottom: 7vw;
-                justify-content: right;
+            .swiper-wrapper {
+              width: 100%;
 
-                @media all and (max-width:1440px) {
-                    padding-top: 13vw;
+              .swiper-slide {
+                a {
+                  color: black;
+                  text-decoration: none;
                 }
 
-                .machine-box {
-                    position: relative;
-
-                    @media all and (max-width:1440px) {
-                        scale: 1.2;
-                    }
-
-                    .all-machine {
-                        width: 20vw;
-                    }
-
-                    .origin-machine {
-                        position: absolute;
-                        width: 24vw;
-                        left: -5.5vw;
-                        top: 5.3vw;
-                        opacity: 0;
-                    }
-
-                    .change1-machine {
-                        position: absolute;
-                        width: 4vw;
-                        left: 9.2vw;
-                        top: 7.8vw;
-                        opacity: 0;
-                    }
-
-                    .change2-machine {
-                        position: absolute;
-                        width: 2.5vw;
-                        left: 14.65vw;
-                        top: 7.4vw;
-                        opacity: 0;
-                    }
-
-                    .change3-machine {
-                        position: absolute;
-                        width: 1.8vw;
-                        left: 15vw;
-                        top: 15vw;
-                        opacity: 0;
-                    }
-
-                    .change4-machine {
-                        position: absolute;
-                        width: 17vw;
-                        left: 1.8vw;
-                        top: 4.3vw;
-                        opacity: 0;
-                    }
+                img {
+                  display: block;
+                  width: 100%;
                 }
+
+                .title {
+                  font-size: 0.9vw;
+                  letter-spacing: 0.2em;
+                  font-family: "Noto Serif TC";
+                  align-items: center;
+                  font-weight: 600;
+                  margin-top: 1vw;
+                  height: 3vw;
+
+                  @media all and (max-width: 1920px) {
+                    height: 4vw;
+                  }
+
+                  @media all and (max-width: 1440px) {
+                    font-size: 1vw;
+                    line-height: 1.8vw;
+                  }
+
+                  @media all and (max-width: 1024px) {
+                    text-align: center;
+                    font-size: $moblie-content;
+                    margin-top: 0vw;
+                    padding-top: 17vw;
+                  }
+                }
+
+                .year {
+                  font-size: 0.9vw;
+                  letter-spacing: 0.1em;
+                  font-family: "Noto Serif TC";
+                  align-items: center;
+                  font-weight: 600;
+
+                  @media all and (max-width: 1440px) {
+                    font-size: 1vw;
+                    line-height: 1.8vw;
+                  }
+
+                  @media all and (max-width: 1024px) {
+                    font-size: $moblie-content;
+                    text-align: center;
+                    margin-top: 9vw;
+                  }
+                }
+              }
+            }
+          }
+
+          .swiper-pagination-horizontal {
+            bottom: -3vw;
+
+            @media all and (max-width: 1024px) {
+              bottom: 22vw;
             }
 
-            .right-box {
-                width: 60%;
-                display: flex;
-                position: relative;
-                flex-direction: column;
-
-                @media all and (max-width:1366px) {
-                    margin-top: 7vw;
-                }
-
-                .tab-box {
-                    width: 80%;
-                    display: flex;
-                    border-bottom: 1px solid #b6c2d1;
-                    margin-top: 6vw;
-                    padding-left: 5vw;
-                    margin-left: 5vw;
-
-                    @media all and (max-width:1440px) {
-                        margin-top: 7vw;
-                    }
-
-                    @media all and (max-width:1366px) {
-                        margin-top: 4vw;
-                    }
-
-                    .tab {
-                        background-color: #e5ecf6;
-                        font-size: 1vw;
-                        letter-spacing: 0.1em;
-                        font-family: "Noto Serif TC";
-                        align-items: center;
-                        font-weight: 600;
-                        padding: 0.4vw 1.3vw;
-                        border-top-left-radius: 1vw;
-                        border-top-right-radius: 1vw;
-                        margin-left: 0.5vw;
-                        cursor: pointer;
-                        -webkit-transition: all 0.3s ease-in-out;
-                        -o-transition: all 0.3s ease-in-out;
-                        transition: all 0.3s ease-in-out;
-                        z-index: 3;
-
-                        @media all and (max-width:1440px) {
-                            font-size: 1.1vw;
-                        }
-
-                        &:hover {
-                            background-color: #acd8f9;
-                        }
-                    }
-
-                    .tab-active {
-                        background-color: #acd8f9;
-                    }
-                }
-
-                .c2-svg-text-top {
-                    width: 30vw;
-                    top: -17vw;
-                    right: -10vw;
-                    position: absolute;
-
-                    @media all and (max-width:1440px) {
-                        width: 32vw;
-                        right: -11vw;
-                    }
-
-                    @media all and (max-width:1366px) {
-                        top: -22vw;
-                    }
-
-                }
-
-                .c2-svg-text-bottom {
-                    width: 30vw;
-                    bottom: -15vw;
-                    left: -14vw;
-                    position: absolute;
-
-                    @media all and (max-width:1440px) {
-                        width: 32vw;
-                        bottom: -15vw;
-                        left: -9vw;
-                    }
-
-                    @media all and (max-width:1366px) {
-                        bottom: -18vw;
-                    }
-                }
-
-                .change-box {
-                    width: 70%;
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    top: 20%;
-                    left: 50%;
-                    transform: translate(-50%, -50%);
-
-                    @media all and (max-width:1366px) {
-                        top: 18%;
-                    }
-
-                    .content-box {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        padding-top: 3vw;
-                        position: absolute;
-                        top: 0px;
-
-                        .title-box {
-                            display: flex;
-                            flex-direction: column;
-
-                            .dot {
-                                display: flex;
-                                flex-direction: column;
-                                width: 8vw;
-                                margin-bottom: 0.5vw;
-
-                                @media all and (max-width:1440px) {
-                                    width: 10vw;
-                                }
-                            }
-
-                            .title {
-                                font-size: 1.1vw;
-                                letter-spacing: 0.2em;
-                                font-family: "Noto Serif TC";
-                                align-items: center;
-                                font-weight: 600;
-                                margin-bottom: 1.5vw;
-
-                                @media all and (max-width:1440px) {
-                                    font-size: 1.25vw;
-                                }
-
-                            }
-                        }
-
-                        .content {
-                            font-size: 0.85vw;
-                            letter-spacing: 0.1em;
-                            font-family: "Noto Serif TC";
-                            align-items: center;
-                            line-height: 1.7vw;
-                            font-weight: 600;
-
-                            @media all and (max-width:1440px) {
-                                font-size: 1vw;
-                                line-height: 1.9vw;
-                            }
-
-                        }
-
-                        .button-box {
-                            display: flex;
-                            justify-content: space-between;
-                            margin-top: 3vw;
-
-                            .button {
-                                position: relative;
-                                overflow: hidden;
-                                background-image: url(../images/other/btn_bg.png);
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                width: 9vw;
-                                height: 9vw;
-                                flex-direction: column;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-
-                                @media all and (max-width:1440px) {
-                                    width: 11vw;
-                                    height: 11vw;
-                                }
-
-                                .text {
-                                    width: 6vw;
-                                    font-size: 1.1vw;
-                                    letter-spacing: 0.2em;
-                                    font-family: "Noto Serif TC";
-                                    text-align: center;
-                                    font-weight: 600;
-
-                                    @media all and (max-width:1440px) {
-                                        font-size: 1.25vw;
-                                    }
-                                }
-                            }
-
-                        }
-                    }
-
-                    .content-box2 {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        padding-top: 2vw;
-                        position: absolute;
-                        top: 0px;
-                        // display: none;
-                        opacity: 0;
-
-                        .button-box {
-                            display: flex;
-                            justify-content: space-between;
-                            margin-top: 3vw;
-
-                            .item {
-                                position: relative;
-                                width: 20%;
-                                display: flex;
-                                flex-direction: column;
-
-                                .content2-button {
-                                    position: relative;
-                                    overflow: hidden;
-                                    background-image: url(../images/other/geay_btn.png);
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    width: 8vw;
-                                    height: 8vw;
-                                    flex-direction: column;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    cursor: pointer;
-                                    -webkit-transition: all 0.5s ease-in-out;
-                                    -o-transition: all 0.5s ease-in-out;
-                                    transition: all 0.5s ease-in-out;
-
-                                    &:hover {
-                                        background-image: url(../images/other/btn_bg.png);
-                                    }
-
-                                    @media all and (max-width:1440px) {
-                                        width: 9vw;
-                                        height: 9vw;
-                                    }
-
-                                    .text {
-                                        width: 5.5vw;
-                                        font-size: 1.1vw;
-                                        letter-spacing: 0.2em;
-                                        font-family: "Noto Serif TC";
-                                        text-align: center;
-                                        font-weight: 600;
-
-                                        @media all and (max-width:1440px) {
-                                            font-size: 1.2vw;
-                                            width: 6vw;
-                                        }
-                                    }
-                                }
-
-                                .item-content {
-                                    font-size: 0.75vw;
-                                    letter-spacing: 0.1em;
-                                    font-family: "Noto Serif TC";
-                                    text-align: center;
-                                    align-items: center;
-                                    font-weight: 600;
-                                    margin-top: 0.5vw;
-                                    opacity: 0;
-
-                                    @media all and (max-width:1440px) {
-                                        font-size: 0.9vw;
-                                    }
-                                }
-                            }
-                        }
-
-
-                        .fixed-swiper-box {
-                            width: 100%;
-                            padding: 0vw 5vw;
-                            position: relative;
-                            margin-top: 3vw;
-
-                            .swiper {
-                                width: 100%;
-
-                                .swiper-wrapper {
-                                    width: 100%;
-
-
-                                    .swiper-slide {
-
-                                        a {
-                                            color: black;
-                                            text-decoration: none;
-                                        }
-
-                                        img {
-                                            display: block;
-                                            width: 100%;
-                                        }
-
-
-                                    }
-
-                                }
-
-                            }
-
-
-                            .c2-swiper-pagination {
-                                // bottom: -3vw;
-                                display: flex;
-                                justify-content: center;
-                                margin-top: 0.5vw;
-
-                                .swiper-pagination-bullet {
-                                    margin: 0.35vw;
-
-                                    @media all and (max-width:1440px) {
-                                        width: 6px;
-                                        height: 6px;
-                                        margin: 0.75vw;
-                                    }
-
-                                    @media all and (max-width:500px) {
-                                        width: 6px;
-                                        height: 6px;
-                                        margin: 0.75vw;
-                                    }
-                                }
-
-                                .swiper-pagination-bullet-active {
-                                    background: #565656
-                                }
-                            }
-
-                            .c2-swiper-prev {
-                                position: absolute;
-                                left: 3vw;
-                                cursor: pointer;
-                                top: 3.5vw;
-
-                                img {
-                                    width: 1vw;
-
-                                    @media all and (max-width:1024px) {
-                                        width: 3vw;
-                                    }
-                                }
-                            }
-
-                            .c2-swiper-next {
-                                position: absolute;
-                                right: 3vw;
-                                top: 3.5vw;
-                                cursor: pointer;
-
-
-                                img {
-                                    width: 1vw;
-
-
-                                    @media all and (max-width:1024px) {
-                                        width: 3vw;
-                                    }
-                                }
-                            }
-                        }
-                    }
-
-                    .content-box3 {
-                        width: 100%;
-                        display: flex;
-                        flex-direction: column;
-                        padding-top: 3vw;
-
-                        position: absolute;
-                        top: 0px;
-                        opacity: 0;
-
-                        .title-box {
-                            display: flex;
-                            flex-direction: column;
-
-                            .dot {
-                                display: flex;
-                                flex-direction: column;
-                                width: 6vw;
-                                margin-bottom: 0.5vw;
-                            }
-
-                            .title {
-                                font-size: 1.1vw;
-                                letter-spacing: 0.2em;
-                                font-family: "Noto Serif TC";
-                                align-items: center;
-                                font-weight: 600;
-                                margin-bottom: 1.5vw;
-
-                                @media all and (max-width:1440px) {
-                                    font-size: 1.25vw;
-                                }
-                            }
-                        }
-
-                        .button-box {
-                            display: flex;
-                            justify-content: space-between;
-                            margin-top: 3vw;
-
-                            .button {
-                                position: relative;
-                                overflow: hidden;
-                                background-image: url(../images/other/geay_btn.png);
-                                background-repeat: no-repeat;
-                                background-size: cover;
-                                width: 9vw;
-                                height: 9vw;
-                                flex-direction: column;
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                cursor: pointer;
-                                -webkit-transition: all 0.5s ease-in-out;
-                                -o-transition: all 0.5s ease-in-out;
-                                transition: all 0.5s ease-in-out;
-
-                                &:hover {
-                                    background-image: url(../images/other/btn_bg.png);
-                                }
-
-                                .text {
-                                    width: 6vw;
-                                    font-size: 1.1vw;
-                                    letter-spacing: 0.2em;
-                                    font-family: "Noto Serif TC";
-                                    text-align: center;
-                                    font-weight: 600;
-
-                                    @media all and (max-width:1440px) {
-                                        font-size: 1.25vw;
-                                    }
-                                }
-                            }
-
-                        }
-
-                        .content-text-box {
-                            margin-top: 2vw;
-                            font-size: 0.85vw;
-                            letter-spacing: 0.1em;
-                            font-family: "Noto Serif TC";
-                            align-items: center;
-                            line-height: 1.7vw;
-                            font-weight: 600;
-                            position: relative;
-
-                            @media all and (max-width:1440px) {
-                                font-size: 1vw;
-                                line-height: 1.9vw;
-                            }
-
-                            .text {
-                                position: absolute;
-                                top: 0px;
-                                left: 0px;
-                                opacity: 0
-                            }
-                        }
-                    }
-
-
-                }
-
-                .content-box3-scrolltop-btn {
-                    position: absolute;
-                    font-size: 0.8vw;
-                    letter-spacing: 0.2em;
-                    font-family: 'Noto Serif TC';
-                    align-items: center;
-                    font-weight: bold;
-                    bottom: 3vw;
-                    right: 5vw;
-                    padding: 0.5vw 0.7vw;
-                    padding-left: 0.95vw;
-                    border: 1px solid black;
-                    overflow: hidden;
-                    color: black;
-                    -webkit-transition: all 0.3s ease-in-out;
-                    -o-transition: all 0.3s ease-in-out;
-                    transition: all 0.3s ease-in-out;
-                    cursor: pointer;
-
-
-                    @media all and (max-width:1440px) {
-                        font-size: 1vw;
-                    }
-
-                    @media all and (max-width:1024px) {
-                        display: none;
-                    }
-
-                    &:before {
-                        content: "";
-                        position: absolute;
-                        width: 100%;
-                        height: 100%;
-                        z-index: -1;
-                        top: 0;
-                        left: -100%;
-                        background-color: #86d5fb;
-                        -webkit-transition: all 0.3s ease-in-out;
-                        -o-transition: all 0.3s ease-in-out;
-                        transition: all 0.3s ease-in-out;
-                    }
-
-                    &:hover {
-                        color: white;
-                        z-index: 2;
-                        border: 1px solid #86d5fb;
-
-                        &:before {
-                            left: 0%;
-                        }
-                    }
-                }
-
+            .swiper-pagination-bullet {
+              margin: 0.35vw;
+
+              @media all and (max-width: 1440px) {
+                width: 6px;
+                height: 6px;
+                margin: 0.75vw;
+              }
+
+              @media all and (max-width: 500px) {
+                width: 6px;
+                height: 6px;
+                margin: 0.75vw;
+              }
             }
+
+            .swiper-pagination-bullet-active {
+              background: #565656;
+            }
+          }
+
+          .c1-swiper-prev {
+            position: absolute;
+            left: 3vw;
+            cursor: pointer;
+            top: 5.5vw;
+
+            @media all and (max-width: 1920px) {
+              left: 2vw;
+            }
+
+            @media all and (max-width: 1024px) {
+              top: 38vw;
+              left: -7vw;
+            }
+
+            img {
+              width: 1vw;
+
+              @media all and (max-width: 1024px) {
+                width: 3vw;
+              }
+            }
+          }
+
+          .c1-swiper-next {
+            position: absolute;
+            right: 3vw;
+            top: 5.5vw;
+            cursor: pointer;
+
+            @media all and (max-width: 1920px) {
+              right: 2vw;
+            }
+
+            @media all and (max-width: 1024px) {
+              top: 38vw;
+              right: -7vw;
+            }
+
+            img {
+              width: 1vw;
+
+              @media all and (max-width: 1024px) {
+                width: 3vw;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .c2-box {
+      width: 100%;
+      height: 100vh;
+      background-image: url(../images/other/c2_bg.webp);
+      background-color: white;
+      position: relative;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      overflow: hidden;
+
+      @media all and (max-width: 1024px) {
+        display: none;
+      }
+
+      .left-box {
+        width: 40%;
+        display: flex;
+        position: relative;
+        padding-top: 7vw;
+        padding-bottom: 7vw;
+        justify-content: right;
+
+        @media all and (max-width: 1440px) {
+          padding-top: 13vw;
         }
 
-        .c2-box-moblie {
+        .machine-box {
+          position: relative;
+
+          @media all and (max-width: 1440px) {
+            scale: 1.2;
+          }
+
+          .all-machine {
+            width: 20vw;
+          }
+
+          .origin-machine {
+            position: absolute;
+            width: 24vw;
+            left: -5.5vw;
+            top: 5.3vw;
+            opacity: 0;
+          }
+
+          .change1-machine {
+            position: absolute;
+            width: 4vw;
+            left: 9.2vw;
+            top: 7.8vw;
+            opacity: 0;
+          }
+
+          .change2-machine {
+            position: absolute;
+            width: 2.5vw;
+            left: 14.65vw;
+            top: 7.4vw;
+            opacity: 0;
+          }
+
+          .change3-machine {
+            position: absolute;
+            width: 1.8vw;
+            left: 15vw;
+            top: 15vw;
+            opacity: 0;
+          }
+
+          .change4-machine {
+            position: absolute;
+            width: 17vw;
+            left: 1.8vw;
+            top: 4.3vw;
+            opacity: 0;
+          }
+        }
+      }
+
+      .right-box {
+        width: 60%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+
+        @media all and (max-width: 1366px) {
+          margin-top: 7vw;
+        }
+
+        .tab-box {
+          width: 80%;
+          display: flex;
+          border-bottom: 1px solid #b6c2d1;
+          margin-top: 6vw;
+          padding-left: 5vw;
+          margin-left: 5vw;
+
+          @media all and (max-width: 1440px) {
+            margin-top: 7vw;
+          }
+
+          @media all and (max-width: 1366px) {
+            margin-top: 4vw;
+          }
+
+          .tab {
+            background-color: #e5ecf6;
+            font-size: 1vw;
+            letter-spacing: 0.1em;
+            font-family: "Noto Serif TC";
+            align-items: center;
+            font-weight: 600;
+            padding: 0.4vw 1.3vw;
+            border-top-left-radius: 1vw;
+            border-top-right-radius: 1vw;
+            margin-left: 0.5vw;
+            cursor: pointer;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            z-index: 3;
+
+            @media all and (max-width: 1440px) {
+              font-size: 1.1vw;
+            }
+
+            &:hover {
+              background-color: #acd8f9;
+            }
+          }
+
+          .tab-active {
+            background-color: #acd8f9;
+          }
+        }
+
+        .c2-svg-text-top {
+          width: 30vw;
+          top: -17vw;
+          right: -10vw;
+          position: absolute;
+
+          @media all and (max-width: 1440px) {
+            width: 32vw;
+            right: -11vw;
+          }
+
+          @media all and (max-width: 1366px) {
+            top: -22vw;
+          }
+        }
+
+        .c2-svg-text-bottom {
+          width: 30vw;
+          bottom: -15vw;
+          left: -14vw;
+          position: absolute;
+
+          @media all and (max-width: 1440px) {
+            width: 32vw;
+            bottom: -15vw;
+            left: -9vw;
+          }
+
+          @media all and (max-width: 1366px) {
+            bottom: -18vw;
+          }
+        }
+
+        .change-box {
+          width: 70%;
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          top: 20%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+
+          @media all and (max-width: 1366px) {
+            top: 18%;
+          }
+
+          .content-box {
+            width: 100%;
             display: flex;
             flex-direction: column;
+            padding-top: 3vw;
+            position: absolute;
+            top: 0px;
+
+            .title-box {
+              display: flex;
+              flex-direction: column;
+
+              .dot {
+                display: flex;
+                flex-direction: column;
+                width: 8vw;
+                margin-bottom: 0.5vw;
+
+                @media all and (max-width: 1440px) {
+                  width: 10vw;
+                }
+              }
+
+              .title {
+                font-size: 1.1vw;
+                letter-spacing: 0.2em;
+                font-family: "Noto Serif TC";
+                align-items: center;
+                font-weight: 600;
+                margin-bottom: 1.5vw;
+
+                @media all and (max-width: 1440px) {
+                  font-size: 1.25vw;
+                }
+              }
+            }
+
+            .content {
+              font-size: 0.85vw;
+              letter-spacing: 0.1em;
+              font-family: "Noto Serif TC";
+              align-items: center;
+              line-height: 1.7vw;
+              font-weight: 600;
+
+              @media all and (max-width: 1440px) {
+                font-size: 1vw;
+                line-height: 1.9vw;
+              }
+            }
+
+            .button-box {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 3vw;
+
+              .button {
+                position: relative;
+                overflow: hidden;
+                background-image: url(../images/other/btn_bg.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 9vw;
+                height: 9vw;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                @media all and (max-width: 1440px) {
+                  width: 11vw;
+                  height: 11vw;
+                }
+
+                .text {
+                  width: 6vw;
+                  font-size: 1.1vw;
+                  letter-spacing: 0.2em;
+                  font-family: "Noto Serif TC";
+                  text-align: center;
+                  font-weight: 600;
+
+                  @media all and (max-width: 1440px) {
+                    font-size: 1.25vw;
+                  }
+                }
+              }
+            }
+          }
+
+          .content-box2 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 2vw;
+            position: absolute;
+            top: 0px;
+            // display: none;
+            opacity: 0;
+
+            .button-box {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 3vw;
+
+              .item {
+                position: relative;
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+
+                .content2-button {
+                  position: relative;
+                  overflow: hidden;
+                  background-image: url(../images/other/geay_btn.png);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 8vw;
+                  height: 8vw;
+                  flex-direction: column;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  cursor: pointer;
+                  -webkit-transition: all 0.5s ease-in-out;
+                  -o-transition: all 0.5s ease-in-out;
+                  transition: all 0.5s ease-in-out;
+
+                  &:hover {
+                    background-image: url(../images/other/btn_bg.png);
+                  }
+
+                  @media all and (max-width: 1440px) {
+                    width: 9vw;
+                    height: 9vw;
+                  }
+
+                  .text {
+                    width: 5.5vw;
+                    font-size: 1.1vw;
+                    letter-spacing: 0.2em;
+                    font-family: "Noto Serif TC";
+                    text-align: center;
+                    font-weight: 600;
+
+                    @media all and (max-width: 1440px) {
+                      font-size: 1.2vw;
+                      width: 6vw;
+                    }
+                  }
+                }
+
+                .item-content {
+                  font-size: 0.75vw;
+                  letter-spacing: 0.1em;
+                  font-family: "Noto Serif TC";
+                  text-align: center;
+                  align-items: center;
+                  font-weight: 600;
+                  margin-top: 0.5vw;
+                  opacity: 0;
+
+                  @media all and (max-width: 1440px) {
+                    font-size: 0.9vw;
+                  }
+                }
+              }
+            }
+
+            .fixed-swiper-box {
+              width: 100%;
+              padding: 0vw 5vw;
+              position: relative;
+              margin-top: 3vw;
+
+              .swiper {
+                width: 100%;
+
+                .swiper-wrapper {
+                  width: 100%;
+
+                  .swiper-slide {
+                    a {
+                      color: black;
+                      text-decoration: none;
+                    }
+
+                    img {
+                      display: block;
+                      width: 100%;
+                    }
+                  }
+                }
+              }
+
+              .c2-swiper-pagination {
+                // bottom: -3vw;
+                display: flex;
+                justify-content: center;
+                margin-top: 0.5vw;
+
+                .swiper-pagination-bullet {
+                  margin: 0.35vw;
+
+                  @media all and (max-width: 1440px) {
+                    width: 6px;
+                    height: 6px;
+                    margin: 0.75vw;
+                  }
+
+                  @media all and (max-width: 500px) {
+                    width: 6px;
+                    height: 6px;
+                    margin: 0.75vw;
+                  }
+                }
+
+                .swiper-pagination-bullet-active {
+                  background: #565656;
+                }
+              }
+
+              .c2-swiper-prev {
+                position: absolute;
+                left: 3vw;
+                cursor: pointer;
+                top: 3.5vw;
+
+                img {
+                  width: 1vw;
+
+                  @media all and (max-width: 1024px) {
+                    width: 3vw;
+                  }
+                }
+              }
+
+              .c2-swiper-next {
+                position: absolute;
+                right: 3vw;
+                top: 3.5vw;
+                cursor: pointer;
+
+                img {
+                  width: 1vw;
+
+                  @media all and (max-width: 1024px) {
+                    width: 3vw;
+                  }
+                }
+              }
+            }
+          }
+
+          .content-box3 {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 3vw;
+
+            position: absolute;
+            top: 0px;
+            opacity: 0;
+
+            .title-box {
+              display: flex;
+              flex-direction: column;
+
+              .dot {
+                display: flex;
+                flex-direction: column;
+                width: 6vw;
+                margin-bottom: 0.5vw;
+              }
+
+              .title {
+                font-size: 1.1vw;
+                letter-spacing: 0.2em;
+                font-family: "Noto Serif TC";
+                align-items: center;
+                font-weight: 600;
+                margin-bottom: 1.5vw;
+
+                @media all and (max-width: 1440px) {
+                  font-size: 1.25vw;
+                }
+              }
+            }
+
+            .button-box {
+              display: flex;
+              justify-content: space-between;
+              margin-top: 3vw;
+
+              .button {
+                position: relative;
+                overflow: hidden;
+                background-image: url(../images/other/geay_btn.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 9vw;
+                height: 9vw;
+                flex-direction: column;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                -webkit-transition: all 0.5s ease-in-out;
+                -o-transition: all 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
+
+                &:hover {
+                  background-image: url(../images/other/btn_bg.png);
+                }
+
+                .text {
+                  width: 6vw;
+                  font-size: 1.1vw;
+                  letter-spacing: 0.2em;
+                  font-family: "Noto Serif TC";
+                  text-align: center;
+                  font-weight: 600;
+
+                  @media all and (max-width: 1440px) {
+                    font-size: 1.25vw;
+                  }
+                }
+              }
+            }
+
+            .content-text-box {
+              margin-top: 2vw;
+              font-size: 0.85vw;
+              letter-spacing: 0.1em;
+              font-family: "Noto Serif TC";
+              align-items: center;
+              line-height: 1.7vw;
+              font-weight: 600;
+              position: relative;
+
+              @media all and (max-width: 1440px) {
+                font-size: 1vw;
+                line-height: 1.9vw;
+              }
+
+              .text {
+                position: absolute;
+                top: 0px;
+                left: 0px;
+                opacity: 0;
+              }
+            }
+          }
+        }
+
+        .content-box3-scrolltop-btn {
+          position: absolute;
+          font-size: 0.8vw;
+          letter-spacing: 0.2em;
+          font-family: "Noto Serif TC";
+          align-items: center;
+          font-weight: bold;
+          bottom: 3vw;
+          right: 5vw;
+          padding: 0.5vw 0.7vw;
+          padding-left: 0.95vw;
+          border: 1px solid black;
+          overflow: hidden;
+          color: black;
+          -webkit-transition: all 0.3s ease-in-out;
+          -o-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          cursor: pointer;
+
+          @media all and (max-width: 1440px) {
+            font-size: 1vw;
+          }
+
+          @media all and (max-width: 1024px) {
+            display: none;
+          }
+
+          &:before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            top: 0;
+            left: -100%;
+            background-color: #86d5fb;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+          }
+
+          &:hover {
+            color: white;
+            z-index: 2;
+            border: 1px solid #86d5fb;
+
+            &:before {
+              left: 0%;
+            }
+          }
+        }
+      }
+    }
+
+    .c2-box-moblie {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+      justify-content: center;
+      margin-bottom: 20vw;
+      display: none;
+
+      @media all and (max-width: 1024px) {
+        display: flex;
+      }
+
+      .moblie-bg {
+        width: 100%;
+      }
+
+      .tab-box-moblie {
+        display: flex;
+        width: 90%;
+        justify-content: center;
+        border-bottom: 1px solid #b6c2d1;
+        margin: 0 auto;
+        margin-top: -8vw;
+
+        .tab-moblie {
+          background-color: #e5ecf6;
+          font-size: $moblie-content;
+          letter-spacing: 0.1em;
+          font-family: "Noto Serif TC";
+          align-items: center;
+          font-weight: 600;
+          padding: 1vw 2.5vw;
+          padding-left: 3vw;
+          border-top-left-radius: 3vw;
+          border-top-right-radius: 3vw;
+          margin-left: 1vw;
+          cursor: pointer;
+          z-index: 3;
+        }
+
+        .tab-active-moblie {
+          background-color: #acd8f9;
+        }
+      }
+
+      .tab1-content {
+        margin-top: 10vw;
+        // position: absolute;
+        // top: 5vw;
+        // opacity: 0;
+        // display: none;
+        padding: 0vw 5vw;
+
+        .title-box {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          text-align: center;
+
+          .dot {
+            display: flex;
+            width: 40vw;
+            margin-bottom: 1vw;
+            padding-right: 3vw;
+            align-self: center;
+          }
+
+          .title {
+            font-size: $moblie-sub-title;
+            letter-spacing: 0.2em;
+            font-family: "Noto Serif TC";
+            align-items: center;
+            font-weight: 600;
+            margin-bottom: 5vw;
+          }
+        }
+
+        .content {
+          font-size: $moblie-content;
+          letter-spacing: 0.15em;
+          font-family: "Noto Serif TC";
+          align-items: center;
+          line-height: 7vw;
+          font-weight: 600;
+          text-align: justify;
+          padding: 0vw 3vw;
+        }
+
+        .machine-box-moblie {
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          .all-machine-moblie {
+            width: 50vw;
+          }
+        }
+
+        .content1-button-box-moblie {
+          display: flex;
+          justify-content: space-between;
+          margin-top: 5vw;
+
+          .content1-button-moblie {
+            position: relative;
+            overflow: hidden;
+            background-image: url(../images/other/btn_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 27vw;
+            height: 27vw;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .text {
+              width: 20vw;
+              font-size: $moblie-content;
+              letter-spacing: 0.15em;
+              font-family: "Noto Serif TC";
+              text-align: center;
+              font-weight: 600;
+              line-height: 6vw;
+            }
+          }
+        }
+      }
+
+      .tab2-content {
+        display: none;
+        padding: 0vw 5vw;
+        opacity: 0;
+
+        .machine-box-moblie {
+          position: relative;
+          display: flex;
+          justify-content: center;
+
+          .all-machine-moblie {
+            width: 50vw;
+          }
+
+          .origin-machine-moblie {
+            position: absolute;
+            width: 61vw;
+            left: 6.5vw;
+            top: 13vw;
+          }
+
+          .change1-machine-moblie {
+            position: absolute;
+            width: 10vw;
+            left: 42.6vw;
+            top: 19.5vw;
+          }
+
+          .change2-machine-moblie {
+            position: absolute;
+            width: 6.5vw;
+            left: 56.23vw;
+            top: 18vw;
+            opacity: 0;
+          }
+
+          .change3-machine-moblie {
+            position: absolute;
+            width: 5vw;
+            left: 57vw;
+            top: 37vw;
+            opacity: 0;
+          }
+
+          .change4-machine-moblie {
+            position: absolute;
+            width: 43vw;
+            left: 24vw;
+            top: 10vw;
+            opacity: 0;
+          }
+        }
+
+        .button-swiper-box {
+          margin-top: 10vw;
+          position: relative;
+
+          .button-swiper {
+            width: 80%;
+            position: relative;
+
+            .swiper-wrapper {
+              .swiper-slide {
+                display: flex;
+                justify-content: space-around;
+
+                .button-box {
+                  position: relative;
+                  overflow: hidden;
+                  background-image: url(../images/other/btn_bg.png);
+                  background-repeat: no-repeat;
+                  background-size: cover;
+                  width: 30vw;
+                  height: 30vw;
+                  flex-direction: column;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  filter: grayscale(1);
+                  z-index: 1;
+
+                  .text {
+                    width: 20vw;
+                    font-size: $moblie-content;
+                    letter-spacing: 0.15em;
+                    font-family: "Noto Serif TC";
+                    text-align: center;
+                    font-weight: 600;
+                    z-index: 5;
+                  }
+                }
+
+                .tab2-active-moblie {
+                  filter: grayscale(0);
+                }
+              }
+            }
+          }
+
+          .item-content-moblie {
+            position: absolute;
+            bottom: -10vw;
+            font-size: $moblie-content;
+            letter-spacing: 0.15em;
+            font-family: "Noto Serif TC";
+            text-align: center;
+            font-weight: 600;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            opacity: 0;
+          }
+
+          .bottle-content-moblie {
+            opacity: 1;
+          }
+
+          .button-swiper-next {
+            position: absolute;
+            right: 2vw;
+            cursor: pointer;
+            top: 12vw;
+
+            img {
+              width: 3vw;
+            }
+          }
+
+          .button-swiper-prev {
+            position: absolute;
+            left: 2vw;
+            cursor: pointer;
+            top: 12vw;
+
+            img {
+              width: 3vw;
+            }
+          }
+        }
+
+        .fixed-swiper-box-moblie {
+          margin-top: 20vw;
+          position: relative;
+          margin-bottom: 10vw;
+
+          .fixed-swiper-moblie {
             width: 100%;
             position: relative;
-            justify-content: center;
-            margin-bottom: 20vw;
-            display: none;
 
-            @media all and (max-width:1024px) {
+            .swiper-wrapper {
+              .swiper-slide {
                 display: flex;
-            }
-
-            .moblie-bg {
-                width: 100%;
-            }
-
-            .tab-box-moblie {
-                display: flex;
-                width: 90%;
                 justify-content: center;
-                border-bottom: 1px solid #b6c2d1;
-                margin: 0 auto;
-                margin-top: -8vw;
 
-                .tab-moblie {
-                    background-color: #e5ecf6;
-                    font-size: $moblie-content;
-                    letter-spacing: 0.1em;
-                    font-family: "Noto Serif TC";
-                    align-items: center;
-                    font-weight: 600;
-                    padding: 1vw 2.5vw;
-                    padding-left: 3vw;
-                    border-top-left-radius: 3vw;
-                    border-top-right-radius: 3vw;
-                    margin-left: 1vw;
-                    cursor: pointer;
-                    z-index: 3;
-
+                img {
+                  width: 66vw;
                 }
+              }
+            }
+          }
 
-                .tab-active-moblie {
-                    background-color: #acd8f9;
-                }
+          .swiper-pagination-horizontal {
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            bottom: -8vw;
+
+            .swiper-pagination-bullet {
+              margin: 0.9vw;
+              width: 8px;
+              height: 8px;
             }
 
-            .tab1-content {
-                margin-top: 10vw;
-                // position: absolute;
-                // top: 5vw;
-                // opacity: 0;
-                // display: none;
-                padding: 0vw 5vw;
-
-                .title-box {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 0 auto;
-                    text-align: center;
-
-                    .dot {
-                        display: flex;
-                        width: 40vw;
-                        margin-bottom: 1vw;
-                        padding-right: 3vw;
-                        align-self: center;
-                    }
-
-                    .title {
-                        font-size: $moblie-sub-title;
-                        letter-spacing: 0.2em;
-                        font-family: "Noto Serif TC";
-                        align-items: center;
-                        font-weight: 600;
-                        margin-bottom: 5vw;
-                    }
-                }
-
-                .content {
-                    font-size: $moblie-content;
-                    letter-spacing: 0.15em;
-                    font-family: "Noto Serif TC";
-                    align-items: center;
-                    line-height: 7vw;
-                    font-weight: 600;
-                    text-align: justify;
-                    padding: 0vw 3vw;
-                }
-
-                .machine-box-moblie {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-
-                    .all-machine-moblie {
-                        width: 50vw;
-                    }
-                }
-
-                .content1-button-box-moblie {
-                    display: flex;
-                    justify-content: space-between;
-                    margin-top: 5vw;
-
-                    .content1-button-moblie {
-                        position: relative;
-                        overflow: hidden;
-                        background-image: url(../images/other/btn_bg.png);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        width: 27vw;
-                        height: 27vw;
-                        flex-direction: column;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-
-                        .text {
-                            width: 20vw;
-                            font-size: $moblie-content;
-                            letter-spacing: 0.15em;
-                            font-family: "Noto Serif TC";
-                            text-align: center;
-                            font-weight: 600;
-                            line-height: 6vw;
-                        }
-                    }
-                }
+            .swiper-pagination-bullet-active {
+              background: #565656;
             }
+          }
 
-            .tab2-content {
+          .c2-swiper-next-moblie {
+            position: absolute;
+            right: 2vw;
+            cursor: pointer;
+            top: 29vw;
+            z-index: 10;
 
-                display: none;
-                padding: 0vw 5vw;
-                opacity: 0;
-
-                .machine-box-moblie {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-
-                    .all-machine-moblie {
-                        width: 50vw;
-                    }
-
-                    .origin-machine-moblie {
-                        position: absolute;
-                        width: 61vw;
-                        left: 6.5vw;
-                        top: 13vw;
-                    }
-
-                    .change1-machine-moblie {
-                        position: absolute;
-                        width: 10vw;
-                        left: 42.6vw;
-                        top: 19.5vw;
-
-                    }
-
-                    .change2-machine-moblie {
-                        position: absolute;
-                        width: 6.5vw;
-                        left: 56.23vw;
-                        top: 18vw;
-                        opacity: 0;
-                    }
-
-                    .change3-machine-moblie {
-                        position: absolute;
-                        width: 5vw;
-                        left: 57vw;
-                        top: 37vw;
-                        opacity: 0;
-                    }
-
-                    .change4-machine-moblie {
-                        position: absolute;
-                        width: 43vw;
-                        left: 24vw;
-                        top: 10vw;
-                        opacity: 0;
-                    }
-                }
-
-                .button-swiper-box {
-                    margin-top: 10vw;
-                    position: relative;
-
-                    .button-swiper {
-                        width: 80%;
-                        position: relative;
-
-                        .swiper-wrapper {
-                            .swiper-slide {
-                                display: flex;
-                                justify-content: space-around;
-
-                                .button-box {
-                                    position: relative;
-                                    overflow: hidden;
-                                    background-image: url(../images/other/btn_bg.png);
-                                    background-repeat: no-repeat;
-                                    background-size: cover;
-                                    width: 30vw;
-                                    height: 30vw;
-                                    flex-direction: column;
-                                    display: flex;
-                                    align-items: center;
-                                    justify-content: center;
-                                    filter: grayscale(1);
-                                    z-index: 1;
-
-                                    .text {
-                                        width: 20vw;
-                                        font-size: $moblie-content;
-                                        letter-spacing: 0.15em;
-                                        font-family: "Noto Serif TC";
-                                        text-align: center;
-                                        font-weight: 600;
-                                        z-index: 5;
-                                    }
-                                }
-
-                                .tab2-active-moblie {
-                                    filter: grayscale(0);
-                                }
-                            }
-                        }
-
-
-                    }
-
-                    .item-content-moblie {
-                        position: absolute;
-                        bottom: -10vw;
-                        font-size: $moblie-content;
-                        letter-spacing: 0.15em;
-                        font-family: "Noto Serif TC";
-                        text-align: center;
-                        font-weight: 600;
-                        align-items: center;
-                        display: flex;
-                        justify-content: center;
-                        width: 100%;
-                        opacity: 0;
-                    }
-
-                    .bottle-content-moblie {
-                        opacity: 1;
-                    }
-
-                    .button-swiper-next {
-                        position: absolute;
-                        right: 2vw;
-                        cursor: pointer;
-                        top: 12vw;
-
-                        img {
-                            width: 3vw;
-                        }
-                    }
-
-                    .button-swiper-prev {
-                        position: absolute;
-                        left: 2vw;
-                        cursor: pointer;
-                        top: 12vw;
-
-                        img {
-                            width: 3vw;
-                        }
-                    }
-                }
-
-                .fixed-swiper-box-moblie {
-                    margin-top: 20vw;
-                    position: relative;
-                    margin-bottom: 10vw;
-
-                    .fixed-swiper-moblie {
-                        width: 100%;
-                        position: relative;
-
-                        .swiper-wrapper {
-
-                            .swiper-slide {
-                                display: flex;
-                                justify-content: center;
-
-                                img {
-                                    width: 66vw;
-                                }
-                            }
-                        }
-
-                    }
-
-                    .swiper-pagination-horizontal {
-                        display: flex;
-                        justify-content: center;
-                        position: absolute;
-                        bottom: -8vw;
-
-                        .swiper-pagination-bullet {
-                            margin: 0.9vw;
-                            width: 8px;
-                            height: 8px;
-                        }
-
-                        .swiper-pagination-bullet-active {
-                            background: #565656
-                        }
-                    }
-
-                    .c2-swiper-next-moblie {
-                        position: absolute;
-                        right: 2vw;
-                        cursor: pointer;
-                        top: 29vw;
-                        z-index: 10;
-
-                        img {
-                            width: 3vw;
-                        }
-                    }
-
-                    .c2-swiper-prev-moblie {
-                        position: absolute;
-                        left: 2vw;
-                        cursor: pointer;
-                        top: 29vw;
-                        z-index: 10;
-
-                        img {
-                            width: 3vw;
-                        }
-                    }
-                }
+            img {
+              width: 3vw;
             }
+          }
 
-            .tab3-content {
-                margin-top: 10vw;
-                // position: absolute;
-                // top: 5vw;
-                padding: 0vw 5vw;
-                display: none;
-                opacity: 0;
+          .c2-swiper-prev-moblie {
+            position: absolute;
+            left: 2vw;
+            cursor: pointer;
+            top: 29vw;
+            z-index: 10;
 
-                .title-box {
-                    display: flex;
-                    flex-direction: column;
-                    margin: 0 auto;
-                    text-align: center;
-
-                    .dot {
-                        display: flex;
-                        width: 40vw;
-                        margin-bottom: 1vw;
-                        padding-right: 3vw;
-                        align-self: center;
-                    }
-
-                    .title {
-                        font-size: $moblie-sub-title;
-                        letter-spacing: 0.2em;
-                        font-family: "Noto Serif TC";
-                        align-items: center;
-                        font-weight: 600;
-                        margin-bottom: 5vw;
-                    }
-                }
-
-                .tab3-button-box {
-                    display: flex;
-                    justify-content: space-around;
-
-                    .tab3-button {
-                        position: relative;
-                        overflow: hidden;
-                        background-image: url(../images/other/btn_bg.png);
-                        background-repeat: no-repeat;
-                        background-size: cover;
-                        width: 27vw;
-                        height: 27vw;
-                        flex-direction: column;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
-                        filter: grayscale(1);
-
-                        .text {
-                            width: 20vw;
-                            font-size: $moblie-content;
-                            letter-spacing: 0.15em;
-                            font-family: "Noto Serif TC";
-                            text-align: center;
-                            font-weight: 600;
-                            z-index: 5;
-                        }
-                    }
-
-                    .tab3-active-moblie {
-                        filter: grayscale(0);
-                    }
-
-
-                }
-
-                .tab3-content-text-box {
-                    position: relative;
-                    font-size: $moblie-content;
-                    letter-spacing: 0.15em;
-                    font-family: "Noto Serif TC";
-                    text-align: justify;
-                    font-weight: 500;
-                    line-height: 6.5vw;
-                    margin-bottom: 40vw;
-
-                    .tab3-content-text {
-                        position: absolute;
-                        top: 10vw;
-                        left: 0px;
-                        opacity: 0;
-                    }
-
-                    .tab3-content-text1 {
-                        opacity: 1;
-                    }
-                }
+            img {
+              width: 3vw;
             }
+          }
         }
+      }
+
+      .tab3-content {
+        margin-top: 10vw;
+        // position: absolute;
+        // top: 5vw;
+        padding: 0vw 5vw;
+        display: none;
+        opacity: 0;
+
+        .title-box {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          text-align: center;
+
+          .dot {
+            display: flex;
+            width: 40vw;
+            margin-bottom: 1vw;
+            padding-right: 3vw;
+            align-self: center;
+          }
+
+          .title {
+            font-size: $moblie-sub-title;
+            letter-spacing: 0.2em;
+            font-family: "Noto Serif TC";
+            align-items: center;
+            font-weight: 600;
+            margin-bottom: 5vw;
+          }
+        }
+
+        .tab3-button-box {
+          display: flex;
+          justify-content: space-around;
+
+          .tab3-button {
+            position: relative;
+            overflow: hidden;
+            background-image: url(../images/other/btn_bg.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 27vw;
+            height: 27vw;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            filter: grayscale(1);
+
+            .text {
+              width: 20vw;
+              font-size: $moblie-content;
+              letter-spacing: 0.15em;
+              font-family: "Noto Serif TC";
+              text-align: center;
+              font-weight: 600;
+              z-index: 5;
+            }
+          }
+
+          .tab3-active-moblie {
+            filter: grayscale(0);
+          }
+        }
+
+        .tab3-content-text-box {
+          position: relative;
+          font-size: $moblie-content;
+          letter-spacing: 0.15em;
+          font-family: "Noto Serif TC";
+          text-align: justify;
+          font-weight: 500;
+          line-height: 6.5vw;
+          margin-bottom: 40vw;
+
+          .tab3-content-text {
+            position: absolute;
+            top: 10vw;
+            left: 0px;
+            opacity: 0;
+          }
+
+          .tab3-content-text1 {
+            opacity: 1;
+          }
+        }
+      }
     }
+  }
 }

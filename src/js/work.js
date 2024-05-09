@@ -28,10 +28,10 @@ window.onload = function () {
                 type: "chars,words,lines", linesClass: "clip-text"
             }));
 
-            let ZHtitle = gsap.utils.toArray(".c1-content .title-box-moblie .content-text-box .content-text");
-            let splitZH = ZHtitle.map(heading => new SplitText(heading, {
-                type: "chars,words,lines", linesClass: "clip-text"
-            }));
+            // let ZHtitle = gsap.utils.toArray(".c1-content .title-box-moblie .content-text-box .content-text");
+            // let splitZH = ZHtitle.map(heading => new SplitText(heading, {
+            //     type: "chars,words,lines", linesClass: "clip-text"
+            // }));
 
             let tl = gsap.timeline({});
 
@@ -45,36 +45,36 @@ window.onload = function () {
                     from: 'start'
                 }
             })
-                .from(splitZH[0].chars, {
-                    x: -70,
-                    ease: "power1.inOut",
-                    duration: 1,
-                    opacity: 0,
-                    stagger: {
-                        each: 0.05,
-                        from: 'start'
-                    }
-                }, '<0.3')
-                .from(splitZH[1].chars, {
-                    x: -70,
-                    ease: "power1.inOut",
-                    duration: 1,
-                    opacity: 0,
-                    stagger: {
-                        each: 0.05,
-                        from: 'start'
-                    }
-                }, '<0.3')
-                .from(splitZH[2].chars, {
-                    x: -70,
-                    ease: "power1.inOut",
-                    duration: 1,
-                    opacity: 0,
-                    stagger: {
-                        each: 0.05,
-                        from: 'start'
-                    }
-                }, '<0.3')
+            // .from(splitZH[0].chars, {
+            //     x: -70,
+            //     ease: "power1.inOut",
+            //     duration: 1,
+            //     opacity: 0,
+            //     stagger: {
+            //         each: 0.05,
+            //         from: 'start'
+            //     }
+            // }, '<0.3')
+            // .from(splitZH[1].chars, {
+            //     x: -70,
+            //     ease: "power1.inOut",
+            //     duration: 1,
+            //     opacity: 0,
+            //     stagger: {
+            //         each: 0.05,
+            //         from: 'start'
+            //     }
+            // }, '<0.3')
+            // .from(splitZH[2].chars, {
+            //     x: -70,
+            //     ease: "power1.inOut",
+            //     duration: 1,
+            //     opacity: 0,
+            //     stagger: {
+            //         each: 0.05,
+            //         from: 'start'
+            //     }
+            // }, '<0.3')
             C1Float();
         } else {
 
@@ -83,10 +83,10 @@ window.onload = function () {
                 type: "chars,words,lines", linesClass: "clip-text"
             }));
 
-            let ZHtitle = gsap.utils.toArray(".c1-content .zh-text");
-            let splitZH = ZHtitle.map(heading => new SplitText(heading, {
-                type: "chars,words,lines", linesClass: "clip-text"
-            }));
+            // let ZHtitle = gsap.utils.toArray(".c1-content .zh-text");
+            // let splitZH = ZHtitle.map(heading => new SplitText(heading, {
+            //     type: "chars,words,lines", linesClass: "clip-text"
+            // }));
 
             let tl = gsap.timeline({});
 
@@ -101,38 +101,38 @@ window.onload = function () {
                 }
             })
                 .from('.c1-box .top-small-text', { opacity: 0, duration: 1, transform: 'skewX(58deg)', ease: "power1.inOut", }, '<')
-                .from(splitZH[0].chars, {
-                    opacity: 0,
-                    duration: 1,
-                    x: -100,
-                    opacity: 0,
-                    ease: "power1.inOut",
-                    stagger: {
-                        each: 0.05,
-                        from: 'start'
-                    }
-                }, '<0.3')
-                .from(splitZH[1].chars, {
-                    opacity: 0,
-                    duration: 1,
-                    x: -100,
-                    opacity: 0,
-                    ease: "power1.inOut",
-                    stagger: {
-                        each: 0.05,
-                        from: 'start'
-                    }
-                }, '<0.3')
-                .from(splitZH[2].chars, {
-                    opacity: 0,
-                    duration: 1,
-                    x: -100,
-                    ease: "power1.inOut",
-                    stagger: {
-                        each: 0.05,
-                        from: 'start'
-                    }
-                }, '<0.3')
+            // .from(splitZH[0].chars, {
+            //     opacity: 0,
+            //     duration: 1,
+            //     x: -100,
+            //     opacity: 0,
+            //     ease: "power1.inOut",
+            //     stagger: {
+            //         each: 0.05,
+            //         from: 'start'
+            //     }
+            // }, '<0.3')
+            // .from(splitZH[1].chars, {
+            //     opacity: 0,
+            //     duration: 1,
+            //     x: -100,
+            //     opacity: 0,
+            //     ease: "power1.inOut",
+            //     stagger: {
+            //         each: 0.05,
+            //         from: 'start'
+            //     }
+            // }, '<0.3')
+            // .from(splitZH[2].chars, {
+            //     opacity: 0,
+            //     duration: 1,
+            //     x: -100,
+            //     ease: "power1.inOut",
+            //     stagger: {
+            //         each: 0.05,
+            //         from: 'start'
+            //     }
+            // }, '<0.3')
 
             C1Float();
         }

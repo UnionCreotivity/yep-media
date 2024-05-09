@@ -1,263 +1,252 @@
 .about-body {
-    background-image: url(../images/about/big_bg.webp);
-    position: relative;
-    width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-    // height: 300vh;
-    display: flex;
-    flex-direction: column;
+  background-image: url(../images/about/big_bg.webp);
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  // height: 300vh;
+  display: flex;
+  flex-direction: column;
 
-    @media all and (max-width:1024px) {
-        background-image: none;
-        background-color: white;
+  @media all and (max-width: 1024px) {
+    background-image: none;
+    background-color: white;
+  }
 
+  .left-bg {
+    position: absolute;
+    left: 0px;
+    top: 17vw;
+    width: 0%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .container {
+    .title-box {
+      position: absolute;
+      top: 5vw;
+      left: 5vw;
+      font-size: 3vw;
+      letter-spacing: 0.3em;
+      font-family: "Noto Serif TC";
+      align-items: center;
+      font-weight: 600;
+
+      @media all and (max-width: 1024px) {
+        position: initial;
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 20vw;
+        font-size: $moblie-sub-title;
+      }
+
+      .text-1 {
+        margin-bottom: 0.5vw;
+
+        @media all and (max-width: 1024px) {
+          font-size: 7.5vw;
+          margin-bottom: 0vw;
+        }
+      }
+
+      .text-2 {
+        @media all and (max-width: 1024px) {
+          letter-spacing: 1em;
+          padding-left: 5vw;
+          margin-bottom: 3vw;
+        }
+      }
     }
 
-    .left-bg {
-        position: absolute;
-        left: 0px;
-        top: 17vw;
-        width: 0%;
+    .top-box {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      height: 100vh;
+      justify-content: center;
+      padding-left: 15vw;
 
-        img {
+      @media all and (max-width: 1024px) {
+        height: auto;
+        padding-left: 0vw;
+      }
+
+      .top-person-box {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+
+        @media all and (max-width: 1024px) {
+          width: 100%;
+          padding-top: 20vw;
+          margin-bottom: 20vw;
+        }
+
+        .img-box {
+          width: 100%;
+          margin: 0 auto;
+
+          img {
+            height: 16vw;
+
+            @media all and (max-width: 1024px) {
+              height: 40vw;
+            }
+
+            @media all and (max-width: 500px) {
+              height: 48vw;
+            }
+          }
+        }
+
+        .job-title-box,
+        .name-box,
+        .content-box {
+          margin-top: 3vw;
+          font-size: 1.1vw;
+          letter-spacing: 0.6em;
+          font-family: "Noto Serif TC";
+          align-items: center;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+
+          @media all and (max-width: 1024px) {
             width: 100%;
-        }
-    }
+            font-size: $moblie-content;
+          }
 
-    .container {
-
-        .title-box {
-            position: absolute;
-            top: 5vw;
-            left: 5vw;
-            font-size: 1.1vw;
-            letter-spacing: 0.3em;
-            font-family: 'Noto Serif TC';
-            align-items: center;
-            font-weight: 600;
-
-            @media all and (max-width:1024px) {
-                position: initial;
-                display: flex;
-                flex-direction: column-reverse;
-                margin-top: 20vw;
-                font-size: $moblie-sub-title;
-            }
-
-            .text-1 {
-                margin-bottom: 0.5vw;
-
-                @media all and (max-width:1024px) {
-                    margin-bottom: 0vw;
-                }
-            }
-
-            .text-2 {
-                @media all and (max-width:1024px) {
-                    letter-spacing: 1em;
-                    padding-left: 5vw;
-                    margin-bottom: 3vw;
-                    font-size: $moblie-big-title;
-                }
-            }
-        }
-
-        .top-box {
+          .job-title,
+          .director-name,
+          .content {
+            padding-left: 3vw;
             display: flex;
-            flex-direction: column;
-            width: 100%;
+            justify-content: center;
+          }
+        }
+      }
+    }
+
+    .person-list-box {
+      width: 80%;
+      display: flex;
+      padding-left: 15vw;
+      margin: 0 auto;
+      justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+      overflow: hidden;
+
+      @media all and (max-width: 1024px) {
+        width: 100%;
+        padding-left: 0vw;
+      }
+
+      @media all and (max-width: 500px) {
+        width: 90%;
+        padding-bottom: 10vw;
+      }
+
+      .person-box {
+        // padding-top: 10vw;
+        padding-bottom: 10vw;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+
+        @media all and (max-width: 1024px) {
+          width: 50%;
+          // border: 1px solid red;
+        }
+
+        @media all and (max-width: 500px) {
+          width: 45%;
+        }
+
+        .img-box {
+          width: 100%;
+          margin: 0 auto;
+          display: flex;
+          justify-content: center;
+
+          img {
+            // width: 75%;
+            height: 18vw;
+
+            @media all and (max-width: 1024px) {
+              height: 40vw;
+            }
+
+            @media all and (max-width: 500px) {
+              height: 42vw;
+            }
+          }
+        }
+
+        .job-title-box,
+        .name-box,
+        .content-box {
+          margin-top: 2vw;
+          font-size: 1.1vw;
+          letter-spacing: 0.6em;
+          font-family: "Noto Serif TC";
+          align-items: center;
+          font-weight: 600;
+          display: flex;
+          justify-content: center;
+
+          @media all and (max-width: 1024px) {
+            margin-top: 5vw;
+            font-size: $moblie-content;
+          }
+
+          .job-title {
+            display: flex;
+
+            @media all and (max-width: 1024px) {
+              flex-direction: column;
+            }
+          }
+
+          .job-title,
+          .name,
+          .content {
+            padding-left: 3vw;
+            display: flex;
+            justify-content: center;
             text-align: center;
-            height: 100vh;
-            justify-content: center;
-            padding-left: 15vw;
+          }
 
-            @media all and (max-width:1024px) {
-                height: auto;
-                padding-left: 0vw;
+          .content {
+            line-height: 2vw;
+
+            @media all and (max-width: 1024px) {
+              line-height: 6.5vw;
+              font-size: 3.4vw;
+              letter-spacing: 0.2em;
+            }
+          }
+
+          .name {
+            @media all and (max-width: 1024px) {
+              font-size: 4.2vw;
+              font-weight: bold;
             }
 
-            .top-person-box {
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                width: 33%;
-
-                @media all and (max-width:1024px) {
-                    width: 100%;
-                    padding-top: 20vw;
-                    margin-bottom: 20vw;
-
-                }
-
-                .img-box {
-                    width: 100%;
-                    margin: 0 auto;
-
-                    img {
-                        height: 16vw;
-
-                        @media all and (max-width:1024px) {
-                            height: 40vw;
-                        }
-
-                        @media all and (max-width:500px) {
-                            height: 48vw;
-                        }
-                    }
-                }
-
-                .job-title-box,
-                .name-box,
-                .content-box {
-                    margin-top: 3vw;
-                    font-size: 1.1vw;
-                    letter-spacing: 0.6em;
-                    font-family: 'Noto Serif TC';
-                    align-items: center;
-                    font-weight: 600;
-                    display: flex;
-                    justify-content: center;
-
-                    @media all and (max-width:1024px) {
-                        width: 100%;
-                        font-size: $moblie-content;
-                    }
-
-                    .job-title,
-                    .director-name,
-                    .content {
-                        padding-left: 3vw;
-                        display: flex;
-                        justify-content: center;
-                    }
-                }
+            @media all and (max-width: 500px) {
+              font-size: 5vw;
+              font-weight: bold;
             }
-
-
+          }
         }
-
-        .person-list-box {
-            width: 80%;
-            display: flex;
-            padding-left: 15vw;
-            margin: 0 auto;
-            justify-content: center;
-            flex-wrap: wrap;
-            position: relative;
-            overflow: hidden;
-
-            @media all and (max-width:1024px) {
-                width: 100%;
-                padding-left: 0vw;
-            }
-
-            @media all and (max-width:500px) {
-                width: 90%;
-                padding-bottom: 10vw;
-
-            }
-
-            .person-box {
-                // padding-top: 10vw;
-                padding-bottom: 10vw;
-                margin: 0 auto;
-                display: flex;
-                flex-direction: column;
-                width: 33%;
-
-                @media all and (max-width:1024px) {
-                    width: 50%;
-                    // border: 1px solid red;
-                }
-
-                @media all and (max-width:500px) {
-                    width: 45%;
-
-                }
-
-                .img-box {
-                    width: 100%;
-                    margin: 0 auto;
-                    display: flex;
-                    justify-content: center;
-
-                    img {
-                        // width: 75%;
-                        height: 18vw;
-
-                        @media all and (max-width:1024px) {
-                            height: 40vw;
-                        }
-
-                        @media all and (max-width:500px) {
-                            height: 42vw;
-                        }
-                    }
-                }
-
-                .job-title-box,
-                .name-box,
-                .content-box {
-                    margin-top: 2vw;
-                    font-size: 1.1vw;
-                    letter-spacing: 0.6em;
-                    font-family: 'Noto Serif TC';
-                    align-items: center;
-                    font-weight: 600;
-                    display: flex;
-                    justify-content: center;
-
-                    @media all and (max-width:1024px) {
-                        margin-top: 5vw;
-                        font-size: $moblie-content;
-                    }
-
-                    .job-title {
-                        display: flex;
-
-                        @media all and (max-width:1024px) {
-                            flex-direction: column;
-                        }
-
-                    }
-
-                    .job-title,
-                    .name,
-                    .content {
-                        padding-left: 3vw;
-                        display: flex;
-                        justify-content: center;
-                        text-align: center;
-
-                    }
-
-                    .content {
-                        line-height: 2vw;
-
-                        @media all and (max-width:1024px) {
-                            line-height: 6.5vw;
-                            font-size: 3.4vw;
-                            letter-spacing: 0.2em;
-                        }
-                    }
-
-                    .name {
-                        @media all and (max-width:1024px) {
-                            font-size: 4.2vw;
-                            font-weight: bold;
-                        }
-
-                        @media all and (max-width:500px) {
-                            font-size: 5vw;
-                            font-weight: bold;
-                        }
-                    }
-                }
-            }
-
-
-        }
+      }
     }
+  }
 }
