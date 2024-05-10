@@ -1764,10 +1764,6 @@ footer {
 .index-body .container .c3-box .right-box .swiper .swiper-slide div img {
   width: 11vw;
   filter: grayscale(1);
-  transition: all 0.25s ease-in-out;
-}
-.index-body .container .c3-box .right-box .swiper .swiper-slide div img:hover {
-  filter: initial;
 }
 @media all and (max-width: 1024px) {
   .index-body .container .c3-box .right-box .swiper .swiper-slide div img {
@@ -3252,6 +3248,136 @@ footer {
 .contact-body .container .bottom-box .content .send-button-box button:hover:before {
   left: 0%;
 }
+.contact-body .container .contact-info-box {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+@media all and (max-width: 1024px) {
+  .contact-body .container .contact-info-box {
+    display: none;
+  }
+}
+.contact-body .container .contact-info-box .item1 {
+  position: absolute;
+  width: 17vw;
+  right: 5vw;
+  bottom: 5vw;
+}
+.contact-body .container .contact-info-box .contact-info-item {
+  position: absolute;
+  width: 19vw;
+  bottom: -8vw;
+  left: 4vw;
+}
+.contact-body .container .contact-info-box .bubble {
+  position: absolute;
+  z-index: 2;
+  top: -5vw;
+  left: 30vw;
+}
+@media all and (max-width: 1920px) {
+  .contact-body .container .contact-info-box .bubble {
+    top: -7vw;
+    left: 22vw;
+  }
+}
+.contact-body .container .contact-info-box .bubble img {
+  width: 100%;
+}
+@media all and (max-width: 1920px) {
+  .contact-body .container .contact-info-box .bubble img {
+    width: 14vw;
+  }
+}
+.contact-body .container .contact-info-box .text-img {
+  position: absolute;
+  z-index: 2;
+  top: 5vw;
+  right: 20vw;
+}
+@media all and (max-width: 1920px) {
+  .contact-body .container .contact-info-box .text-img {
+    top: 8vw;
+    right: 1vw;
+  }
+}
+.contact-body .container .contact-info-box .text-img img {
+  width: 150%;
+}
+@media all and (max-width: 1920px) {
+  .contact-body .container .contact-info-box .text-img img {
+    width: 48vw;
+  }
+}
+.contact-body .container .contact-info-box .content {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+  height: 80vh;
+  background-color: white;
+  border-top-left-radius: 8vw;
+  border-bottom-right-radius: 8vw;
+  flex-direction: column;
+  padding-top: 9vw;
+  overflow: hidden;
+  color: black;
+  text-align: center;
+  font-family: "Noto Serif TC";
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  line-height: 1.7;
+  font-size: 0.85vw;
+}
+@media all and (max-width: 1920px) {
+  .contact-body .container .contact-info-box .content {
+    padding-bottom: 18vw;
+    overflow: initial;
+    margin-top: -0.3vw;
+  }
+}
+@media all and (max-width: 1440px) {
+  .contact-body .container .contact-info-box .content {
+    font-size: 0.9vw;
+    padding-top: 11vw;
+    height: 73vh;
+  }
+}
+@media all and (max-width: 1366px) {
+  .contact-body .container .contact-info-box .content {
+    height: 75vh;
+    padding-top: 10vw;
+  }
+}
+.contact-body .container .contact-info-box .content .top-logo {
+  width: 100%;
+}
+.contact-body .container .contact-info-box .content .top-logo img {
+  width: 8.5%;
+}
+.contact-body .container .contact-info-box .content .bottom-info {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: left;
+}
+.contact-body .container .contact-info-box .content .bottom-info .info1 {
+  margin-top: 2vw;
+}
+.contact-body .container .contact-info-box .content .bottom-info .info2 {
+  margin-top: 1.5vw;
+}
+.contact-body .container .contact-info-box .content .text {
+  display: flex;
+  font-size: 1.1vw;
+  letter-spacing: 0.2em;
+  font-family: "Noto Serif TC";
+  align-items: center;
+  font-weight: 600;
+  position: relative;
+  top: 8vw;
+  left: 25vw;
+}
 .contact-body .container .info-box-moblie {
   position: relative;
   background-repeat: no-repeat;
@@ -3548,11 +3674,11 @@ footer {
   display: flex;
   width: 100%;
   justify-content: center;
-  margin-top: 15vw;
+  margin-top: 10vw;
 }
 @media all and (max-width: 500px) {
   .contact-body .container .info-box-moblie .info-content-box .send-button-box {
-    margin-bottom: 15vw;
+    margin-bottom: 10vw;
   }
 }
 .contact-body .container .info-box-moblie .info-content-box .send-button-box button {
@@ -3609,6 +3735,50 @@ footer {
   border-bottom-left-radius: 25vw;
   border-top-left-radius: 0vw;
   border-bottom-right-radius: 0vw;
+}
+.contact-body .container .info-box-moblie .info-content-box3 {
+  border-top-right-radius: 25vw;
+  border-bottom-left-radius: 25vw;
+  border-top-left-radius: 0vw;
+  border-bottom-right-radius: 0vw;
+}
+.contact-body .container .info-box-moblie .new-info-content-moblie {
+  border-top-right-radius: 0vw;
+  border-bottom-left-radius: 0vw;
+  border-top-left-radius: 25vw;
+  border-bottom-right-radius: 25vw;
+}
+.contact-body .container .info-box-moblie .new-info-content-moblie .content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Noto Serif TC";
+  text-align: center;
+  align-items: center;
+  letter-spacing: 0.15em;
+  line-height: 1.8;
+  font-size: 3.7vw;
+  color: black;
+  font-weight: 600;
+  padding-top: 7vw;
+}
+.contact-body .container .info-box-moblie .new-info-content-moblie .content .top-logo {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  text-align: center;
+  align-items: center;
+}
+.contact-body .container .info-box-moblie .new-info-content-moblie .content .top-logo img {
+  width: 47%;
+}
+.contact-body .container .info-box-moblie .new-info-content-moblie .content .bottom-info {
+  display: flex;
+  margin-top: 10vw;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact-body .container .info-box-moblie .new-info-content-moblie .content .bottom-info .info2 {
+  margin-top: 5vw;
 }
 
 .ad-body {

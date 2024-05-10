@@ -137,7 +137,6 @@
 
         @media all and (max-width: 500px) {
           padding-top: 20vw;
-
           height: auto;
         }
 
@@ -800,6 +799,138 @@
       }
     }
 
+    .contact-info-box {
+      display: flex;
+      width: 100%;
+      position: relative;
+
+      @media all and (max-width: 1024px) {
+        display: none;
+      }
+      .item1 {
+        position: absolute;
+        width: 17vw;
+        right: 5vw;
+        bottom: 5vw;
+      }
+
+      .contact-info-item {
+        position: absolute;
+        width: 19vw;
+        bottom: -8vw;
+        left: 4vw;
+      }
+
+      .bubble {
+        position: absolute;
+        z-index: 2;
+        top: -5vw;
+        left: 30vw;
+
+        @media all and (max-width: 1920px) {
+          top: -7vw;
+          left: 22vw;
+        }
+
+        img {
+          width: 100%;
+
+          @media all and (max-width: 1920px) {
+            width: 14vw;
+          }
+        }
+      }
+
+      .text-img {
+        position: absolute;
+        z-index: 2;
+        top: 5vw;
+        right: 20vw;
+
+        @media all and (max-width: 1920px) {
+          top: 8vw;
+          right: 1vw;
+        }
+
+        img {
+          width: 150%;
+
+          @media all and (max-width: 1920px) {
+            width: 48vw;
+          }
+        }
+      }
+
+      .content {
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        height: 80vh;
+        background-color: white;
+        border-top-left-radius: 8vw;
+        border-bottom-right-radius: 8vw;
+        flex-direction: column;
+        padding-top: 9vw;
+        overflow: hidden;
+        color: black;
+        text-align: center;
+        font-family: "Noto Serif TC";
+        letter-spacing: 0.1em;
+        font-weight: 600;
+        line-height: 1.7;
+        font-size: 0.85vw;
+
+        @media all and (max-width: 1920px) {
+          padding-bottom: 18vw;
+          overflow: initial;
+          margin-top: -0.3vw;
+        }
+
+        @media all and (max-width: 1440px) {
+          font-size: 0.9vw;
+          padding-top: 11vw;
+          height: 73vh;
+        }
+
+        @media all and (max-width: 1366px) {
+          height: 75vh;
+          padding-top: 10vw;
+        }
+
+        .top-logo {
+          width: 100%;
+          img {
+            width: 8.5%;
+          }
+        }
+
+        .bottom-info {
+          display: flex;
+          flex-direction: column;
+          margin: 0 auto;
+          text-align: left;
+          .info1 {
+            margin-top: 2vw;
+          }
+          .info2 {
+            margin-top: 1.5vw;
+          }
+        }
+
+        .text {
+          display: flex;
+          font-size: 1.1vw;
+          letter-spacing: 0.2em;
+          font-family: "Noto Serif TC";
+          align-items: center;
+          font-weight: 600;
+          position: relative;
+          top: 8vw;
+          left: 25vw;
+        }
+      }
+    }
+
     .info-box-moblie {
       position: relative;
       background-repeat: no-repeat;
@@ -1122,10 +1253,10 @@
           display: flex;
           width: 100%;
           justify-content: center;
-          margin-top: 15vw;
+          margin-top: 10vw;
 
           @media all and (max-width: 500px) {
-            margin-bottom: 15vw;
+            margin-bottom: 10vw;
           }
 
           button {
@@ -1188,6 +1319,56 @@
         border-bottom-left-radius: 25vw;
         border-top-left-radius: 0vw;
         border-bottom-right-radius: 0vw;
+      }
+
+      .info-content-box3 {
+        border-top-right-radius: 25vw;
+        border-bottom-left-radius: 25vw;
+        border-top-left-radius: 0vw;
+        border-bottom-right-radius: 0vw;
+      }
+
+      .new-info-content-moblie {
+        border-top-right-radius: 0vw;
+        border-bottom-left-radius: 0vw;
+        border-top-left-radius: 25vw;
+        border-bottom-right-radius: 25vw;
+
+        .content {
+          display: flex;
+          flex-direction: column;
+          font-family: "Noto Serif TC";
+          text-align: center;
+          align-items: center;
+          letter-spacing: 0.15em;
+          line-height: 1.8;
+          font-size: 3.7vw;
+          color: black;
+          font-weight: 600;
+          padding-top: 7vw;
+          .top-logo {
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+            text-align: center;
+            align-items: center;
+
+            img {
+              width: 47%;
+            }
+          }
+
+          .bottom-info {
+            display: flex;
+            margin-top: 10vw;
+            justify-content: center;
+            flex-direction: column;
+
+            .info2 {
+              margin-top: 5vw;
+            }
+          }
+        }
       }
     }
   }
