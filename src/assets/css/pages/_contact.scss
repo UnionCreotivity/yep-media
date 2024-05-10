@@ -1346,6 +1346,14 @@
           color: black;
           font-weight: 600;
           padding-top: 7vw;
+          @media all and (max-width: 500px) {
+            position: absolute;
+            width: 100%;
+            padding-top: 0vw;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
           .top-logo {
             display: flex;
             flex-direction: column;
@@ -1355,6 +1363,10 @@
 
             img {
               width: 47%;
+
+              @media all and (max-width: 500px) {
+                width: 50%;
+              }
             }
           }
 
@@ -1363,9 +1375,14 @@
             margin-top: 10vw;
             justify-content: center;
             flex-direction: column;
-
+            a {
+              color: black;
+            }
             .info2 {
               margin-top: 5vw;
+              a {
+                color: black;
+              }
             }
           }
         }

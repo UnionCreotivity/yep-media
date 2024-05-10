@@ -3761,6 +3761,16 @@ footer {
   font-weight: 600;
   padding-top: 7vw;
 }
+@media all and (max-width: 500px) {
+  .contact-body .container .info-box-moblie .new-info-content-moblie .content {
+    position: absolute;
+    width: 100%;
+    padding-top: 0vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .contact-body .container .info-box-moblie .new-info-content-moblie .content .top-logo {
   display: flex;
   flex-direction: column;
@@ -3771,14 +3781,25 @@ footer {
 .contact-body .container .info-box-moblie .new-info-content-moblie .content .top-logo img {
   width: 47%;
 }
+@media all and (max-width: 500px) {
+  .contact-body .container .info-box-moblie .new-info-content-moblie .content .top-logo img {
+    width: 50%;
+  }
+}
 .contact-body .container .info-box-moblie .new-info-content-moblie .content .bottom-info {
   display: flex;
   margin-top: 10vw;
   justify-content: center;
   flex-direction: column;
 }
+.contact-body .container .info-box-moblie .new-info-content-moblie .content .bottom-info a {
+  color: black;
+}
 .contact-body .container .info-box-moblie .new-info-content-moblie .content .bottom-info .info2 {
   margin-top: 5vw;
+}
+.contact-body .container .info-box-moblie .new-info-content-moblie .content .bottom-info .info2 a {
+  color: black;
 }
 
 .ad-body {
